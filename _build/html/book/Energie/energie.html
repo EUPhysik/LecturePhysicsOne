@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>6. Arbeit, Leistung und Energie &#8212; Skript Physik 1</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7. Stossprozesse" href="../Stossprozesse/stoss.html" />
+    <link rel="prev" title="5.2. Kreisbewegungen" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/FB3_ET-Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Skript Physik 1</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Physik 1: Mechnik und Wärmelehre
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Grundlagen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Grundlagen/grundlagen.html">
+   1. Grundlagen
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Einheiten.html">
+   2. Physikalische Einheiten
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_SI.html">
+     2.1. SI - Basiseinheiten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_abgleitet.html">
+     2.2. Abgeleitete Einheiten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_Praefixe.html">
+     2.3. Exponentialschreibweise / Präfixe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_Aufgaben.html">
+     2.4. Aufgaben zu physikalischen Einheiten
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Differentialrechnung.html">
+   3. Funktionen, Differential- und Integralrechnung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Eigenschaften.html">
+     3.1. Eigenschaften
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Differenzialrechnung.html">
+     3.2. Differentialrechnung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Integralrechnung.html">
+     3.3. Integralrechnung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Aufgaben.html">
+     3.4. Aufgaben zur Differential- und Integralrechnung
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Vektorrechnung.html">
+   4. Vektorrechnung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Vektorrechnung_Rechenregeln.html">
+     4.1. Rechenregeln
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Vektorrechnung_Aufgaben.html">
+     4.2. Aufgaben zur Vektorrechnung
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Mechanik eines Massenpunktes
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Koordinatensysteme/koordinatensysteme_0.html">
+   1. Koordinatensysteme
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/koordinatensysteme.html">
+     1.1. Koordinatensysteme und Bezugssysteme
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/polarkoordinaten.html">
+     1.2. Polarkoordinaten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/inertialsysteme.html">
+     1.3. Inertialsysteme
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/galilei.html">
+     1.4. Galilei-Transformation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Kinematik/kinematik.html">
+   2. Kinematik
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">
+     2.1. Kinematik eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">
+     2.2. Eindimensionale Bewegung eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">
+     2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">
+     2.4. 2 dimensionale Bewegungen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">
+     2.5. Schiefer Wurf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">
+     2.6. Beispielaufgaben zum Schiefen Wurf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/selbsttest_massenpunkt.html">
+     2.7. Selbsttest Kinematik
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/dynamik.html">
+   3. Dynamik
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/axiome.html">
+     3.4. Die Newton’schen Axiome
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/statik.html">
+     3.5. Statik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/kinetik.html">
+     3.6. Kinetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/reibung.html">
+     3.7. Reibungskräfte
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Scheinkraefte/scheinkraefte.html">
+   4. Scheinkräfte
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Scheinkraefte/zentrifugalkraft.html">
+     4.3. Zentrifugalkraft
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Scheinkraefte/corioliskraft.html">
+     4.4. Corioliskraft
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehbewegungen.html">
+   5. Drehungen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehmoment.html">
+     5.1. Drehmoment und Drehimpuls
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html">
+     5.2. Kreisbewegungen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   6. Arbeit, Leistung und Energie
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Stossprozesse/stoss.html">
+   7. Stossprozesse
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_1.html">
+     7.1. Gerader zentraler elastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_2.html">
+     7.2. Gerader zentraler unelastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_3.html">
+     7.3. Schiefer zentraler elastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/rakete.html">
+     7.4. Raketengleichung
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Starre Körper
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper.html">
+   1. Starre Körper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper2.html">
+   2. Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper3.html">
+   3. Trägheitsmoment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/steiner.html">
+   4. Satz von Steiner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/zusammengesetzt.html">
+   5. Trägheitsmoment zusammengesetzter Körper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/energie.html">
+   6. Rotationsenergie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/schiefe_ebene_dreh.html">
+   7. Starrer Körper auf schiefer Ebene
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Hydrostatik und Hydrodynamik
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/fluessigkeiten.html">
+   1. Flüssigkeiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydraulik.html">
+   2. Hydraulik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrostatik.html">
+   3. Hydrostatik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrodynamik.html">
+   4. Hydrodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/diffusion.html">
+   5. Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/stroemungen.html">
+   6. Strömungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/grenzen_des_laminaren_Modells.html">
+   7. Grenzen des einfachen Modells
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ärostatik und Ärodynamik
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/gase.html">
+   1. Gase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/aerostatik.html">
+   2. Aerostatik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/aerodynamik.html">
+   3. Aerodynamik
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Wärmelehre
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/grundlagen_waerme.html">
+   1. Aggregatzustände
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/aufbau.html">
+   2. Eigenschaften der Aggregatzustände
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/temperatur.html">
+   3. Temperatur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/temp_festkoerper.html">
+   4. Temperatureffekte auf Festkörper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/temp_fluessigkeit.html">
+   5. Temperatureffekte auf Flüssigkeiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/temp_gas.html">
+   6. Temperatureffekte auf Gase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/thermo_begriffe.html">
+   7. Thermodynamische Grundbegriffe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/hauptsaetze.html">
+   8. Grundlagen der Thermodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/zustandsaenderungen.html">
+   9. Thermodynamische Zustandsänderungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/waermetauscher.html">
+   10. Wärmetauscher
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../waerme/kreisprozesse.html">
+   11. Thermodynamische Vergleichsprozesse
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/book/Energie/energie.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arbeit">
+   6.1. Arbeit
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-verschiebearbeit">
+     6.1.1. Beispiel: Verschiebearbeit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-hubarbeit">
+     6.1.2. Beispiel: Hubarbeit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-beschleunigungsarbeit">
+     6.1.3. Beispiel: Beschleunigungsarbeit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leistung">
+   6.2. Leistung
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-mechanische-leistung">
+     6.2.1. Beispiel: Mechanische Leistung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-mechanische-leistung-2">
+     6.2.2. Beispiel: Mechanische Leistung 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie">
+   6.3. Energie
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-energieerhaltungssatz">
+     6.3.1. Beispiel: Energieerhaltungssatz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie-bei-drehbewegungen">
+   6.4. Energie bei Drehbewegungen
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Arbeit, Leistung und Energie</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arbeit">
+   6.1. Arbeit
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-verschiebearbeit">
+     6.1.1. Beispiel: Verschiebearbeit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-hubarbeit">
+     6.1.2. Beispiel: Hubarbeit
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-beschleunigungsarbeit">
+     6.1.3. Beispiel: Beschleunigungsarbeit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leistung">
+   6.2. Leistung
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-mechanische-leistung">
+     6.2.1. Beispiel: Mechanische Leistung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-mechanische-leistung-2">
+     6.2.2. Beispiel: Mechanische Leistung 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie">
+   6.3. Energie
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#beispiel-energieerhaltungssatz">
+     6.3.1. Beispiel: Energieerhaltungssatz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energie-bei-drehbewegungen">
+   6.4. Energie bei Drehbewegungen
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="arbeit-leistung-und-energie">
+<h1><span class="section-number">6. </span>Arbeit, Leistung und Energie<a class="headerlink" href="#arbeit-leistung-und-energie" title="Permalink to this headline">#</a></h1>
+<p>Eine Kraft, die an einer Masse angreift, bewirkt eine Bewegung.
+Wirkt eine Kraft <span class="math notranslate nohighlight">\(F\)</span> auf einen materiellen Punkt oder Körper und verschiebt ihn dabei um ein Wegelement <span class="math notranslate nohighlight">\(\Delta s\)</span>, so hat die Kraft den Zustand des Körpers verändert. Man bezeichnet diesen Vorgang auch als Arbeit, die verrichtet wird. Arbeit ist dabei keine vektorielle, sondern eine skalare Größe. Sie wird oft mit <span class="math notranslate nohighlight">\(W\)</span> bezeichnet, die Einheit ist <span class="math notranslate nohighlight">\(1 \, J = 1\)</span> Joule <span class="math notranslate nohighlight">\(= 1 \, Nm\)</span>.</p>
+<section id="arbeit">
+<h2><span class="section-number">6.1. </span>Arbeit<a class="headerlink" href="#arbeit" title="Permalink to this headline">#</a></h2>
+<p><strong>Definition</strong>
+Die Arbeit ist das Wegintegral der Kraft (<a class="reference internal" href="#arbeit-1"><span class="std std-numref">siehe Abbildung 6.1</span></a>).</p>
+<p><span class="math notranslate nohighlight">\(dW = \vec{F}\cdot d\vec{s}\)</span></p>
+<p><span class="math notranslate nohighlight">\(W_{12} = \int_1^2 dW = \int_{s_1}^{s_2} \vec{F} \cdot d\vec{s}\)</span></p>
+<figure class="align-default" id="arbeit-1">
+<a class="reference internal image-reference" href="../../_images/arbeit.png"><img alt="../../_images/arbeit.png" src="../../_images/arbeit.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.1 </span><span class="caption-text">Arbeit als Wegintegral der Kraft.</span><a class="headerlink" href="#arbeit-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Ist die Kraft, die entlang des Wegelementes wirkt, konstant, so lässt sich schreiben</p>
+<p><span class="math notranslate nohighlight">\(\Delta W = \vec{F} \cdot \Delta \vec{s}\)</span></p>
+<p>Das Skalarprodukt <span class="math notranslate nohighlight">\(\vec{F} \cdot \Delta \vec{s}\)</span> bewirkt, dass nur diejenige Kraftkomponente beiträgt, die parallel zum zurückgelegten Weg wirkt (<a class="reference internal" href="#arbeit-2"><span class="std std-numref">siehe Abbildung 6.2</span></a>).</p>
+<p><span class="math notranslate nohighlight">\(\Delta W = \left|\vec{F} \right| \cdot \left| \Delta \vec{s} \right| \cdot cos \left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)\)</span></p>
+<p>Der <span class="math notranslate nohighlight">\(cos\left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)\)</span> ist =1, wenn <span class="math notranslate nohighlight">\(\vec{F} \parallel \Delta\vec{s}\)</span> und =0, wenn <span class="math notranslate nohighlight">\(\vec{F} \perp \Delta\vec{s}\)</span>.</p>
+<figure class="align-default" id="arbeit-2">
+<a class="reference internal image-reference" href="../../_images/arbeit2.png"><img alt="../../_images/arbeit2.png" src="../../_images/arbeit2.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.2 </span><span class="caption-text">Nur der zum Weg parallele Anteil der wirkenden Kraft verrichtet Arbeit.</span><a class="headerlink" href="#arbeit-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="beispiel-verschiebearbeit">
+<h3><span class="section-number">6.1.1. </span>Beispiel: Verschiebearbeit<a class="headerlink" href="#beispiel-verschiebearbeit" title="Permalink to this headline">#</a></h3>
+<p>Verschiebearbeit ist die Arbeit, die verrichtet wird, wenn ein Gegenstand durch eine konstante Kraft <span class="math notranslate nohighlight">\(F_x\)</span> entlang eines Weges <span class="math notranslate nohighlight">\(x\)</span> verschoben wird.</p>
+<figure class="align-default" id="arbeit-3">
+<a class="reference internal image-reference" href="../../_images/verschiebearbeit.png"><img alt="../../_images/verschiebearbeit.png" src="../../_images/verschiebearbeit.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.3 </span><span class="caption-text">Verschiebearbeit: Die Kraft <span class="math notranslate nohighlight">\(\vec{F}\)</span> bewirkt eine Verschiebung der Masse <span class="math notranslate nohighlight">\(m\)</span> entlang der x-Achse.</span><a class="headerlink" href="#arbeit-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dann gilt</p>
+<p><span class="math notranslate nohighlight">\(W_{12} = \int_1^2 \vec{F}(\vec{r}) d\vec{r} = \int_{x_1}^{x_2} F_x dx = F_x \int_{x_1}^{x_2} dx = F_x \left( x_2 - x_1 \right) = F_x \Delta x\)</span></p>
+</section>
+<section id="beispiel-hubarbeit">
+<h3><span class="section-number">6.1.2. </span>Beispiel: Hubarbeit<a class="headerlink" href="#beispiel-hubarbeit" title="Permalink to this headline">#</a></h3>
+<p>Hubarbeit ist die Arbeit, die verrichtet wird, wenn ein Gegenstand um eine Höhe <span class="math notranslate nohighlight">\(h\)</span> gegen die Gewichtskraft <span class="math notranslate nohighlight">\(m\cdot g\)</span> angehoben wird.</p>
+<figure class="align-default" id="arbeit-4">
+<a class="reference internal image-reference" href="../../_images/hubarbeit.png"><img alt="../../_images/hubarbeit.png" src="../../_images/hubarbeit.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.4 </span><span class="caption-text">Hubarbeit: Die Kraft <span class="math notranslate nohighlight">\(\vec{F}\)</span> bewirkt eine Anhebung der Masse <span class="math notranslate nohighlight">\(m\)</span> um die Höhe <span class="math notranslate nohighlight">\(h\)</span>.</span><a class="headerlink" href="#arbeit-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dann gilt</p>
+<p><span class="math notranslate nohighlight">\(W_{12} = \int_1^2 \vec{F}(r) d \vec{r} = \int_1^2 \left( - m \cdot \vec{g} \right) \cdot d \vec{r} = - m g_y (y_2 - y_1) = - m g h\)</span></p>
+</section>
+<section id="beispiel-beschleunigungsarbeit">
+<h3><span class="section-number">6.1.3. </span>Beispiel: Beschleunigungsarbeit<a class="headerlink" href="#beispiel-beschleunigungsarbeit" title="Permalink to this headline">#</a></h3>
+<p>Beschleunigungsarbeit wird verrichtet, wenn ein Gegenstand durch eine wirkende Kraft von einer Geschwindigkeit <span class="math notranslate nohighlight">\(v_1\)</span> auf eine Geschwindigkeit <span class="math notranslate nohighlight">\(v_2\)</span> beschleunigt wird.</p>
+<figure class="align-default" id="arbeit-5">
+<a class="reference internal image-reference" href="../../_images/beschleunigungsarbeit.png"><img alt="../../_images/beschleunigungsarbeit.png" src="../../_images/beschleunigungsarbeit.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Beschleunigungsarbeit: Die Kraft <span class="math notranslate nohighlight">\(\vec{F}\)</span> bewirkt eine Beschleunigung der Masse <span class="math notranslate nohighlight">\(m\)</span>.</span><a class="headerlink" href="#arbeit-5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dann gilt</p>
+<p><span class="math notranslate nohighlight">\(W_{kin} = \int_1^2 F(x) dx = \int_1^2 m \cdot a \,dx = m\int_1^2 \frac{d v(t) }{dt} dx\)</span></p>
+<p>Substitution
+<span class="math notranslate nohighlight">\(v = \frac{dx}{dt} \Leftrightarrow dx = v \cdot dt\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow W_{kin} = m \int_1^2 \frac{dv}{dt} v \, dt\)</span></p>
+<p>Aufgrund der Kettenregel gilt:
+<span class="math notranslate nohighlight">\(\frac{d}{dt} f\left( g (t) \right) = \frac{\partial f}{\partial g} \frac{dg}{dt}\)</span></p>
+<p>und damit gilt beispielsweise mit</p>
+<p><span class="math notranslate nohighlight">\(f = \frac{1}{2} \left(v(t)\right)^2 \Rightarrow \frac{d}{dt} \left( \frac{1}{2} v^2(t) \right) = v(t) \frac{dv(t)}{dt}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow W_{kin} = m \int_1^2 \frac{dv}{dt} v \, dt = m \left|\frac{1}{2} \left( v(t) \right)^2 \right|_1^2 = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right)\)</span></p>
+</section>
+</section>
+<section id="leistung">
+<h2><span class="section-number">6.2. </span>Leistung<a class="headerlink" href="#leistung" title="Permalink to this headline">#</a></h2>
+<p><strong>Definition</strong>
+Leistung ist verrichtete Arbeit pro Zeit</p>
+<p>Dies bedeutet, die Leistung <span class="math notranslate nohighlight">\(P\)</span> gibt an, wie viel Arbeit in einem bestimmten Zeitraum verrichtet wurde. Es gilt damit</p>
+<p><span class="math notranslate nohighlight">\(P = \frac{dW}{dt}\)</span></p>
+<p>Die Einheit der Leistung ist <span class="math notranslate nohighlight">\([P] = 1\, \frac{J}{s} = 1 \, W = 1\)</span> Watt.</p>
+<section id="beispiel-mechanische-leistung">
+<h3><span class="section-number">6.2.1. </span>Beispiel: Mechanische Leistung<a class="headerlink" href="#beispiel-mechanische-leistung" title="Permalink to this headline">#</a></h3>
+<p>Ein Wanderer wiegt <span class="math notranslate nohighlight">\(70 \, kg\)</span> und trägt einen <span class="math notranslate nohighlight">\(7 \, kg\)</span> schweren Rucksack auf einen um <span class="math notranslate nohighlight">\(200 \, m\)</span> höher gelegenen Gipfel eines Berges hinauf. Er benötigt hierfür <span class="math notranslate nohighlight">\(30 \, min\)</span>. Welche Leistung bringt der Wanderer durchschnittlich auf, um den Rucksack auf den Berg zu tragen?</p>
+<p>Hubarbeit für den Wanderer: <span class="math notranslate nohighlight">\(\Delta W_W = m_w g h = 70 \,kg \cdot 9.81 \frac{kg\cdot m}{s^2}\cdot 200m = 137,34 \,kJ\)</span></p>
+<p>Hubarbeit für den Rucksack: <span class="math notranslate nohighlight">\(\Delta W_R = m_R g h = 7 \,kg \cdot 9.81 \frac{kg\cdot m}{s^2}\cdot 200m = 13,734 \,kJ\)</span></p>
+<p>Für die Leistung gilt:</p>
+<p><span class="math notranslate nohighlight">\(P = \frac{dW}{dt} \stackrel{Durchschnittswert}{=}\frac{\Delta W}{\Delta t}\)</span></p>
+<p>Damit muss der Wanderer durchschnittlich die Leistung</p>
+<p><span class="math notranslate nohighlight">\(\overline{P}_W = \frac{\Delta W_W}{\Delta t} = \frac{137,34 \, kJ}{30\cdot 60 s} = 76,3 \,W\)</span></p>
+<p>aufbringen, um die <span class="math notranslate nohighlight">\(200 \)</span> Höhenmeter zu überwinden.
+Um den Rucksack auf den Berg zu tragen muss zusätzlich die Leistung</p>
+<p><span class="math notranslate nohighlight">\(\overline{P}_R = \frac{\Delta W_W}{\Delta t} = \frac{13,734 \, kJ}{30\cdot 60 s} = 7,63 \,W\)</span> aufgebracht werden.</p>
+<p>Insgesamt ist damit die benötigte Leistung</p>
+<p><span class="math notranslate nohighlight">\(\overline{P}_{Ges} = \overline{P}_W + \overline{P}_R = 83,93 \, W\)</span></p>
+</section>
+<section id="beispiel-mechanische-leistung-2">
+<h3><span class="section-number">6.2.2. </span>Beispiel: Mechanische Leistung 2<a class="headerlink" href="#beispiel-mechanische-leistung-2" title="Permalink to this headline">#</a></h3>
+<p>Ein Auto fährt bei einer gesamten Fahrwiderstandskraft <span class="math notranslate nohighlight">\(F = 1200\, N\)</span> von eine Geschwindigkeit von <span class="math notranslate nohighlight">\(v = 72 \frac{km}{h} = 20 \frac{m}{s}\)</span>. Berechnen Sie die mechanische Leistung, die der Motor des Autos aufbringt.</p>
+<p>Die Fahrwiderstandskraft <span class="math notranslate nohighlight">\(F = 1200\, N\)</span> ist konstant, daher gilt</p>
+<p><span class="math notranslate nohighlight">\(W = \int F \, ds = F\int ds \)</span></p>
+<p>Die Leistung ist daher</p>
+<p><span class="math notranslate nohighlight">\(P = \frac{dW}{dt} = \frac{d}{dt} F\int ds = F \int \frac{ds}{dt} = F \int dv = F \cdot v\)</span></p>
+<p>Damit ist</p>
+<p><span class="math notranslate nohighlight">\(P = 1200 \, N \cdot 20 \frac{m}{s} = 24 \, kW\)</span></p>
+</section>
+</section>
+<section id="energie">
+<h2><span class="section-number">6.3. </span>Energie<a class="headerlink" href="#energie" title="Permalink to this headline">#</a></h2>
+<p>Arbeit und Energie stehen in enger Beziehung. Die Energie kennzeichnet die Fähigkeit eines Körpers oder Systems, Arbeit zu verrichten. Arbeit ist also eine Vorgangsgröße, Energie eine Systemeigenschaft beziehungsweise Zustandsgröße. Die Einheit der Energie ist gleich der Einheit der Arbeit, also <span class="math notranslate nohighlight">\(\left[ E \right] = 1 \, J\)</span>.</p>
+<p>Arbeit <span class="math notranslate nohighlight">\(\longrightarrow\)</span> beschreibt Vorgang</p>
+<p>Energie <span class="math notranslate nohighlight">\(\longrightarrow\)</span> beschreibt Zustand</p>
+<p><strong>Energiesatz der Mechanik:</strong></p>
+<p><span class="math notranslate nohighlight">\(\Delta E = E_{nachher} - E_{vorher} = \Delta W\)</span></p>
+<p>In der klassischen Mechanik gilt der Energieerhaltungssatz:</p>
+<p>In einem abgeschlossenen System bleibt der Energieinhalt konstant. Energie kann weder vernichtet werden noch aus nichts entstehen; sie kann sich in verschiedene Formen umwandeln oder zwischen verschiedenen Teilen des Systems ausgetauscht werden.</p>
+<p><span class="math notranslate nohighlight">\(E_{ges} = E_{kin} + E_{pot} \left( + E_{diss} \right) = \text{konstant}\)</span></p>
+<p>Die dissipative Energie (Reibung) wird oft als Verlustenergie bezeichnet.
+Dies ist falsch, da keine Energie verloren geht, allerdings wird sie in thermische Energie (mit niedriger Temperatur) umgewandelt und kann nicht mehr in kinetische oder potentielle Energie umgewandelt werden.</p>
+<p>Der Energieerhaltungssatz ist ein oft verwendeter Satz. Es kann beispielsweise verwendet werden, um Anfangs- und Endzustände einer Bewegung in Relation zu setzen, ohne dass die genauen Bewegungsgleichungen benötigt werden.</p>
+<section id="beispiel-energieerhaltungssatz">
+<h3><span class="section-number">6.3.1. </span>Beispiel: Energieerhaltungssatz<a class="headerlink" href="#beispiel-energieerhaltungssatz" title="Permalink to this headline">#</a></h3>
+<figure class="align-default" id="energie-1">
+<a class="reference internal image-reference" href="../../_images/energieerhaltung.png"><img alt="../../_images/energieerhaltung.png" src="../../_images/energieerhaltung.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6.6 </span><span class="caption-text">Beispiel zur Energieerhaltung.</span><a class="headerlink" href="#energie-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Für die Hubarbeit gilt (siehe <a class="reference external" href="#beispiel-hubarbeit"></a>)</p>
+<p><span class="math notranslate nohighlight">\(E_{pot}: \,\,\, W_{pot} \text{ Hubarbeit von } (1) \text{ nach } (2)\)</span></p>
+<p><span class="math notranslate nohighlight">\(W_{pot} = W_{12} =  mg \left( x_2 - x_1\right) = mgh =: E_{pot}\)</span></p>
+<p>Für die Beschleunigungsarbeit gilt (siehe <a class="reference external" href="#beispiel-beschleunigungsarbeit"></a>)</p>
+<p><span class="math notranslate nohighlight">\(E_{kin} = W_{kin} = \text{ Beschleunigungs von (1) nach (2) } = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right) =  \frac{m}{2} v^2\)</span></p>
+<p>mit <span class="math notranslate nohighlight">\( v\left( t_1 \right) = 0\)</span> und <span class="math notranslate nohighlight">\(v \left( t_2 \right) = v(t) \)</span>.</p>
+<p>Damit gilt für die Gesamtenergie <span class="math notranslate nohighlight">\(E_{ges} = E_{kin} + E_{pot} = \)</span> konstant</p>
+<p>In (1) gilt <span class="math notranslate nohighlight">\(v = 0 \Rightarrow E_{ges} = E_{pot}\)</span></p>
+<p>In (2) gilt <span class="math notranslate nohighlight">\(h = 0 \Rightarrow E_{ges} = E_{kin}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow E_{pot,1} = E_{kin,2}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow mgh = \frac{m}{2}v^2 \Leftrightarrow v^2 = 2 g h \Leftrightarrow \left| v\right| =\sqrt{2gh}\)</span></p>
+<p>Damit lässt sich mit einfachen Mitteln die Geschwindigkeit im Punkt (2) berechnen, ohne dass die genauen Bewegungsgleichungen bekannt sind.</p>
+</section>
+</section>
+<section id="energie-bei-drehbewegungen">
+<h2><span class="section-number">6.4. </span>Energie bei Drehbewegungen<a class="headerlink" href="#energie-bei-drehbewegungen" title="Permalink to this headline">#</a></h2>
+<p>Bei der Drehbewegung eines Massenpunktes (siehe <a class="reference internal" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html"><span class="doc std std-doc">Kreisbewegungen</span></a>) hat der Massenpunkt kinetische Energie</p>
+<p><span class="math notranslate nohighlight">\(E_{kin} = \frac{1}{2}m \cdot v^2\)</span></p>
+<p>bei der Kreisbewegung gilt</p>
+<p><span class="math notranslate nohighlight">\(\omega = \frac{v}{r} \Leftrightarrow v = \omega \cdot r\)</span></p>
+<p>Damit ist</p>
+<p><span class="math notranslate nohighlight">\(E_{kin} = \frac{1}{2}m \cdot v^2 = \frac{1}{2}m \cdot \left( \omega \cdot r \right)^2\)</span></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./book/Energie"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">5.2. </span>Kreisbewegungen</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Stossprozesse/stoss.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Stossprozesse</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Simone Arnold<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
