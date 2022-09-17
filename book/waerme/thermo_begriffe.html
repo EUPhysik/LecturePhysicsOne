@@ -1,0 +1,1014 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>7. Thermodynamische Grundbegriffe &#8212; Skript Physik 1</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8. Grundlagen der Thermodynamik" href="hauptsaetze.html" />
+    <link rel="prev" title="6. Temperatureffekte auf Gase" href="temp_gas.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/FB3_ET-Logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Skript Physik 1</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Physik 1: Mechnik und Wärmelehre
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Grundlagen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Grundlagen/grundlagen.html">
+   1. Grundlagen
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Einheiten.html">
+   2. Physikalische Einheiten
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_SI.html">
+     2.1. SI - Basiseinheiten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_abgleitet.html">
+     2.2. Abgeleitete Einheiten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_Praefixe.html">
+     2.3. Exponentialschreibweise / Präfixe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Einheiten_Aufgaben.html">
+     2.4. Aufgaben zu physikalischen Einheiten
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Differentialrechnung.html">
+   3. Funktionen, Differential- und Integralrechnung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Eigenschaften.html">
+     3.1. Eigenschaften
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Differenzialrechnung.html">
+     3.2. Differentialrechnung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Integralrechnung.html">
+     3.3. Integralrechnung
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Differentialrechnung_Aufgaben.html">
+     3.4. Aufgaben zur Differential- und Integralrechnung
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Grundlagen/Vektorrechnung.html">
+   4. Vektorrechnung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Vektorrechnung_Rechenregeln.html">
+     4.1. Rechenregeln
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Grundlagen/Vektorrechnung_Aufgaben.html">
+     4.2. Aufgaben zur Vektorrechnung
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Mechanik eines Massenpunktes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Koordinatensysteme/koordinatensysteme_0.html">
+   1. Koordinatensysteme
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/koordinatensysteme.html">
+     1.1. Koordinatensysteme und Bezugssysteme
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/polarkoordinaten.html">
+     1.2. Polarkoordinaten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/inertialsysteme.html">
+     1.3. Inertialsysteme
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Koordinatensysteme/galilei.html">
+     1.4. Galilei-Transformation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Kinematik/kinematik.html">
+   2. Kinematik
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">
+     2.1. Kinematik eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">
+     2.2. Eindimensionale Bewegung eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">
+     2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">
+     2.4. 2 dimensionale Bewegungen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">
+     2.5. Schiefer Wurf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">
+     2.6. Beispielaufgaben zum Schiefen Wurf
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kinematik/selbsttest_massenpunkt.html">
+     2.7. Selbsttest Kinematik
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/dynamik.html">
+   3. Dynamik
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/axiome.html">
+     3.4. Die Newton’schen Axiome
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/statik.html">
+     3.5. Statik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/kinetik.html">
+     3.6. Kinetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/reibung.html">
+     3.7. Reibungskräfte
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Scheinkraefte/scheinkraefte.html">
+   4. Scheinkräfte
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Scheinkraefte/zentrifugalkraft.html">
+     4.3. Zentrifugalkraft
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Scheinkraefte/corioliskraft.html">
+     4.4. Corioliskraft
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehbewegungen.html">
+   5. Drehungen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehmoment.html">
+     5.1. Drehmoment und Drehimpuls
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html">
+     5.2. Kreisbewegungen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Energie/energie.html">
+   6. Arbeit, Leistung und Energie
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Stossprozesse/stoss.html">
+   7. Stossprozesse
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_1.html">
+     7.1. Gerader zentraler elastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_2.html">
+     7.2. Gerader zentraler unelastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/stoss_3.html">
+     7.3. Schiefer zentraler elastischer Stoß
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Stossprozesse/rakete.html">
+     7.4. Raketengleichung
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Starre Körper
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper.html">
+   1. Starre Körper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper2.html">
+   2. Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/starrer_koerper3.html">
+   3. Trägheitsmoment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/steiner.html">
+   4. Satz von Steiner
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/zusammengesetzt.html">
+   5. Trägheitsmoment zusammengesetzter Körper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/energie.html">
+   6. Rotationsenergie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../starreKoerper/schiefe_ebene_dreh.html">
+   7. Starrer Körper auf schiefer Ebene
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Hydrostatik und Hydrodynamik
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/fluessigkeiten.html">
+   1. Flüssigkeiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydraulik.html">
+   2. Hydraulik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrostatik.html">
+   3. Hydrostatik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrodynamik.html">
+   4. Hydrodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/diffusion.html">
+   5. Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/stroemungen.html">
+   6. Strömungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/grenzen_des_laminaren_Modells.html">
+   7. Grenzen des einfachen Modells
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ärostatik und Ärodynamik
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/gase.html">
+   1. Gase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/aerostatik.html">
+   2. Aerostatik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Gase/aerodynamik.html">
+   3. Aerodynamik
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Wärmelehre
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="grundlagen_waerme.html">
+   1. Aggregatzustände
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="aufbau.html">
+   2. Eigenschaften der Aggregatzustände
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="temperatur.html">
+   3. Temperatur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="temp_festkoerper.html">
+   4. Temperatureffekte auf Festkörper
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="temp_fluessigkeit.html">
+   5. Temperatureffekte auf Flüssigkeiten
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="temp_gas.html">
+   6. Temperatureffekte auf Gase
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   7. Thermodynamische Grundbegriffe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="hauptsaetze.html">
+   8. Grundlagen der Thermodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zustandsaenderungen.html">
+   9. Thermodynamische Zustandsänderungen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="waermetauscher.html">
+   10. Wärmetauscher
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kreisprozesse.html">
+   11. Thermodynamische Vergleichsprozesse
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/book/waerme/thermo_begriffe.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#begriffsdefinitionen">
+   7.1. Begriffsdefinitionen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volumen">
+     7.1.1. Volumen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#druck">
+     7.1.2. Druck
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#temperatur">
+     7.1.3. Temperatur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#innere-energie">
+     7.1.4. innere Energie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enthalpie">
+     7.1.5. Enthalpie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entropie">
+     7.1.6. Entropie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#warmeenergie-und-kapazitat">
+     7.1.7. Wärmeenergie und -kapazität
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beispiel-wasser-kochen">
+       7.1.7.1. Beispiel: Wasser kochen
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Thermodynamische Grundbegriffe</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#begriffsdefinitionen">
+   7.1. Begriffsdefinitionen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volumen">
+     7.1.1. Volumen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#druck">
+     7.1.2. Druck
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#temperatur">
+     7.1.3. Temperatur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#innere-energie">
+     7.1.4. innere Energie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enthalpie">
+     7.1.5. Enthalpie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#entropie">
+     7.1.6. Entropie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#warmeenergie-und-kapazitat">
+     7.1.7. Wärmeenergie und -kapazität
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beispiel-wasser-kochen">
+       7.1.7.1. Beispiel: Wasser kochen
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="thermodynamische-grundbegriffe">
+<h1><span class="section-number">7. </span>Thermodynamische Grundbegriffe<a class="headerlink" href="#thermodynamische-grundbegriffe" title="Permalink to this headline">#</a></h1>
+<p>Bislang wurde das Verhalten von Festkörper, Flüssigkeiten und Gase bei Temperaturänderungen betrachtet. Für ein tieferes Verständnis werden im Folgenden die Grundlagen thermodynamischer Zustandsänderungen beschrieben.
+Hierzu werden zunächst wichtige Begriffe definiert und erläutert.</p>
+<section id="begriffsdefinitionen">
+<h2><span class="section-number">7.1. </span>Begriffsdefinitionen<a class="headerlink" href="#begriffsdefinitionen" title="Permalink to this headline">#</a></h2>
+<section id="volumen">
+<h3><span class="section-number">7.1.1. </span>Volumen<a class="headerlink" href="#volumen" title="Permalink to this headline">#</a></h3>
+<p>Das Volumen <span class="math notranslate nohighlight">\(V\)</span> ist die Ausdehnung bzw. der Platzbedarf eines Körpers</p>
+<p><span class="math notranslate nohighlight">\(\left[ V\right] = 1 \, m^3\)</span></p>
+<p>Für Flüssigkeiten oft <span class="math notranslate nohighlight">\(\left[V\right] = 1 \, l = \, 1\, \text{Liter} \, = 1 \, \left(0,1 \, m\right)^3 = 10^{(-3)} \, m^3\)</span></p>
+</section>
+<section id="druck">
+<h3><span class="section-number">7.1.2. </span>Druck<a class="headerlink" href="#druck" title="Permalink to this headline">#</a></h3>
+<p>Der Druck <span class="math notranslate nohighlight">\(p\)</span> ist definiert durch <span class="math notranslate nohighlight">\(p = \frac{F}{A}\)</span>.</p>
+<p>Der thermodynamische Druck ist eine Zustandsgröße, die bei einem Gas mit einer Zustandsgleichung definiert wird, und kann im Ungleichgewicht vom mechanischen Druck abweichen.</p>
+<p>Beispiele sind</p>
+<ul class="simple">
+<li><p>Hydrostatischer Druck <span class="math notranslate nohighlight">\(p(h) = \rho g h \left(+ \rho_0 \right)\)</span></p></li>
+<li><p>Hydrodynamischer Druck <span class="math notranslate nohighlight">\(p(v)= \frac{1}{2} \rho v^2\)</span></p></li>
+<li><p>Gasdruck <span class="math notranslate nohighlight">\(p \cdot V = n\cdot R\cdot T\)</span></p></li>
+</ul>
+</section>
+<section id="temperatur">
+<h3><span class="section-number">7.1.3. </span>Temperatur<a class="headerlink" href="#temperatur" title="Permalink to this headline">#</a></h3>
+<p>Die Temperatur ist die mittlere kinetische Energie der Teilchen in einem Material. Eine Temperatur kann daher nur für ein System bestimmt werden, welches sich im Gleichgewicht befindet. Die SI-Einheit der Temperatur ist 1 Kelvin (1 <span class="math notranslate nohighlight">\(K\)</span>).</p>
+</section>
+<section id="innere-energie">
+<h3><span class="section-number">7.1.4. </span>innere Energie<a class="headerlink" href="#innere-energie" title="Permalink to this headline">#</a></h3>
+<p>Die innere Energie <span class="math notranslate nohighlight">\(U\)</span> ist die gesamte für thermodynamische Umwandlungsprozesse zur Verfügung stehende Energie eines physikalischen Systems, das sich in Ruhe und im thermodynamischen Gleichgewicht befindet.
+Die innere Energie ändert sich, wenn das System mit seiner Umgebung Wärme oder Arbeit austauscht.</p>
+<p><span class="math notranslate nohighlight">\(\Delta U = \Delta Q + \Delta W\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Delta Q = \)</span> dem System zugefügte oder entnommene Wärme</p>
+<p><span class="math notranslate nohighlight">\(\Delta W = \)</span> am System verrichtete Arbeit</p>
+<p>Im Allgemeinen ist die innere Energie die gesamte kinetische Energie der ungeordneten Bewegung der Teilchen.
+Weitere Beiträge zur inneren Energie (molekülinterne Schwingungen, chemische Reaktionen, Radioaktivität, Bindungskräfte und van-der-Waals Kräfte) können oft vernachlässigt werden.
+Zur inneren Energie eines Systems gehört nicht die potentielle oder kinetische Energie des gesamten Systems. 
+Die innere Energie ist eine extensive Größe.</p>
+<p>Der Absolutwert der inneren Energie ist schwer zu berechnen, da es viele mögliche Beiträge gibt.</p>
+<p>Für ideale Gase kann <span class="math notranslate nohighlight">\(U\)</span> bäherungsweise berechnet werden.
+Hierzu verwendet man den <a class="reference external" href="https://de.wikipedia.org/wiki/Gleichverteilungssatz">Gleichverteilungssatz</a>. Ein Teilchen in einem System, das sich im thermodynamischen Gleichgewicht befindet, besitzt für jeden Freiheitsgrad eine Energie von ￼<span class="math notranslate nohighlight">\(\frac{1}{2} k_B \cdot T= \frac{1}{2} \frac{R}{N_A}T\)</span></p>
+<p>Dann gilt für die innere Energie des idealen Gases <span class="math notranslate nohighlight">\(U = \frac{f}{2} n R T\)</span>, wobei <span class="math notranslate nohighlight">\(f\)</span> die Anzahl der Freiheitsgrade ist.
+Für ein 1-atomiges Gas ist <span class="math notranslate nohighlight">\(f=3\)</span>, dies entspricht den drei Freiheitsgraden der Translation.</p>
+</section>
+<section id="enthalpie">
+<h3><span class="section-number">7.1.5. </span>Enthalpie<a class="headerlink" href="#enthalpie" title="Permalink to this headline">#</a></h3>
+<p>Die Enthalpie <span class="math notranslate nohighlight">\(H\)</span> kann als Wärmeinhalt eines thermodynamischen Systems verstanden werden.
+Sie ist die Summe aus der inneren Energie <span class="math notranslate nohighlight">\(U\)</span> des Systems und dem Produkt aus Druck <span class="math notranslate nohighlight">\(p\)</span> und Volumen <span class="math notranslate nohighlight">\(V\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(H = U + p\cdot V\)</span></p>
+<p><span class="math notranslate nohighlight">\(\left[ H\right] = 1 \, J\)</span></p>
+<p>Die Enthalpie ist eine extensive Größe: Die Enthalpie eines Gesamtsystems ist die Summe der Enthalpien der Teilsysteme.</p>
+</section>
+<section id="entropie">
+<h3><span class="section-number">7.1.6. </span>Entropie<a class="headerlink" href="#entropie" title="Permalink to this headline">#</a></h3>
+<p>Die Entropie ist ein abstrakter Begriff und folgt aus der statistischen Herleitung der Thermodynamik.
+Die Thermodynamische Definition der Entropie erfolge durch Ludwig Boltzmann und ist gegeben durch</p>
+<p><span class="math notranslate nohighlight">\(S = k_B \cdot ln \left(\Omega\right)\)</span></p>
+<p>Dabei ist <span class="math notranslate nohighlight">\(\Omega\)</span> das Phasenraumvolumen. Dieses kann man sich in etwa wie folgt vorstellen:</p>
+<p>Betrachtet man ein System aus vier Teilchen, die entweder auf der rechten oder der linken Seite eines Behälters sein können. In <a class="reference internal" href="#phasenraum"><span class="std std-numref"> Abbildung 7.15</span></a> sind die Möglichkeiten dagestellt, mit denen ein bestimmter Zustand erzeugt werden kann. Beispielsweise gibt es nur eine Möglickeit, wenn alle Teilchen links sein sollen, jedoch 6 Moglichkeiten, wenn je 2 Teilchen links und 2 Teilchen rechts sein sollen. Da die Teilchen ununterscheidbar sind, sind die Möglichkeiten jeweils gleichwertig. Die Anzahl der Möglichkeiten, mit der ein Zustand konstruiert werden kann, stellt das Phasenraumvolumen dar.</p>
+<figure class="align-default" id="phasenraum">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg"><img alt="Veranschaulichung des Phasenraumvolumens" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg" width="70%" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7.15 </span><span class="caption-text">Veranschaulichung des Phasenraumvolumens <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=84321913">Von MikeRun</a></span><a class="headerlink" href="#phasenraum" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Die Einheit der Entropie ist</p>
+<p><span class="math notranslate nohighlight">\(\left[ S \right] = \frac{J}{K}\)</span></p>
+<p>Die Entropie ist somit als ein objektives Maß für die Menge an Information zu begreifen, die benötigt würde, um von einem beobachtbaren Makrozustand auf den tatsächlich vorliegenden Mikrozustand des Systems schließen zu können. (Das umgangssprachliche: „Maß für Unordnung“ trifft die Definition der Entropie daher nur in etwa.</p>
+<p>Entropie ist eine extensive Größe: Fasst man zwei System zu einem einzigen System zusammen, ist die Gesamtentropie die Summe der Entropien beider Systeme.</p>
+<p>Bei reversiblen Prozessen gilt</p>
+<p><span class="math notranslate nohighlight">\(dS = \frac{dQ_{reversibel}}{T}\)</span></p>
+</section>
+<section id="warmeenergie-und-kapazitat">
+<h3><span class="section-number">7.1.7. </span>Wärmeenergie und -kapazität<a class="headerlink" href="#warmeenergie-und-kapazitat" title="Permalink to this headline">#</a></h3>
+<p>Wird einem System Wärme zugeführt, ändert sich die Temperatur des Systems, der Betrag der Temperaturänderung hängt von den Stoffeigenschaften ab.
+Die Menge an Energie, die aufgewendet werden muss, um <span class="math notranslate nohighlight">\(1 \, kg\)</span> Stoff um <span class="math notranslate nohighlight">\(1 \, K\)</span> zu erwärmen wird als Wärmekapazität <span class="math notranslate nohighlight">\(C\)</span> bezeichnet.</p>
+<p><span class="math notranslate nohighlight">\(C = \frac{\Delta Q}{\Delta T}\)</span></p>
+<p>Die Wärmekapazität ist stoffspezifisch, bezogen auf die Masse ergibt sich die spezifische Wärmekapazität <span class="math notranslate nohighlight">\(c = \frac{C}{m}\)</span> bzw. <span class="math notranslate nohighlight">\(C=c\,m=C_m\,n\)</span> mit <span class="math notranslate nohighlight">\(C_m\)</span> molare Wärmekapazität.</p>
+<p>Ein Stoff verhält sich prinzipiell unterschiedlich beim Erwärmen, je nachdem ob die Messung bei konstantem äußerem Druck <span class="math notranslate nohighlight">\(p\)</span> oder bei gleichbleibendem Volumen <span class="math notranslate nohighlight">\(V\)</span> durchgeführt wird, daher unterscheidet man</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span> Wärmekapazität bei konstantem Druck, sie ist definiert als <span class="math notranslate nohighlight">\(C_P = \left(\frac{dH}{dT} \right)_{p = \text{konst.}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_V\)</span> Wärmekapazität bei konstantem Volumen, sie ist definiert als C_V = \left(\frac{dU}{dT} \right)_{V = \text{konst.}}</p></li>
+</ul>
+<p>Die spezifische Wärmekapazität ist</p>
+<p><span class="math notranslate nohighlight">\(c = \frac{C}{m}\)</span></p>
+<p>Dies ist hauptsächlich für kompressible Stoffe, wie Gase, relevant. Für Feststoffe und Flüssigkeiten gilt <span class="math notranslate nohighlight">\(c_p \approx c_V = c\)</span>.</p>
+<p>Für ideale Gase gilt</p>
+<p><span class="math notranslate nohighlight">\(C_p = C_V + n \cdot R\)</span> beziehungsweise <span class="math notranslate nohighlight">\(c_p = c_V + R_S\)</span></p>
+<p>Die Wärmekapazität ist die Fähigkeit eines Stoffes, Wärme und damit thermische Energie zu speichern.</p>
+<p>Die hinzugefügte Wärme <span class="math notranslate nohighlight">\(\Delta Q\)</span> einer Masse <span class="math notranslate nohighlight">\(m\)</span> bei einer Temperaturdifferenz</p>
+<p><span class="math notranslate nohighlight">\(\Delta T\)</span> ist <span class="math notranslate nohighlight">\(\Delta Q = m \cdot c \cdot \Delta T\)</span></p>
+<p>Die Einheit der Wärme ist die einer Energie <span class="math notranslate nohighlight">\(\rightarrow \left[ \Delta Q \right] = 1 \, J\)</span>.</p>
+<section id="beispiel-wasser-kochen">
+<h4><span class="section-number">7.1.7.1. </span>Beispiel: Wasser kochen<a class="headerlink" href="#beispiel-wasser-kochen" title="Permalink to this headline">#</a></h4>
+<p>Wie groß ist die hinzugefügte Wärmeenergie, wenn <span class="math notranslate nohighlight">\(1 \,l\)</span> Wasser von <span class="math notranslate nohighlight">\(T_1 = 20^\circ C\)</span> au4 <span class="math notranslate nohighlight">\(T_1 = 100^\circ C\)</span> erhitzt wird?</p>
+<p><span class="math notranslate nohighlight">\(\Delta T = T_2 -T_1 = 80 \,K\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Delta Q = c \cdot m \cdot \Delta T = c \cdot \rho \cdot V \cdot \Delta T\)</span></p>
+<p>Für Wasser ist die Wärmekapazität <span class="math notranslate nohighlight">\(c = c_{Wasser} = 4,19 \frac{kJ}{kg \cdot K}\)</span></p>
+<p>Die Dichte von Wasser ist <span class="math notranslate nohighlight">\(\rho = \rho_{Wasser}(20 ^\circ C) = 0,998202 \frac{g}{cm^3} \)</span></p>
+<p>Streng genommen müsste die Dichte- und Volumenänderung des Wassers berücksichtigt werden. Da die Masse aber konstant bleibt, mitteln sich diese Änderungen weg.</p>
+<p>Damit ist</p>
+<p><span class="math notranslate nohighlight">\(\Delta Q = 4,19 \frac{kJ}{kg \cdot K} \cdot 10^{-3} m^3 \cdot 9982,02 \frac{kg}{m^3} \cdot 80 \, K = 335 \, kJ = 0,093 \, kWh\)</span></p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./book/waerme"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="temp_gas.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">6. </span>Temperatureffekte auf Gase</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="hauptsaetze.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Grundlagen der Thermodynamik</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Simone Arnold<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
