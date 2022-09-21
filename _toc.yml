@@ -38,7 +38,6 @@ parts:
     - file: book/Massenpunkt/Kinematik/mechanik_massenpunkt_2d
     - file: book/Massenpunkt/Kinematik/schiefer_wurf
     - file: book/Massenpunkt/Kinematik/schiefer_wurf_beispiele
-    - file: book/Massenpunkt/Kinematik/selbsttest_massenpunkt
   - file: book/Massenpunkt/Kräfte/dynamik
     sections:
     - file: book/Massenpunkt/Kräfte/axiome
