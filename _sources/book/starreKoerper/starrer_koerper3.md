@@ -24,11 +24,11 @@ Analog zum Impuls $ \vec{p} = m \cdot \vec{v}$ definiert man dann das Trägheits
 $\vec{L} = \Theta \vec{\omega}$
 
 Für eine Punktmasse auf einer Kreisbahn ist demnach
-$ =: \Theta \omega$
+$ \Theta =: mr^2$
 
-Für Drehimpuls und Drehmoment gilt der Zusammenhang
+Für Drehimpuls und Drehmoment gilt dann analog zu Impuls und Kraft der Zusammenhang
 
-$\vec{M} = \frac{d \vec{L}}{dt} = \Theta \frac{d \vec{omega}}{dt} = \Theta \vec{\alpha}$
+$\vec{M} = \frac{d \vec{L}}{dt} = \Theta \frac{d \vec{\omega}}{dt} = \Theta \vec{\alpha}$
 
 wobei $\vec{\alpha}$ die Winkelbeschleunigung ist.
 

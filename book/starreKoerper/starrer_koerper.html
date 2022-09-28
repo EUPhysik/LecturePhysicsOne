@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Model" href="starrer_koerper2.html" />
-    <link rel="prev" title="7.4. Raketengleichung" href="../Stossprozesse/rakete.html" />
+    <link rel="next" title="2. Trägheitsmoment" href="starrer_koerper3.html" />
+    <link rel="prev" title="6.4. Raketengleichung" href="../Stossprozesse/rakete.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -321,11 +323,16 @@ const thebe_selector_output = ".output, .cell_output"
      3.7. Reibungskräfte
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Kr%C3%A4fte/scheinkraefte_linear.html">
+     3.8. Scheinkräfte
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Scheinkraefte/scheinkraefte.html">
-   4. Scheinkräfte
+  <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehbewegungen.html">
+   4. Drehungen
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -334,20 +341,40 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehmoment.html">
+     4.1. Drehmoment und Drehimpuls
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html">
+     4.2. Kreisbewegungen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Scheinkraefte/scheinkraefte_rot.html">
+     4.3. Scheinkräfte im rotierenden Bezugssystem
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../Scheinkraefte/zentrifugalkraft.html">
-     4.3. Zentrifugalkraft
+     4.4. Zentrifugalkraft
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Scheinkraefte/corioliskraft.html">
-     4.4. Corioliskraft
+     4.5. Corioliskraft
     </a>
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Energie/energie.html">
+   5. Arbeit, Leistung und Energie
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehbewegungen.html">
-   5. Drehungen
+  <a class="reference internal" href="../Stossprozesse/stoss.html">
+   6. Stossprozesse
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
@@ -356,50 +383,23 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/drehmoment.html">
-     5.1. Drehmoment und Drehimpuls
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Massenpunkt/Drehbewegungen/kreisbewegung.html">
-     5.2. Kreisbewegungen
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Energie/energie.html">
-   6. Arbeit, Leistung und Energie
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../Stossprozesse/stoss.html">
-   7. Stossprozesse
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
     <a class="reference internal" href="../Stossprozesse/stoss_1.html">
-     7.1. Gerader zentraler elastischer Stoß
+     6.1. Gerader zentraler elastischer Stoß
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Stossprozesse/stoss_2.html">
-     7.2. Gerader zentraler unelastischer Stoß
+     6.2. Gerader zentraler unelastischer Stoß
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Stossprozesse/stoss_3.html">
-     7.3. Schiefer zentraler elastischer Stoß
+     6.3. Schiefer zentraler elastischer Stoß
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Stossprozesse/rakete.html">
-     7.4. Raketengleichung
+     6.4. Raketengleichung
     </a>
    </li>
   </ul>
@@ -417,39 +417,34 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="starrer_koerper2.html">
-   2. Model
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="starrer_koerper3.html">
-   3. Trägheitsmoment
+   2. Trägheitsmoment
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="steiner.html">
-   4. Satz von Steiner
+   3. Satz von Steiner
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="zusammengesetzt.html">
-   5. Trägheitsmoment zusammengesetzter Körper
+   4. Trägheitsmoment zusammengesetzter Körper
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="energie.html">
-   6. Rotationsenergie
+   5. Rotationsenergie
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="schiefe_ebene_dreh.html">
-   7. Starrer Körper auf schiefer Ebene
+   6. Starrer Körper auf schiefer Ebene
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Hydrostatik und Hydrodynamik
+  Hydro-/Aerostatik und Hydro-/Aerodynamik
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -464,50 +459,43 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../Hydraulik/hydrostatik.html">
-   3. Hydrostatik
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Hydraulik/hydrodynamik.html">
-   4. Hydrodynamik
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Hydraulik/diffusion.html">
-   5. Diffusion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Hydraulik/stroemungen.html">
-   6. Strömungen
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Hydraulik/grenzen_des_laminaren_Modells.html">
-   7. Grenzen des einfachen Modells
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Ärostatik und Ärodynamik
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
   <a class="reference internal" href="../Gase/gase.html">
-   1. Gase
+   3. Gase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrostatik.html">
+   4. Hydrostatik
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Gase/aerostatik.html">
-   2. Aerostatik
+   5. Aerostatik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/hydrodynamik.html">
+   6. Hydrodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/diffusion.html">
+   7. Diffusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/stroemungen.html">
+   8. Strömungen
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Gase/aerodynamik.html">
-   3. Aerodynamik
+   9. Aerodynamik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Hydraulik/grenzen_des_laminaren_Modells.html">
+   10. Grenzen des einfachen Modells
   </a>
  </li>
 </ul>
@@ -682,12 +670,53 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model">
+   1.1. Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#massenverteilung">
+     1.1.1. Massenverteilung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schwerpunkt">
+     1.1.2. Schwerpunkt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bewegungen">
+     1.1.3. Bewegungen
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -699,6 +728,36 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model">
+   1.1. Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#massenverteilung">
+     1.1.1. Massenverteilung
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schwerpunkt">
+     1.1.2. Schwerpunkt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bewegungen">
+     1.1.3. Bewegungen
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -716,6 +775,44 @@ title="Print to PDF"
 <p><span class="caption-number">Fig. 1.8 </span><span class="caption-text">Modell eines starren Körpers.</span><a class="headerlink" href="#starrerkoerper-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="model">
+<h2><span class="section-number">1.1. </span>Model<a class="headerlink" href="#model" title="Permalink to this headline">#</a></h2>
+<p>Ein starrer Körper kann durch die Position des Schwerpunktes und der Massenverteilung bezüglich dieses Schwerpunktes beschrieben werden.</p>
+<figure class="align-default" id="starrerkoerper-2">
+<a class="reference internal image-reference" href="../../_images/starrerkoerper2.svg"><img alt="../../_images/starrerkoerper2.svg" src="../../_images/starrerkoerper2.svg" width="300px" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.9 </span><span class="caption-text">Modell eines starren Körpers bzgl. eines Koordinatensystems.</span><a class="headerlink" href="#starrerkoerper-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="massenverteilung">
+<h3><span class="section-number">1.1.1. </span>Massenverteilung<a class="headerlink" href="#massenverteilung" title="Permalink to this headline">#</a></h3>
+<p>Die Positionen der einzelnen Massenelemente <span class="math notranslate nohighlight">\(m_i\)</span> wird bezüglich eines gewählten Koordinatensystem durch den Vektor <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> beschrieben (siehe beispielsweise der der rote Pfeil in <a class="reference internal" href="#starrerkoerper-2"><span class="std std-numref">Abbildung 1.9</span></a>). Damit gibt es pro Massenelement einen dazugehörenden Ortsvektor.</p>
+<p>Beim Übergang zu einem kontinuierlichen System wird</p>
+<p><span class="math notranslate nohighlight">\(m_i \rightarrow dm\)</span></p>
+</section>
+<section id="schwerpunkt">
+<h3><span class="section-number">1.1.2. </span>Schwerpunkt<a class="headerlink" href="#schwerpunkt" title="Permalink to this headline">#</a></h3>
+<p>Als Schwerpunkt wird der Massenmittelpunkt des starren Körpers verstanden.
+Bei diskreten Systemen wird der Schwerpunkt bestimmt durch</p>
+<p><span class="math notranslate nohighlight">\(\vec{r}_S = \frac{1}{M}\sum_i m_i \vec{r}_i\)</span>  mit <span class="math notranslate nohighlight">\(M = \sum_i m_i\)</span></p>
+<p>Beim Übergang zu einem kontinuierlichen System wird <span class="math notranslate nohighlight">\(\sum \rightarrow \int\)</span> und</p>
+<p><span class="math notranslate nohighlight">\(\vec{r}_S = \frac{1}{M} \int \vec{r} \, dm = \frac{1}{M} \int \vec{r} \rho(r)\, dV \)</span> mit <span class="math notranslate nohighlight">\(M = \int \, dm\)</span></p>
+</section>
+<section id="bewegungen">
+<h3><span class="section-number">1.1.3. </span>Bewegungen<a class="headerlink" href="#bewegungen" title="Permalink to this headline">#</a></h3>
+<p>Die möglichen Bewegungen eines starren Körpers sind</p>
+<ol class="simple">
+<li><p><strong>Translationsbewegung</strong> Der starre Körper bewegt sich in eine Richtung ohne Drehbewegung. Die Bewegung kann vollständig durch die Bewegung des Schwerpunktes beschrieben Werden, da der Abstand jedes Massenpunktes zum Schwerpunkt konstant ist.</p></li>
+<li><p><strong>Rotationsbewegung</strong> Der starre Körper dreht sich um eine feste Drehachse. Dies bedeutet, dass der Abstand der einzelnen Massenelemente zur Drehachse konstant ist. Die Bewegung kann nicht über die Bewegung des Schwerpunktes beschrieben werden.</p></li>
+</ol>
+<figure class="align-default" id="trans-vs-rot-1">
+<a class="reference internal image-reference" href="../../_images/trans_vs_rot.svg"><img alt="../../_images/trans_vs_rot.svg" src="../../_images/trans_vs_rot.svg" width="700px" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.10 </span><span class="caption-text">Mögliche Bewegung eines starren Körpers.</span><a class="headerlink" href="#trans-vs-rot-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -749,13 +846,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">7.4. </span>Raketengleichung</p>
+            <p class="prev-next-title"><span class="section-number">6.4. </span>Raketengleichung</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="starrer_koerper2.html" title="next page">
+    <a class='right-next' id="next-link" href="starrer_koerper3.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Model</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Trägheitsmoment</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

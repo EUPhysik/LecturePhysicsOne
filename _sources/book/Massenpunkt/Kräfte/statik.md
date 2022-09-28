@@ -1,13 +1,13 @@
 # Statik
 
 Die Statik beschäftigt sich mit Massen, die unbewegt, also in Ruhe sind. 
-In einem statischen Kräftegleichgewicht ist die Summe aller angreifenden Käfte = 0. Es gilt also
+In einem statischen Kräftegleichgewicht ist die Summe aller angreifenden Kräfte = 0. Es gilt also
 
 $\vec{F}_{ges} = \sum_{i=1}^N \vec{F}_i $
 
 Diese Bedingung kann genutzt werden, um Kräfte in Relation zueinander zu setzen und somit Bedingungen zwischen physikalischen Größen herzuleiten.
 
-**Beispiel**
+**Beispiel:**
 
 ```{figure} Bilder/statik_01.png
 ---
