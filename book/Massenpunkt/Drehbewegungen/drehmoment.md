@@ -38,6 +38,10 @@ Bei der Betrachtung von statischen Gleichgewichten gibt es, sofern Rotationsbewe
 
 $\sum \vec{M} = \vec{0}$
 
+Dies bedeutet, dass im statiscchen Gleichgewicht die Summe der nach links drehenden Drehmomente und die Summe der nach rechts drehenden Drehmomente gleich ist.
+
+$\vec{M}_\circlearrowleft = \vec{M}_\circlearrowright$
+
 ## Beispiel: Kran
 
 ```{figure} Bilder/kran.png

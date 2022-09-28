@@ -8,7 +8,7 @@ name: zentrifugal_bsp-1
 Zentrifugalkraft.
  ```
 
-Die Zentrifugalkraft ist eine Trägheitskraft, die bei Dreh- und Kreisbewegungen auftritt und radial von der Rotationsachse nach außen gerichtet ist (siehe [rotierendes Bezugssystem](scheinkraefte.html#beispiel-rotierendes-bezugssystem)).
+Die Zentrifugalkraft ist eine Trägheitskraft, die bei Dreh- und Kreisbewegungen auftritt und radial von der Rotationsachse nach außen gerichtet ist (siehe [rotierendes Bezugssystem](../Scheinkraefte/scheinkraefte_rot.html#scheinkräfte-im-rotierenden-bezugssystem)).
 
 Oft wird auch von einer Zentrifugalkraft gesprochen, diese hängen wie folgt zusammen:
 

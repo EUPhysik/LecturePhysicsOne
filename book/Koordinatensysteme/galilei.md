@@ -12,13 +12,15 @@ Darstellung einer Koordinatentransformation.
  ```
 
 Bei der Galilei-Transformation betrachtet man ein Koordinatensystem $O$ und ein Koordinatensystem $O^\prime$, welches sich von $O$ wegbewegt.
-Zum Zeitpunkt $t=0$ liegen die Koordinatenurspünge übereinander.
+Zum Zeitpunkt $t=0$ liegen die Koordinatenurspünge in den folgenden Betrachtungen übereinander. Prinzipiell können die Koordinatensysteme auch einen Offset haben. 
 
 Betrachtet aus $O$ bewegt sich der Koordinatenursprung von $O^\prime$ mit $\frac{1}{2} \vec{a}_{O \rightarrow O^\prime} t^2 + \vec{v}_{0, O \rightarrow O^\prime}t$
 
 Der Ortsvektor, der die beiden Koordinatenursprünge miteinander verbindet ist demnach
 
 $\vec{r}_{O \rightarrow O^\prime} = \frac{1}{2} \vec{a}_{O \rightarrow O^\prime} t^2 + \vec{v}_{0, O \rightarrow O^\prime}t$
+
+Eine Herleitung dieser Zusammenhänge erfolgt im Kapitel [Kinematik des Massenpunktes](../Massenpunkt/Kinematik/mechanik_massenpunkt.md).
 
 Ein Punkt $P$ wird nun aus beiden Bezugssystemen betrachtet. Im Bezugssystem $O$ bezeichnet $\vec{r}$ den Ortsvektor von Koordinatenursprung zum Punkt $P$. Im Bezugssystem $^\prime$ bezeichnet $\vec{r}^\prime$ den Ortsvektor von Koordinatenursprung zum Punkt $P$ (siehe {numref}` Abbildung %s <galilei-2>`).
 

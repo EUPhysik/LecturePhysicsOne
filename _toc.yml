@@ -44,14 +44,14 @@ parts:
     - file: book/Massenpunkt/Kräfte/statik
     - file: book/Massenpunkt/Kräfte/kinetik
     - file: book/Massenpunkt/Kräfte/reibung
-  - file: book/Scheinkraefte/scheinkraefte
-    sections:
-    - file: book/Scheinkraefte/zentrifugalkraft
-    - file: book/Scheinkraefte/corioliskraft
+    - file: book/Massenpunkt/Kräfte/scheinkraefte_linear
   - file: book/Massenpunkt/Drehbewegungen/drehbewegungen
     sections:
     - file: book/Massenpunkt/Drehbewegungen/drehmoment
     - file: book/Massenpunkt/Drehbewegungen/kreisbewegung
+    - file: book/Scheinkraefte/scheinkraefte_rot
+    - file: book/Scheinkraefte/zentrifugalkraft
+    - file: book/Scheinkraefte/corioliskraft
   - file: book/Energie/energie
   - file: book/Stossprozesse/stoss
     sections:
@@ -63,28 +63,24 @@ parts:
   numbered: True  
   chapters:
   - file: book/starreKoerper/starrer_koerper
-  - file: book/starreKoerper/starrer_koerper2
   - file: book/starreKoerper/starrer_koerper3
   - file: book/starreKoerper/steiner
   - file: book/starreKoerper/zusammengesetzt
   - file: book/starreKoerper/energie
   - file: book/starreKoerper/schiefe_ebene_dreh
-- caption: Hydrostatik und Hydrodynamik
+- caption: Hydro-/Aerostatik und Hydro-/Aerodynamik
   numbered: True  
   chapters:
   - file: book/Hydraulik/fluessigkeiten
   - file: book/Hydraulik/hydraulik
+  - file: book/Gase/gase
   - file: book/Hydraulik/hydrostatik
+  - file: book/Gase/aerostatik
   - file: book/Hydraulik/hydrodynamik
   - file: book/Hydraulik/diffusion
   - file: book/Hydraulik/stroemungen
-  - file: book/Hydraulik/grenzen_des_laminaren_Modells
-- caption: Ärostatik und Ärodynamik
-  numbered: True  
-  chapters:
-  - file: book/Gase/gase
-  - file: book/Gase/aerostatik
   - file: book/Gase/aerodynamik
+  - file: book/Hydraulik/grenzen_des_laminaren_Modells
 - caption: Wärmelehre
   numbered: True  
   chapters:

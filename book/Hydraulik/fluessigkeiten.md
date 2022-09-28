@@ -8,7 +8,7 @@ Im Festkörper sind die Teilchen fest in einer Gitterstruktur gefunden und schwi
 In der Flüssigkeit ist diese Gitterstruktur aufgebrochen, die Teilchen sind aber noch eng zusammen. Bei Bewegung müssen sich die Teilchen durch Lücken zwischen ihren Nachbarn hindurch zwängen (Diffusion, Brownsche Molekularbewegung).
 Im Gas haben die Teilchen die höchste kinetische Energie. Hier bewegen sie sich mit großem Abstand zueinander und die Teilchen bewegen sich geradlinig wie Billardkugeln, bis sie mit einem anderen oder mit der Gefäßwand zusammen stoßen.
 
-Die folgenden Kapitel beschäftigen sich mit der Mechanik von Flüssigkeiten.
+Flüssigkeiten können wir folgt beschrieben werden:
 
 Die Moleküle bzw. Atome sind nicht wie beim Festkörper in eine Gitterstruktur eingebunden, sondern können sich gegenseitig verschieben. Bei Erhöhung der Temperatur werden die Teilchenbewegungen immer schneller.
 Die Abstände zwischen den Teilchen sind gering, die Teilchen wechselwirken weiter miteinander.

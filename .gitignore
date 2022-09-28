@@ -3,4 +3,4 @@
 **/.DS_Store
 .venv
 *~
-book/_build
+_build

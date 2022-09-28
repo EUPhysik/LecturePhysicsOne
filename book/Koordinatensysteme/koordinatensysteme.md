@@ -30,4 +30,4 @@ name: kart-1
 Rechtshändiges kartesisches Koordinatensystem
  ```
 
- In einem solchen Koordinatensystem können beispielsweise in drei Dimensionen zwei räumliche und eine zeitliche Komponente dargestellt werden.
+ In einem solchen Koordinatensystem können beispielsweise in drei Dimensionen drei räumliche oder zwei räumliche und eine zeitliche Komponente dargestellt werden.

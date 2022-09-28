@@ -38,7 +38,7 @@ name: massenpunkt-1
 Darstellung einer Bewegung in 1 Dimension.
  ```
 
-In der Kinematik werden zur Darstellung Weg-Zeit Diagramme verwendet. Dabei wird auf der x-Achse die Zeit und auf der y-Achse die zurückgelegte Strecke aufgetragen. Entsprechend werden diese Diagramme auch als x-t-Diagramm bezeichnet.
+In der Kinematik werden zur Darstellung Weg-Zeit Diagramme verwendet. Dabei wird auf der x-Achse die Zeit und auf der y-Achse die zurückgelegte Strecke aufgetragen. Entsprechend werden diese Diagramme auch als x-t-Diagramm bezeichnet  (siehe {numref}`Abbildung %s <massenpunkt-2>`).
 
 ```{figure} Bilder/1-dim-movement.png
 ---
@@ -59,6 +59,16 @@ $v(t) = \frac{dx}{dt} = \frac{d t^2}{dt} = 2 t$
 
 Während sich die Position des Massenpunktes quadratisch mit der Zeit ändert, ändert sich die Geschwindigkeit also linear.
 
+Das zugehörige Diagramm wird als v-t-Diagramm bezeichnet. Dabei wird auf der x-Achse die Zeit und auf der y-Achse die Geschwindigkeit aufgetragen (siehe {numref}`Abbildung %s <massenpunkt-2b>`). 
+
+```{figure} Bilder/1-dim-movement-v.png
+---
+width: 850px
+name: massenpunkt-2b
+---
+Darstellung der Geschwindigkeit einer Bewegung in 1 Dimension.
+ ```
+
 Die Beschleunigung, die auf diesen Massenpunkt wirkt, die zeitliche Änderung der Geschwindigkeit. Damit gilt in gleicher Weise
 
 $a(t) = \frac{dv}{dt} = \dot{v}(t) = \ddot{x}(t)$
@@ -68,6 +78,16 @@ Im konkreten Beispiel mit $x(t) = t^2$ gilt somit für die Beschleunigung
 $a(t) =  \frac{dv}{dt} =  \frac{d (2t) }{dt} = 2$
 
 Die Beschleunigung ist also in diesem Beispiel konstant. 
+
+Das zugehörige Diagramm wird als a-t-Diagramm bezeichnet. Dabei wird auf der x-Achse die Zeit und auf der y-Achse die Beschleunigung aufgetragen (siehe {numref}`Abbildung %s <massenpunkt-2c>`). 
+
+```{figure} Bilder/1-dim-movement-a.png
+---
+width: 850px
+name: massenpunkt-2c
+---
+Darstellung der Beschleunigung einer Bewegung in 1 Dimension.
+ ```
 
 ## Spezialfälle 
 
@@ -97,5 +117,5 @@ $v (t) = a \cdot t + v_0$
 
 $x (t) = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + x_0 \cdot t$
 
-Im Fall der gleichmäßig beschleunigten Bewegung gilt dann bei vernachlässigbarer Anfangsgeschwindigkeit $a \frac{v}{t}$. Die Strecke hängt quadratisch von der Zeit ab. 
+Im Fall der gleichmäßig beschleunigten Bewegung gilt dann bei vernachlässigbarer Anfangsgeschwindigkeit $a =\frac{v}{t}$. Die Strecke hängt quadratisch von der Zeit ab. 
 Diese Art der Bewegung tritt beispielsweise beim freien Fall auf. Hier wirkt die konstante Erdbeschleunigung $g=9.81 \, \frac{m}{s^2}$.

@@ -1,7 +1,7 @@
 # Gase
 
-Die folgenden Kapitel beschäftigen sich mit der Mechanik von Gasen.
 
+Gase können wir folgt beschrieben werden:
 
 In Gasen ist die Bewegungsenergie der Atome/Moleküle ist so hoch, dass die elektromagnetischen Wechselwirkungen der Teilchen vernachlässigt werden können und die  Wechselwirkung im wesentlichen durch Stoßprozesse stattfindet.
 
