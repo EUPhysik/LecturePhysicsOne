@@ -28,10 +28,41 @@ bibtex_bibfiles:
 #  path_to_book: docs  # Optional path to your book, relative to the repository root
 #  branch: master  # Which branch of the repository should be used when creating links (optional)
 
+
+################################# HTML-SETTINGS###################
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon               : 'physics_icon_small.png'
   use_multitoc_numbering: false
-#  use_issues_button: true
-#  use_repository_button: true
+  home_page_in_navbar   : False
+  baseurl               : 'https://euphysik.github.io/LecturePhysicsOne/'
+  use_edit_page_button  : true
+  use_issues_button     : true
+  use_repository_button : true
+  extra_footer          : |
+    <p>
+    <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg' height='31'/>
+    | Contacts and Infos: <a href='https://www.fh-dortmund.de/personen/Simone-Arnold/index.php'>Simone Arnold@FH Dortmund</a>
+    </br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+    </p>
+
+###############################################################################
+# Sphinx settings
+sphinx:
+  config:
+    html_show_copyright : false
+
+###############################################################################
+# Launch button settings
+repository:
+  url            : "https://github.com/EUPhysik/LecturePhysicsOne.git"
+  branch         : main
+  path_to_book   : "book"
+
+# launch_buttons:
+#   jupyterhub_url : https://io.cce.uni-wuppertal.de/dataanalysis_ws21/user/
+
+launch_buttons:
+  binderhub_url  : ''
+  jupyterhub_url : ''
