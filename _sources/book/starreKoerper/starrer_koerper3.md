@@ -160,7 +160,7 @@ $\Theta = \int dV \rho r_\perp^2 = \frac{3 \,m}{4\pi R^3} \int_0^R \int_0^\pi \i
 
 ## Übersicht Trägheitsmomente
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Kugel.png
+```{figure} Bilder/TM_Kugel.png
 ---
 width: 150px
 name: TM_Kugel
@@ -168,7 +168,7 @@ name: TM_Kugel
 $\Theta = \frac{2}{5}mr^2$  
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Scheibe.png
+```{figure} Bilder/TM_Scheibe.png
 ---
 width: 150px
 name: TM_Scheibe
@@ -176,7 +176,7 @@ name: TM_Scheibe
 $\Theta = \frac{1}{2}mr^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Scheibe_2.png
+```{figure} Bilder/TM_Scheibe_2.png
 ---
 width: 100px
 name: TM_Scheibe_2
@@ -184,7 +184,7 @@ name: TM_Scheibe_2
 $\Theta = \frac{1}{4}mr^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Zylinder.png
+```{figure} Bilder/TM_Zylinder.png
 ---
 width: 150px
 name: TM_Zylinder
@@ -192,7 +192,7 @@ name: TM_Zylinder
 $\Theta = \frac{1}{2}mr^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Wuerfel.png
+```{figure} Bilder/TM_Wuerfel.png
 ---
 width: 200px
 name: TM_Wuerfel
@@ -200,7 +200,7 @@ name: TM_Wuerfel
 $\Theta = \frac{1}{6}ma^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Quader.png
+```{figure} Bilder/TM_Quader.png
 ---
 width: 200px
 name: TM_Quader
@@ -208,7 +208,7 @@ name: TM_Quader
 $\Theta = \frac{1}{12}m \left(b^2 + c^2\right)$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Stab.png
+```{figure} Bilder/TM_Stab.png
 ---
 width: 200px
 name: TM_Stab
@@ -216,7 +216,7 @@ name: TM_Stab
 $\Theta = \frac{1}{12}ml^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Stab_2.png
+```{figure} Bilder/TM_Stab_2.png
 ---
 width: 200px
 name: TM_Stab_2
@@ -224,7 +224,7 @@ name: TM_Stab_2
 $\Theta = \frac{1}{3}ml^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Hohlzylinder.png
+```{figure} Bilder/TM_Hohlzylinder.png
 ---
 width: 120px
 name: TM_Hohlzylinder
@@ -232,7 +232,7 @@ name: TM_Hohlzylinder
 $\Theta = \frac{1}{2}m \left(r_a^2 +r_i^2\right)$}
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Zylinderwand.png
+```{figure} Bilder/TM_Zylinderwand.png
 ---
 width: 150px
 name: TM_Zylinderwand
@@ -240,7 +240,7 @@ name: TM_Zylinderwand
 $\Theta \approx m r^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Kegel.png
+```{figure} Bilder/TM_Kegel.png
 ---
 width: 150px
 name: TM_Kegel
@@ -248,7 +248,7 @@ name: TM_Kegel
 $\Theta = \frac{3}{10}m\,r^2$
  ```
 
-```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Zylinder_quer.png
+```{figure} Bilder/TM_Zylinder_quer.png
 ---
 width: 150px
 name: TM_Zylinder_quer
