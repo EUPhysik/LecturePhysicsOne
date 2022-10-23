@@ -115,7 +115,7 @@ $a (t) = a$
 
 $v (t) = a \cdot t + v_0$ 
 
-$x (t) = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + x_0 \cdot t$
+$x (t) = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + x_0 $
 
 Im Fall der gleichmäßig beschleunigten Bewegung gilt dann bei vernachlässigbarer Anfangsgeschwindigkeit $a =\frac{v}{t}$. Die Strecke hängt quadratisch von der Zeit ab. 
 Diese Art der Bewegung tritt beispielsweise beim freien Fall auf. Hier wirkt die konstante Erdbeschleunigung $g=9.81 \, \frac{m}{s^2}$.
