@@ -157,8 +157,10 @@ $a(t) =  \frac{d}{dt} \left(- sin \left(2 \cdot t \right) \right)  = -2 \cdot co
 |--|--|--|
 |![alt](Bilder/pendel_x.png)|![alt](Bilder/pendel_vx.png)|![alt](Bilder/pendel_ax.png)|
 
-$a(t)$ ist immer dann =0, wenn $cos\left(2 \cdot t \right) = 0$ ist, also $2 \cdot t = n \cdot \pi$.
+$a(t)$ ist immer dann =0, wenn $cos\left(2 \cdot t \right) = 0$ ist, also $2 \cdot t = k \cdot \pi$.
 
 Damit gilt
 
-$t_n = \frac{n \cdot \pi}{2}$
+$t_n = \frac{k \cdot \pi}{2}$
+
+dabei ist $k = \left(\frac{1}{2} +n \right)$ mit $n = 0,1,2,...$
