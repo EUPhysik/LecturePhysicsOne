@@ -753,11 +753,6 @@ title="Print to PDF"
    3.5.1. Anwendung: Messung von Kräften
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#anwendung-berechnung-statischer-belastung">
-   3.5.2. Anwendung: Berechnung statischer Belastung
-  </a>
- </li>
 </ul>
 
     </nav>
@@ -780,11 +775,6 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#anwendung-messung-von-kraften">
    3.5.1. Anwendung: Messung von Kräften
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#anwendung-berechnung-statischer-belastung">
-   3.5.2. Anwendung: Berechnung statischer Belastung
   </a>
  </li>
 </ul>
@@ -843,58 +833,90 @@ Eine Federwaage besteht aus einer Feder, deren Federkonstante <span class="math 
 <p>Durch Messung der Auslenkung <span class="math notranslate nohighlight">\(x\)</span> kann dann die Gewichtskraft bestimmt werden. Über die bekannte Erdbeschleunigung <span class="math notranslate nohighlight">\(g\)</span> kann dann die Masse berechnet werden</p>
 <p><span class="math notranslate nohighlight">\( m \cdot g = k \cdot x  \Leftrightarrow m  = \frac{k \cdot x}{g}\)</span></p>
 <p>Im Allgemeinen, insbesondere ausserhalb des Anwendungsbereiches, ist die Federkonstante nicht konstant und eine einfache derartige Berechnung ist dort nicht möglich.</p>
-</section>
-<section id="anwendung-berechnung-statischer-belastung">
-<h2><span class="section-number">3.5.2. </span>Anwendung: Berechnung statischer Belastung<a class="headerlink" href="#anwendung-berechnung-statischer-belastung" title="Permalink to this headline">#</a></h2>
-<p>Mit Hilfe der Statik lassen sich auch komplizierte Situationen betrachten und die statischen Kräfte auf einzelne Bauteile analysiert werden.
-Beispielsweise seien in folgender Anordnung die mechanischen Kräfte auf die Streben der in <a class="reference internal" href="#statik-wandhalterung-1"><span class="std std-numref">Abbildung 3.6</span></a> dargestellten Wandhalterung zu berechnen:</p>
-<figure class="align-default" id="statik-wandhalterung-1">
-<a class="reference internal image-reference" href="../../../_images/statik_wandhalterung.png"><img alt="../../../_images/statik_wandhalterung.png" src="../../../_images/statik_wandhalterung.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Darstellung der Kräfte an einer Wandhalterung.</span><a class="headerlink" href="#statik-wandhalterung-1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Hier hängt eine Masse über eine Umlenkrolle an einem Seil. Die Wandhalterung besteht aus zwei Streben auf die jeweils eine Kraft wirkt. Diese beiden Kräfte <span class="math notranslate nohighlight">\(F_1\)</span> und <span class="math notranslate nohighlight">\(F_2\)</span> gilt es zu berechnen.</p>
-<p>Mit Hilfe des Seils kann die Masse auf- und abbewegt werden. Zu jedem bestimmten Zeitpunkt herrscht entlang des Seils ein statisches Kräftegleichgewicht, die Masse bewirkt eine Gewichtskraft <span class="math notranslate nohighlight">\(F_g\)</span>, das Seil kompensiert diese Kraft durch die Seilkraft <span class="math notranslate nohighlight">\(F_S\)</span>. Wäre das nicht so, würde das Gewicht nach unten abstürzen. Es gilt also entlang des Seils für die Beträge dieser beiden Kräfte <span class="math notranslate nohighlight">\(F_g = F_S\)</span>.</p>
-<p>Auf die Wandhalterung wirkt die Resultierende der beiden Kräfte <span class="math notranslate nohighlight">\(\vec{F}_g + \vec{F}_S\)</span>. Beide Kräfte sind gegenüber der Resultierenden <span class="math notranslate nohighlight">\(\vec{F}_R\)</span> um einen Winkel von <span class="math notranslate nohighlight">\(\frac{\alpha}{2}\)</span> verschoben. In <span class="math notranslate nohighlight">\(\vec{F}_R\)</span>-Richtung wirkt also jeweils der Anteil <span class="math notranslate nohighlight">\(F_g \cdot cos\left( \frac{\alpha}{2} \right)\)</span></p>
-<figure class="align-default" id="statik-wandhalterung-kraefte-1">
-<a class="reference internal image-reference" href="../../../_images/statik_wandhalterung_kraefte.png"><img alt="../../../_images/statik_wandhalterung_kraefte.png" src="../../../_images/statik_wandhalterung_kraefte.png" style="width: 300px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Resultierende Kraft an Wandhalterung.</span><a class="headerlink" href="#statik-wandhalterung-kraefte-1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Mit <span class="math notranslate nohighlight">\(\vec{F}_g = m \cdot \vec{g}\)</span> und <span class="math notranslate nohighlight">\(F_g = F_S\)</span>  ist also</p>
-<p><span class="math notranslate nohighlight">\(F_R = 2 \cdot F_g \cdot cos\left( \frac{\alpha}{2} \right)= 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\)</span></p>
-<p>Zur Betrachtung der Kraft auf die Wandhalterung muss zunächst ein Koordinatensystem festgelegt werden. In diesem Beispiel wird es so gewählt, dass die x-Richtung entlang der Strebe 2 verläuft, die y-Richtung senkrecht dazu. (siehe <a class="reference internal" href="#statik-wandhalterung-2"><span class="std std-numref">Abbildung 3.8</span></a>)</p>
-<figure class="align-default" id="statik-wandhalterung-2">
-<a class="reference internal image-reference" href="../../../_images/statik_wandhalterung_2.png"><img alt="../../../_images/statik_wandhalterung_2.png" src="../../../_images/statik_wandhalterung_2.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3.8 </span><span class="caption-text">Darstellung der Kräfte an einer Wandhalterung.</span><a class="headerlink" href="#statik-wandhalterung-2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Nur wird die Resultierende Kraft <span class="math notranslate nohighlight">\(\vec{F}_R\)</span> in die Komponenten bezüglich des gewählten Koordinatensystems betrachtet.</p>
-<p>In x-Richtung wirkt</p>
-<p><span class="math notranslate nohighlight">\(\left|F_{R,x} \right| = F_R \cdot sin \left( \frac{\alpha}{2} \right) =  2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right)\)</span></p>
-<p>In y-Richtung wirkt</p>
-<p><span class="math notranslate nohighlight">\(\left|F_{R,y} \right| = F_R \cdot cos \left( \frac{\alpha}{2} \right) = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right)\)</span></p>
-<figure class="align-default" id="statik-wandhalterung-res-2-2">
-<a class="reference internal image-reference" href="../../../_images/statik_wandhalterung_res_2.png"><img alt="../../../_images/statik_wandhalterung_res_2.png" src="../../../_images/statik_wandhalterung_res_2.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Aufteilung der Kraft in y-Richtung</span><a class="headerlink" href="#statik-wandhalterung-res-2-2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Die Kraft in y-Richtung über Strebe 1 aufgenommen. Zusätzlich wird ein Teil der Kraft in x-Richtung von Strebe 1 aufgenommen.
-Es gilt</p>
-<p><span class="math notranslate nohighlight">\(sin \left( \beta \right) = \frac{\left|F_{R,y} \right|}{F_{1,y}} \Leftrightarrow F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} \)</span></p>
-<p><span class="math notranslate nohighlight">\(cos \left( \beta \right) = \frac{F_{1,x}}{F_{1,y}} \Leftrightarrow F_{1,x} = F_{1,y} \cdot cos \left( \beta \right)\)</span></p>
-<p>wobei <span class="math notranslate nohighlight">\(F_{1,x}\)</span> der Teil ist, der von Strebe 1 in x-Richtung aufgenommen wird.
-Damit ist</p>
-<p><span class="math notranslate nohighlight">\(F_1 = F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right) \cdot \frac{1}{sin \left( \beta \right)}\)</span></p>
-<p><span class="math notranslate nohighlight">\(F_2 = \left| \left|F_{R,x} \right| - F_{1,x} \right| = \left|2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) - 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) cos \left( \beta \right) \right|\)</span></p>
-<p>Für <span class="math notranslate nohighlight">\(\alpha = 40^\circ\)</span>, <span class="math notranslate nohighlight">\(\beta = 45^\circ\)</span> und <span class="math notranslate nohighlight">\(m = 50 \, kg\)</span> ergibt dies</p>
-<p><span class="math notranslate nohighlight">\(F_1 = 1071 \, N\)</span></p>
-<p><span class="math notranslate nohighlight">\(F_2 = 314 \, N\)</span></p>
-</section>
+ <!-- ## Anwendung: Berechnung statischer Belastung
+
+ Mit Hilfe der Statik lassen sich auch komplizierte Situationen betrachten und die statischen Kräfte auf einzelne Bauteile analysiert werden. 
+ Beispielsweise seien in folgender Anordnung die mechanischen Kräfte auf die Streben der in {numref}`Abbildung %s <statik_wandhalterung-1>` dargestellten Wandhalterung zu berechnen:
+
+  ```{figure} Bilder/statik_wandhalterung.png
+---
+width: 400px
+name: statik_wandhalterung-1
+---
+Darstellung der Kräfte an einer Wandhalterung.
+ ```
+
+ Hier hängt eine Masse über eine Umlenkrolle an einem Seil. Die Wandhalterung besteht aus zwei Streben auf die jeweils eine Kraft wirkt. Diese beiden Kräfte $F_1$ und $F_2$ gilt es zu berechnen.
+
+ Mit Hilfe des Seils kann die Masse auf- und abbewegt werden. Zu jedem bestimmten Zeitpunkt herrscht entlang des Seils ein statisches Kräftegleichgewicht, die Masse bewirkt eine Gewichtskraft $F_g$, das Seil kompensiert diese Kraft durch die Seilkraft $F_S$. Wäre das nicht so, würde das Gewicht nach unten abstürzen. Es gilt also entlang des Seils für die Beträge dieser beiden Kräfte $F_g = F_S$.
+ 
+ Auf die Wandhalterung wirkt die Resultierende der beiden Kräfte $\vec{F}_g + \vec{F}_S$. Beide Kräfte sind gegenüber der Resultierenden $\vec{F}_R$ um einen Winkel von $\frac{\alpha}{2}$ verschoben. In $\vec{F}_R$-Richtung wirkt also jeweils der Anteil $F_g \cdot cos\left( \frac{\alpha}{2} \right)$
+
+
+
+ 
+ ```{figure} Bilder/statik_wandhalterung_kraefte.png
+---
+width: 300px
+name: statik_wandhalterung_kraefte-1
+---
+Resultierende Kraft an Wandhalterung.
+ ```
+
+Mit $\vec{F}_g = m \cdot \vec{g}$ und $F_g = F_S$  ist also 
+
+$F_R = 2 \cdot F_g \cdot cos\left( \frac{\alpha}{2} \right)= 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)$
+
+Zur Betrachtung der Kraft auf die Wandhalterung muss zunächst ein Koordinatensystem festgelegt werden. In diesem Beispiel wird es so gewählt, dass die x-Richtung entlang der Strebe 2 verläuft, die y-Richtung senkrecht dazu. (siehe {numref}`Abbildung %s <statik_wandhalterung-2>`)
+
+
+```{figure} Bilder/statik_wandhalterung_2.png
+---
+width: 400px
+name: statik_wandhalterung-2
+---
+Darstellung der Kräfte an einer Wandhalterung.
+ ```
+
+
+Nur wird die Resultierende Kraft $\vec{F}_R$ in die Komponenten bezüglich des gewählten Koordinatensystems betrachtet. 
+
+In x-Richtung wirkt
+
+$\left|F_{R,x} \right| = F_R \cdot sin \left( \frac{\alpha}{2} \right) =  2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right)$
+
+In y-Richtung wirkt
+
+$\left|F_{R,y} \right| = F_R \cdot cos \left( \frac{\alpha}{2} \right) = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right)$
+
+
+```{figure} Bilder/statik_wandhalterung_res_2.png
+---
+width: 400px
+name: statik_wandhalterung_res_2-2
+---
+Aufteilung der Kraft in y-Richtung
+ ```
+
+Die Kraft in y-Richtung über Strebe 1 aufgenommen. Zusätzlich wird ein Teil der Kraft in x-Richtung von Strebe 1 aufgenommen.
+Es gilt
+
+$sin \left( \beta \right) = \frac{\left|F_{R,y} \right|}{F_{1,y}} \Leftrightarrow F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} $
+
+$cos \left( \beta \right) = \frac{F_{1,x}}{F_{1,y}} \Leftrightarrow F_{1,x} = F_{1,y} \cdot cos \left( \beta \right)$
+
+wobei $F_{1,x}$ der Teil ist, der von Strebe 1 in x-Richtung aufgenommen wird.
+Damit ist 
+
+$F_1 = F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right) \cdot \frac{1}{sin \left( \beta \right)}$
+
+$F_2 = \left| \left|F_{R,x} \right| - F_{1,x} \right| = \left|2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) - 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) cos \left( \beta \right) \right|$
+
+Für $\alpha = 40^\circ$, $\beta = 45^\circ$ und $m = 50 \, kg$ ergibt dies
+
+$F_1 = 1225 \, N$
+
+$F_2 = 314 \, N$ --></section>
 </section>
 
     <script type="text/x-thebe-config">
