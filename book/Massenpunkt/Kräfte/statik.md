@@ -72,7 +72,7 @@ $ m \cdot g = k \cdot x  \Leftrightarrow m  = \frac{k \cdot x}{g}$
 
 Im Allgemeinen, insbesondere ausserhalb des Anwendungsbereiches, ist die Federkonstante nicht konstant und eine einfache derartige Berechnung ist dort nicht möglich. 
 
-## Anwendung: Berechnung statischer Belastung
+<!-- ## Anwendung: Berechnung statischer Belastung
 
  Mit Hilfe der Statik lassen sich auch komplizierte Situationen betrachten und die statischen Kräfte auf einzelne Bauteile analysiert werden. 
  Beispielsweise seien in folgender Anordnung die mechanischen Kräfte auf die Streben der in {numref}`Abbildung %s <statik_wandhalterung-1>` dargestellten Wandhalterung zu berechnen:
@@ -157,4 +157,4 @@ $F_1 = 1225 N$
 
 $F_2 = - 550 N$
 
-Das Gewicht zieht also an der oberen Strebe von der Wand weg und drückt die untere Strebe in die Wand hinein.
+Das Gewicht zieht also an der oberen Strebe von der Wand weg und drückt die untere Strebe in die Wand hinein. -->
