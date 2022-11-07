@@ -52,6 +52,7 @@ parts:
     - file: book/Scheinkraefte/scheinkraefte_rot
     - file: book/Scheinkraefte/zentrifugalkraft
     - file: book/Scheinkraefte/corioliskraft
+    - file: book/Massenpunkt/Drehbewegungen/erde
   - file: book/Energie/energie
   - file: book/Stossprozesse/stoss
     sections:
