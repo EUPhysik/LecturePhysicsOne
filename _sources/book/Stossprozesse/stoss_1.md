@@ -16,10 +16,10 @@ Zusammenhänge zwischen $\vec{v}_1 , \,  \vec{v}_2$ und $\vec{v}^\prime_1 , \,  
 
 $E_{vor} = E_{nach}$
 
-$\frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_1^2 
+$\frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 
 = \frac{1}{2} m_1 \left(v^\prime_1 \right)^2 + \frac{1}{2} m_2 \left(v^\prime_2 \right)^2
 \Leftrightarrow 
-m_1 v_1^2 + m_2 v_1^2 
+m_1 v_1^2 + m_2 v_2^2 
 = m_1 \left(v^\prime_1 \right)^2 + m_2 \left(v^\prime_2 \right)^2
 $
 
