@@ -27,7 +27,7 @@ In Flüssigkeiten befinden sich die einzelnen Moleküle im Gleichgewicht in eine
 Dieser Abstand ist gekennzeichnet durch ein Gleichgewicht abstoßender und anziehender Kräfte innerhalb der Wirkungssphäre des einzelnen Moleküls in der Flüssigkeit (elektrostatische Wechselwirkung)
 Im Gas Wechselwirkung nur durch Stoßprozesse
 
-```{figure} Bilder/Oberflächenspannung.png
+```{figure} Bilder/Oberflaechenspannung.png
 ---
 width: 600px
 name: Oberflächenspannung-1
@@ -41,7 +41,7 @@ Somit besitzen alle direkt an der Oberfläche liegenden Moleküle eine sogenannt
 
 Wird nun eine Oberfläche $A$ um $\Delta A$ vergrößert, erfordert dies den Transport von Molekülen in Richtung Oberfläche. Dies resultiert in einer zur Oberflächenänderung $\Delta A$  proportionalen Arbeit $\Delta W$.
 
-```{figure} Bilder/Oberflächenspannung2.png
+```{figure} Bilder/Oberflaechenspannung2.png
 ---
 width: 600px
 name: Oberflächenspannung-2
