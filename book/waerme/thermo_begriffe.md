@@ -110,7 +110,7 @@ Die Wärmekapazität ist stoffspezifisch, bezogen auf die Masse ergibt sich die 
 Ein Stoff verhält sich prinzipiell unterschiedlich beim Erwärmen, je nachdem ob die Messung bei konstantem äußerem Druck $p$ oder bei gleichbleibendem Volumen $V$ durchgeführt wird, daher unterscheidet man
 
 * $C_p$ Wärmekapazität bei konstantem Druck, sie ist definiert als $C_P = \left(\frac{dH}{dT} \right)_{p = \text{konst.}}$
-* $C_V$ Wärmekapazität bei konstantem Volumen, sie ist definiert als C_V = \left(\frac{dU}{dT} \right)_{V = \text{konst.}}
+* $C_V$ Wärmekapazität bei konstantem Volumen, sie ist definiert als $C_V = \left(\frac{dU}{dT} \right)_{V = \text{konst.}}$
 
 Die spezifische Wärmekapazität ist 
 

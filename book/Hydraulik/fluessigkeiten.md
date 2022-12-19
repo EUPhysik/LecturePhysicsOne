@@ -49,7 +49,7 @@ name: Oberflächenspannung-2
 Darstellung der Oberflächenspannung
  ```
 
-Die Oberflächenspannung ist definiert als der Proportionalitätsfaktor $\sigma = \frac{\Delta W}{\Delta A}$ mit $\Delta W = F \cdot F \Delta s$.
+Die Oberflächenspannung ist definiert als der Proportionalitätsfaktor $\sigma = \frac{\Delta W}{\Delta A}$ mit $\Delta W = F \Delta s$.
 
 ### Messung der Oberflächenspannung
 
