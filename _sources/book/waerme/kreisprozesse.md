@@ -159,7 +159,7 @@ $\Delta U = 0 \Rightarrow \Delta Q = -\Delta W$
 
 Die dem Prozess zugeführte Arbeit ist
 
-$W_{34} = - \int_3^4 p(V) \cdot dV = - \int_3^4 \frac{n R  T_3}{V} \cdot dV = n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)$
+$W_{34} = - \int_3^4 p(V) \cdot dV = - \int_3^4 \frac{n R  T_3}{V} \cdot dV =  - n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)$
 
 Diesmal wird die Wärmemenge aus der Umgebung aufgenommen
 
@@ -182,9 +182,9 @@ $W_{41} = \Delta U_{42} = m c_V \left( T_1 - T_3 \right) = - m c_V \left( T_3 - 
 
 Die Nutzarbeit im Carnot-Prozess ist somit
 
-$W_{Nutz} = \oint dW = W_{12} + W_{23} + W_{34} + W_{41} = n  R T_1 \cdot ln \left( \frac{V_1}{V_2}\right) + m c_V \left( T_3 - T_1 \right) + n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)- m c_V \left( T_3 - T_1 \right) $
+$W_{Nutz} = \oint dW = W_{12} + W_{23} + W_{34} + W_{41} = n  R T_1 \cdot ln \left( \frac{V_1}{V_2}\right) + m c_V \left( T_3 - T_1 \right) - n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)- m c_V \left( T_3 - T_1 \right) $
 
-$= n  R \left( T_1 \cdot ln \left( \frac{V_1}{V_2}\right) + T_3 \cdot ln \left( \frac{V_4}{V_3}\right) \right)$
+$= n  R \left( T_1 \cdot ln \left( \frac{V_1}{V_2}\right) - T_3 \cdot ln \left( \frac{V_4}{V_3}\right) \right)$
 
 Dies lässt sich weiter vereinfachen durch eine Beziehung zwischen den verschiedenen Volumina.
 
@@ -217,7 +217,7 @@ $Q_{zu} = Q_{34} = n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)$
 
 Damit ist der Wirkungsgrad des Carnot-Prozesses
 
-$\eta_{th} = \frac{\left| W_{Nutz}\right|}{Q_{Zu}} = \eta_{th} = \frac{\left| - n  R \cdot ln \left( \frac{V_4}{V_3}\right) \left( T_3  - T_1 \right) \right|}{n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)} =\frac{T_3 - T_1}{T_3} \Leftrightarrow \eta_{th} = 1 - \frac{T_3}{T_1}$
+$\eta_{th} = \frac{\left| W_{Nutz}\right|}{Q_{Zu}} = \eta_{th} = \frac{\left| - n  R \cdot ln \left( \frac{V_4}{V_3}\right) \left( T_3  - T_1 \right) \right|}{n  R T_3 \cdot ln \left( \frac{V_4}{V_3}\right)} =\frac{T_3 - T_1}{T_3} \Leftrightarrow \eta_{th} = 1 - \frac{T_1}{T_3}$
 
 Der Wirkungsgrad des Carnot-Prozesses hängt also nur von der Temperaturdifferenz zwischen Wärme- und Kältereservoir ab und ist immer kleiner als 1.
 
