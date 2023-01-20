@@ -30,7 +30,7 @@ width: 70%
 alt: Laengenausdehnung von Kupfer
 name: Laengenausdehnung-2
 ---
-Temperaturabhängigkeit des Längenausdehnungskoeffizient am Beispiel Kupfer.
+Temperaturabhängigkeit des Längenausdehnungskoeffizient am Beispiel Kupfer. Quelle: TU Dresden
  ```
 
 Betrachtet man nicht allzu große Temperaturänderungen, kann die Temperaturabhängigkeit des Längenausdehnungskoeffizients vernachlässigt werden.
