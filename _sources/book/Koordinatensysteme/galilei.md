@@ -42,7 +42,7 @@ Damit gelten folgende Zusammenhänge
 |-|-|
 |$ \vec{r} = \vec{r}^\prime + \frac{1}{2} \vec{a}_{O \rightarrow O^\prime} t^2 + \vec{v}_{0, O \rightarrow O^\prime}t$|$ \vec{r}^\prime = \vec{r} - \frac{1}{2} \vec{a}_{O \rightarrow O^\prime} t^2 - \vec{v}_{0, O \rightarrow O^\prime}t$|
 |$ \vec{v} = \vec{v}^\prime + \vec{a}_{O \rightarrow O^\prime}t + \vec{v}_{0, O \rightarrow O^\prime}$|$ \vec{v}^\prime = \vec{v} - \vec{a}_{O \rightarrow O^\prime} t - \vec{v}_{0, O \rightarrow O^\prime}$|
-|$ \vec{a} = \vec{v}^\prime + \vec{a}_{O \rightarrow O^\prime}$|$ \vec{a}^\prime = \vec{a} - \vec{a}_{O \rightarrow O^\prime}$|
+|$ \vec{a} = \vec{a}^\prime + \vec{a}_{O \rightarrow O^\prime}$|$ \vec{a}^\prime = \vec{a} - \vec{a}_{O \rightarrow O^\prime}$|
 
 
 ## Spezialfall $\vec{a}_{O \rightarrow O^\prime} = \vec{0}$
