@@ -1,8 +1,8 @@
-# Physik 1: Mechnik und Wärmelehre
+# Physik 1: Mechasnik und Wärmelehre
 
 ## Allgemeine Infos
 
-Dieses Skript soll zur Unterstützung der Vorlesung **Physik 1: Mechnik und Wärmelehre** dienen. Zum einen sollen die Vorlesungungsinhalte dargestellt und den Teilnehmen der Vorlesung eine Möglichkeit zum Vor- und Nachbereiten der Inhalte zu geben. 
+Dieses Skript soll zur Unterstützung der Vorlesung **Physik 1: Mechanik und Wärmelehre** dienen. Zum einen sollen die Vorlesungungsinhalte dargestellt und den Teilnehmen der Vorlesung eine Möglichkeit zum Vor- und Nachbereiten der Inhalte zu geben. 
 
 Jedoch, dieses Skript ist kurz gefasst und wird es auch so bleiben, da der Fokus nur auf den für die Vorlesung relevanten Themen liegt. Darüber hinaus gibt es viele gute Physikbücher, die diese und weitere Themen in großer Tiefe aufbereitet haben (und auch viele über diese Vorlesung hinaus gehende Inhalte enthalten). Ein detailliertes Nachlesen in diesen Büchern wird ausdrücklich empfohlen. Empfohlen ist für diese Vorlesung sind:
 
