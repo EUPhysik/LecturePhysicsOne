@@ -1,4 +1,4 @@
-# Physik 1: Mechasnik und Wärmelehre
+# Physik 1: Mechanik und Wärmelehre
 
 ## Allgemeine Infos
 
