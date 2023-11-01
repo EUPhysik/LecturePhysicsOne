@@ -4,17 +4,17 @@
 
 Gegeben sei folgender Zusammenhang zwischen x und t zur Beschreibung der Bewegung eines Massenpunktes
 
-$x(t) = x \cdot \sqrt{x} + 5 x^3$
+$x(t) = t \cdot \sqrt{t} + 5 t^3$
 
 Wie sehen Geschwindigkeit und Beschleunigung aus?
 
 **Lösung:**
 
-$x(t) = x \cdot \sqrt{x} + 5 x^3 = x^{3/2} + 5 x^3$
+$x(t) = t \cdot \sqrt{t} + 5 t^3 = t^{3/2} + 5 t^3$
 
-$v(t) = \frac{d}{dt} x(t) = \frac{d}{dt} \left(x^{3/2} + 5 x^3 \right) = \frac{3}{2} x^{1/2} + 5\cdot 3 x^2 = \frac{3}{2} x^{1/2} + 15 x^2$
+$v(t) = \frac{d}{dt} x(t) = \frac{d}{dt} \left(t^{3/2} + 5 t^3 \right) = \frac{3}{2} t^{1/2} + 5\cdot 3 t^2 = \frac{3}{2} t^{1/2} + 15 t^2$
 
-$a(t) = \frac{d}{dt} \left( \frac{3}{2} x^{1/2} + 15 x^2 \right) = \frac{3}{2} \frac{1}{2}x^{-1/2} + 2\cdot 15 x = \frac{3}{4} \frac{1}{\sqrt{x}}+ 30 x$
+$a(t) = \frac{d}{dt} \left( \frac{3}{2} t^{1/2} + 15 t^2 \right) = \frac{3}{2} \frac{1}{2}t^{-1/2} + 2\cdot 15 t = \frac{3}{4} \frac{1}{\sqrt{t}}+ 30 t$
 
 ## Beispiel 2: x aus a
 
