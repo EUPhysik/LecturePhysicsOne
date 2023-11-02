@@ -38,9 +38,9 @@ $x(t) = \frac{1}{6} t^3$
 
 $a_y(t) = \sqrt{t}$
 
-$v_y(t) = \frac{2}{3} \sqrt{x^3}$
+$v_y(t) = \frac{2}{3} \sqrt{t^3}$
 
-$y(t) = \frac{4}{15} \sqrt{x^5}$
+$y(t) = \frac{4}{15} \sqrt{t^5}$
 
 Daraus ergibt sich zusammengesetzt folgende Bewegung
 
