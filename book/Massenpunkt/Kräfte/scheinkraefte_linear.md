@@ -37,7 +37,7 @@ gilt daher
 
 Im beschleunigten Bezugssystem $O^\prime$ gilt daher $\vec{a}^\prime = \vec{a} - \vec{a}_{O \rightarrow O^\prime}$. Damit wirken hier folgende Kräfte
 
-$\Rightarrow F_{O^\prime} = m \cdot \vec{a}^\prime = m\cdot \vec{a} - m \cdot \vec{a}_{O \rightarrow O^\prime} = - \left(- 5 \frac{m}{s^2} \right)= 5 \frac{m}{s^2}$
+$\Rightarrow F_{O^\prime} = m \cdot \vec{a}^\prime = m\cdot \vec{a} - m \cdot \vec{a}_{O \rightarrow O^\prime} = - m \cdot \left(- 5 \frac{m}{s^2} \right)= m \cdot 5 \frac{m}{s^2}$
 
 Die Kraft $- m \cdot \vec{a}_{O \rightarrow O^\prime}$ ist die Scheinkraft, die durch die Beschleunigung des Bezugssystems bewirkt wird.
 Anschaulich gesprochen wird das Bezugssystem (das Auto) gebremst, dadurch scheint es so, als ob die Flasche beschleunigt wird. Ein von aussen zuschauender Beobachter würde dagegen eine Flasche sehen, die sich mit konstanter Geschwindigkeit weiterbewegt, während das Auto gebremst wird. 
