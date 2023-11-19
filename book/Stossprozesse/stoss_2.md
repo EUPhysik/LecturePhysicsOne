@@ -5,7 +5,7 @@
 width: 700px
 name: stoss-6
 ---
-Gerader zentraler elastischer Stoß.
+Gerader zentraler inelastischer Stoß.
  ```
 
 Bei geraden zentralen unelastischen Stoß handelt es sich ebenfalls um ein eindimensionales Problem. 
@@ -23,7 +23,7 @@ $\Rightarrow v_1^\prime = v_2^\prime = v^\prime \text{ und } M = m_1 + m_2$
 
 Dann ist
 
-$\Rightarrow \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = M \left(v^\prime \right)^2 + \Delta E$
+$\Rightarrow \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = \frac{1}{2} M \left(v^\prime \right)^2 + \Delta E$
 
 **Impulserhaltung**
 
@@ -34,4 +34,4 @@ $m_1 v_1 + m_2 v_2 = \left( m_1  + m_2 \right) v^\prime = M v^\prime
 
 Damit lässt sich der Teil der Energie berechnen, der als Verformungsenergie zum zusammenkleben der Massen aufgewandt wird. 
 
-$\Delta E = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - M \left( \frac{m_1 v_1 + m_2 v_2}{M}\right)^2 = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - \frac{\left(m_1 v_1 + m_2 v_2\right)^2}{M}$
+$\Delta E = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 -\frac{1}{2} M \left( \frac{m_1 v_1 + m_2 v_2}{M}\right)^2 = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - \frac{\left(m_1 v_1 + m_2 v_2\right)^2}{2M} = \frac{m_1m_2}{2M} \left(v_1 - v_2  \right)^2$
