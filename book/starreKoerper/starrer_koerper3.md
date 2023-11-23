@@ -38,7 +38,7 @@ wobei $\vec{\alpha}$ die Winkelbeschleunigung ist.
 |Kraft|$\vec{F} = \frac{d \vec{p}}{dt}$|Drehmoment|$\vec{M} = \frac{d \vec{L}}{dt}$|
 ||$\vec{F} = m \cdot \vec{a}$||$\vec{M} = \Theta \cdot \vec{\alpha}$| 
 |Impuls|$\vec{p}$|Drehimpuls|$\vec{L} = \vec{r} \times \vec{p}$|
-||$\vec{p} = m \cdot \vec{v}$||$\vec{L} =\Theta \cdot \omega$|
+||$\vec{p} = m \cdot \vec{v}$||$\vec{L} =\Theta \cdot \vec{\omega}$|
 
 Wie der Impuls bei der Translationsbewegung, ist der Drehimpuls bei der Drehbewegung eine Erhaltungsgröße, wenn kein äußeres Drehmoment anliegt.
 
