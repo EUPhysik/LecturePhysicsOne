@@ -81,11 +81,11 @@ Greift kein äußeres Drehmoment an, ist der Gesamtdrehimpuls erhalten:
 
 $\vec{M} = 0 \Rightarrow \vec{L} = \sum_k \vec{L}_k = \text{konstant}$
 
-Für die Drehimpulse gilt $\vec{L}_k = \Theta_k \omega_k$
+Für die Drehimpulse gilt $\vec{L}_k = \Theta_k \vec{\omega}_k$
 
-Und damit $\vec{L} = \Theta_1 \omega_1 + \Theta_2 \omega_2 + \Theta_3 \omega_3$
+Und damit $\vec{L} = \Theta_1 \vec{\omega}_1 + \Theta_2 \vec{\omega}_2 + \Theta_3 \vec{\omega}_3$
 
-Da die Massen einen festen Abstand zueinander haben, gilt $\omega_1 = \omega_2 = \omega_3 =:\omega$ und somit $\vec{L} = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)\omega$
+Da die Massen einen festen Abstand zueinander haben, gilt $\vec{\omega}_1 = \vec{\omega}_2 = \vec{\omega}_3 =:\vec{\omega}$ und somit $\vec{L} = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)\vec{\omega}$
 
 Das gesamte Trägheitsmoment $\Theta = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)$ ist also die Summe der Trägheitsmomente der Massenpunkte. 
 
