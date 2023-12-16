@@ -26,7 +26,7 @@ Um eine laminare Strömung zu beschreiben, gibt es zwei wichtige Grundgleichunge
 ## Kontinuitätsgleichung
 
 Betrachtet man einen Flüssigkeitstrom (beispielsweise durch eine Rohrleitung), so bleibt der Massenstrom (der bei inkompressiblen Medien gleich dem Volumenstrom ist) konstant. Denn die gleiche Menge Flüssigkeit, die in das Rohr hineinfließt, muss am Ende auch wieder hinausfließen, wenn keine Flüssigkeit verloren geht ({numref}`siehe Abbildung %s <Kontinuitaetsgleichung-1>`).
-￼
+
 
 ```{figure} Bilder/Kontinuitaetsgleichung.png
 ---
