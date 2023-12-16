@@ -43,7 +43,7 @@ Hydrostatisches Paradoxon
 
 Da der Druck entlang der roten Linie gleich ist, ist der Füllstand in allen Röhren gleich, unabhängig von ihrer Form. Gilt für Röhren, die zu breit genug sind, dass der Kapillareffekt keine Rolle spielt
 
-```{figure} Bilder/roehren.png
+```{figure} Bilder/komm_roehren.png
 ---
 width: 90%
 alt: Kommunizierende Röhren
