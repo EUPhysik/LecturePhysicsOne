@@ -30,7 +30,8 @@ An der Ausarbeitung des Skripts und der Übungen sind beteiligt (in alphabetisch
 
 ## Danksagung
 
-Die in der Vorlesung und der Erstellung der Materiallien verwendeten Softwarewerkzeuge sind meist frei verfügbar, quelloffen und von Freiwilligen entwickelt. Insbesondere gilt der Dank dem
+Die in der Vorlesung und der Erstellung der Materiallien verwendeten Softwarewerkzeuge sind meist frei verfügbar, quelloffen und von Freiwilligen entwickelt.
+Insbesondere gilt der Dank dem
 
 * Team von [Jupyter](https://github.com/jupyter/jupyter)
 

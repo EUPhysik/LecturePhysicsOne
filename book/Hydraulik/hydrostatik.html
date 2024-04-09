@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>4. Hydrostatik &#8212; Skript Physik 1</title>
   
@@ -19,54 +18,50 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Hydraulik/hydrostatik';</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/Hydraulik/hydrostatik.html" />
-    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="5. Aerostatik" href="../Gase/aerostatik.html" />
@@ -80,10 +75,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -124,11 +118,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -162,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
 <ul class="nav bd-sidenav">
@@ -497,18 +505,18 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="hydrostatik">
-<h1><span class="section-number">4. </span>Hydrostatik<a class="headerlink" href="#hydrostatik" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">4. </span>Hydrostatik<a class="headerlink" href="#hydrostatik" title="Link to this heading">#</a></h1>
 <p><strong>Definition:</strong>
 Der hydrostatische Druck (Gravitationsdruck), ist der Druck, der sich innerhalb eines ruhenden Fluids, das ist eine Flüssigkeit oder ein Gas, durch den Einfluss der Gravitation einstellt. Quantitativ beschrieben wird er durch das Pascal’sches Gesetz.</p>
 <section id="pascalsches-gesetz">
-<h2><span class="section-number">4.1. </span>Pascal’sches Gesetz<a class="headerlink" href="#pascalsches-gesetz" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Pascal’sches Gesetz<a class="headerlink" href="#pascalsches-gesetz" title="Link to this heading">#</a></h2>
 <figure class="align-default" id="pascal-1">
 <a class="reference internal image-reference" href="../../_images/pascalschesgesetz.png"><img alt="Pascal’sches Gesetz" src="../../_images/pascalschesgesetz.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Pascal’sches Gesetz</span><a class="headerlink" href="#pascal-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Pascal’sches Gesetz</span><a class="headerlink" href="#pascal-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Auf die Grundfläche wirkt die Kraft <span class="math notranslate nohighlight">\(F = m \cdot g = \rho \cdot V \cdot g = \rho \cdot h \cdot A \cdot g \)</span></p>
@@ -519,32 +527,32 @@ Der hydrostatische Druck (Gravitationsdruck), ist der Druck, der sich innerhalb 
 <span class="math notranslate nohighlight">\(p_h = \rho \cdot g \cdot h \left( + p_{at}\right)\)</span></p>
 </section>
 <section id="hydrostatisches-paradoxon">
-<h2><span class="section-number">4.2. </span>Hydrostatisches Paradoxon<a class="headerlink" href="#hydrostatisches-paradoxon" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Hydrostatisches Paradoxon<a class="headerlink" href="#hydrostatisches-paradoxon" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(p_h\)</span> hängt nicht von der Form eines Gefäßes ab!
 Entscheidend für den Druck an dessen Boden ist alleine die Höhe des Fluid- bzw. Flüssigkeitsspiegels und dessen Dichte! Grund dafür ist, dass nicht nur Gewichtskräfte, sondern auch Auftriebskräfte wirken.</p>
 <figure class="align-default" id="hydrostatik-1">
 <a class="reference internal image-reference" href="../../_images/hydrostatisches_paradoxon.png"><img alt="Hydrostatisches Paradoxon" src="../../_images/hydrostatisches_paradoxon.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Hydrostatisches Paradoxon</span><a class="headerlink" href="#hydrostatik-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Hydrostatisches Paradoxon</span><a class="headerlink" href="#hydrostatik-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="anwendung-kommuzierende-rohren">
-<h3><span class="section-number">4.2.1. </span>Anwendung: Kommuzierende Röhren<a class="headerlink" href="#anwendung-kommuzierende-rohren" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.2.1. </span>Anwendung: Kommuzierende Röhren<a class="headerlink" href="#anwendung-kommuzierende-rohren" title="Link to this heading">#</a></h3>
 <p>Da der Druck entlang der roten Linie gleich ist, ist der Füllstand in allen Röhren gleich, unabhängig von ihrer Form. Gilt für Röhren, die zu breit genug sind, dass der Kapillareffekt keine Rolle spielt</p>
 <figure class="align-default" id="roehren-1">
 <a class="reference internal image-reference" href="../../_images/komm_roehren.png"><img alt="Kommunizierende Röhren" src="../../_images/komm_roehren.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.21 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.21 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Dies macht man sich bei der Schlauchwaage zunutze. Eine Schlauchwaage besteht aus zwei Gefäßen mit Maßeinteilungen (meist mm). Die beiden Gefäße sind oben offen und besitzen Bodenöffnungen, durch die sie mit einem Schlauch verbunden sind. Das Gefäß-Schlauchsystem wird mit Wasser gefüllt. Durch den in beiden Gefäßen gleichen Wasserspiegel lassen sich Höhenunterschiede ablesen oder übertragen. Bevor man den Wasserspiegel der Schlauchwaage als Markierung übernimmt, muss der Schlauch unbedingt frei von Luftblasen sein.</p>
 </section>
 <section id="beispiel-kommuzierende-rohren">
-<h3><span class="section-number">4.2.2. </span>Beispiel: Kommuzierende Röhren<a class="headerlink" href="#beispiel-kommuzierende-rohren" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.2.2. </span>Beispiel: Kommuzierende Röhren<a class="headerlink" href="#beispiel-kommuzierende-rohren" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="roehren-2">
 <a class="reference internal image-reference" href="../../_images/roehren2.png"><img alt="Kommunizierende Röhren" src="../../_images/roehren2.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.22 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.22 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Bei unterschiedlichen Flüssigkeiten steigt die leichtere Flüssigkeit höher</p>
@@ -554,7 +562,7 @@ Entscheidend für den Druck an dessen Boden ist alleine die Höhe des Fluid- bzw
 </section>
 </section>
 <section id="auftrieb">
-<h2><span class="section-number">4.3. </span>Auftrieb<a class="headerlink" href="#auftrieb" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.3. </span>Auftrieb<a class="headerlink" href="#auftrieb" title="Link to this heading">#</a></h2>
 <p>Der (statische) Auftrieb ist das Phänomen, dass ein Körper, der in ein ruhendes Fluid (eine Flüssigkeit oder ein Gas) eintaucht, scheinbar an Gewicht verliert.
 Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die statische Auftriebskraft kompensiert.</p>
 <p><span class="math notranslate nohighlight">\(F_A = \rho \cdot g \cdot V_{verdraengt}\)</span></p>
@@ -563,7 +571,7 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
 <figure class="align-default" id="auftrieb-1">
 <a class="reference internal image-reference" href="../../_images/auftrieb.svg"><img alt="Auftrieb" src="../../_images/auftrieb.svg" width="90%" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.23 </span><span class="caption-text">Prinzip des Auftriebs</span><a class="headerlink" href="#auftrieb-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.23 </span><span class="caption-text">Prinzip des Auftriebs</span><a class="headerlink" href="#auftrieb-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><span class="math notranslate nohighlight">\(F_l\)</span> und <span class="math notranslate nohighlight">\(F_r\)</span> heben sich auf.</p>
@@ -575,11 +583,11 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
 <p>Ist <span class="math notranslate nohighlight">\(F_G = F_A \longrightarrow\)</span> schwebt der Körper</p>
 <p>Ist <span class="math notranslate nohighlight">\(F_G &gt; F_A \longrightarrow\)</span> sinkt der Körper ab</p>
 <section id="beispiel-schwimmender-eisberg">
-<h3><span class="section-number">4.3.1. </span>Beispiel: Schwimmender Eisberg<a class="headerlink" href="#beispiel-schwimmender-eisberg" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Beispiel: Schwimmender Eisberg<a class="headerlink" href="#beispiel-schwimmender-eisberg" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="eisberg-1">
 <a class="reference internal image-reference" href="../../_images/eisberg.png"><img alt="eisberg" src="../../_images/eisberg.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.24 </span><span class="caption-text">Schwimmender Eisberg</span><a class="headerlink" href="#eisberg-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.24 </span><span class="caption-text">Schwimmender Eisberg</span><a class="headerlink" href="#eisberg-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Dichte des Wassers: <span class="math notranslate nohighlight">\(\rho_W = 1.02 \frac{g}{cm^3}\)</span></p>
@@ -653,6 +661,7 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -718,8 +727,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
