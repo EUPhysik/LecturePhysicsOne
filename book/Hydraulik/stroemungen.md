@@ -13,7 +13,7 @@ name: stroemung-1
 Darstellung einer Strömung. 
  ```
 
-Bei einer Strömung setzt sich der Gesamtdruck zusammen aus einem statischen und einem dynamischen Anteil. Der statische Druck wurde bereits im Kapitel [](./hydrostatik.html#pascalsches-gesetz) hergeleitet. Für diesen gilt
+Bei einer Strömung setzt sich der Gesamtdruck zusammen aus einem statischen und einem dynamischen Anteil. Der statische Druck wurde bereits im Kapitel [Pascal'sches Gesetz](./hydrostatik.html#pascalsches-gesetz) hergeleitet. Für diesen gilt
 
 $p_{stat}(h) = \rho \cdot g \cdot h$
 
@@ -91,7 +91,7 @@ $\Leftrightarrow p_{1,gesamt} = p_{2,gesamt}$
 
 Dabei ist
 
-$p_0$ der Umgebungsdruck, der derjenige Anteil des statischen Drucks ist, der nicht aus dem Eigengewicht des Fluids resultiert
+$p_0$ der Thermodynamische Druck, der derjenige Anteil des statischen Drucks ist, der nicht aus dem Eigengewicht des Fluids resultiert, sondern aus der inneren Energie des Fluids.
 
 $\rho g h$ der hydrostatische Druck
 
@@ -137,7 +137,11 @@ Aus der Kontinuitätsbedingung erhält man $\Delta V = \text{konst.} = A_1 \, \D
 
 Mit $\Delta s = v \, \Delta t$ erhält man $A_1 \cdot v_1 \cdot \Delta t = A_2 \cdot v_2 \cdot \Delta t \Leftrightarrow v_2 = v_1 \frac{A_1}{A_2} = \frac{8}{4}\cdot 4 \, m/s = 8 \, m/s $
 
-$p_2 = p_1 + \frac{\rho}{2}\left(v_1^2 - v_2^2\right) =  p_1 + \frac{\rho}{2} v_1^2\left(1 - \left( \frac{A_1}{A_2} \right)^2\right) = 4 \cdot 10^5 \frac{kg \cdot m}{s^2}\, \text{bar} + \frac{1000 \, kg/m^3}{2}\cdot 4 \, m/s \cdot \left(1 - 4 \right) = 3.76 \, bar$
+$p_2 = p_1 + \frac{\rho}{2}\left(v_1^2 - v_2^2\right) =  p_1 + \frac{\rho}{2} v_1^2\left(1 - \left( \frac{A_1}{A_2} \right)^2\right)$
+
+$= 4 \cdot 10^5 \frac{N}{m^2} + \frac{1000 \, kg/m^3}{2}\cdot 4 \, m/s \cdot \left(1 - \left(\frac{80 \, cm^2}{40 \, cm^2}\right)^2 \right) $
+
+$= 4 \cdot 10^5 \frac{kg}{m \cdot s^2} + \frac{1000 \, kg/m^3}{2}\cdot 4 \, m/s \cdot \left(1 - 4 \right) =  3.94 \, bar$
 
 ### Beispiel: Torricelli
 
@@ -175,7 +179,7 @@ Entlang der Strömungslinie gilt $h = \text{konst.} \Rightarrow p + \frac{1}{2} 
 
 Kontinuitätsgleichung $A \cdot v \cdot \Delta t = \text{konst.}$
 
-In [obigem Abschnitt](./stroemungen.html#beispiel-laminare-rohrströmung), wird gezeigt, dass wenn die Strömungsgeschwindigkeit einer inkompressiblen Strömung zunimmt, der Umgebungsdruck fällt. Dies macht man sich beim Venturi-Effekt zunutze. Auf diese Art kann durch Messung des Differenzdrucks die Strömungsgeschwindigkeit in einer Rohrleitung gemessen werden.
+In [obigem Abschnitt](./stroemungen.html#beispiel-laminare-rohrströmung), wird gezeigt, dass wenn die Strömungsgeschwindigkeit einer inkompressiblen Strömung zunimmt, der Thermodynamische Druck fällt. Dies macht man sich beim Venturi-Effekt zunutze. Auf diese Art kann durch Messung des Differenzdrucks die Strömungsgeschwindigkeit in einer Rohrleitung gemessen werden.
 
 
 ```{figure} Bilder/Venturi_Messung.png
@@ -199,7 +203,7 @@ Damit ergibt sich für die Geschwindigkeit der Rohrströmung
 
 $\Rightarrow v_1^2 = \frac{2\cdot \Delta p}{\rho \left( \left( \frac{d_1}{d_2} \right)^4 - 1 \right)} \Leftrightarrow v_1 = \sqrt{\frac{2\cdot \Delta p}{\rho \left( \left( \frac{d_1}{d_2} \right)^4 - 1 \right)}}$
 
-Eine weitere Anwengung ist die Venturi Düse. Hierbei wird der entstehende niedrige Umgebungsdruck genutzt, um eine Flüssigkeit aus einem Behälter anzusaugen und fein zerstäubt auszupusten ({numref}`siehe Abbildung %s <Venturi-4>`).
+Eine weitere Anwengung ist die Venturi Düse. Hierbei wird der entstehende niedrige Thermodynamische Druck genutzt, um eine Flüssigkeit aus einem Behälter anzusaugen und fein zerstäubt auszupusten ({numref}`siehe Abbildung %s <Venturi-4>`).
 
  ```{figure} Bilder/VenturiDuese.png
 ---
