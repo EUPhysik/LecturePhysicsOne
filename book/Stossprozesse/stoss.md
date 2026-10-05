@@ -1,9 +1,9 @@
 # Stossprozesse
 
-Stossprozesse bezeichnen Wechselwirkungsprozesse, bei denen zwei Massen mit unterschiedichen Geschwindigkeiten aufeinandertreffen und danach sich wieder voneinander wegbewegen. Dabei wird sowohl Energie als auch Impuls übertragen.
+Stossprozesse bezeichnen Wechselwirkungsprozesse, bei denen zwei Massen mit unterschiedlichen Geschwindigkeiten aufeinandertreffen und danach sich wieder voneinander wegbewegen. Dabei wird sowohl Energie als auch Impuls übertragen.
 Kennzeichnend für Stoßprozesse sind 
 * Kurze Wechselwirkungszeit, in der hohe Kräfte auftreten
-* Abrupte Bewegungsänderung von mind. Einem der beteiligten Massen
+* Abrupte Bewegungsänderung von mind. einem der beteiligten Massen
 
 ```{figure} Bilder/stoss.png
 ---
@@ -45,11 +45,11 @@ Stossprozesse können durch verschiedene Eigenschaften klassifiziert werden. Die
 |Stossprozess | Eigenschaft|
 |-------------|------------|
 |Glatter Stoss| Keine Reibungskräfte wirksam|
-|             | $p_{1,\perp} = p_{2,\perp} = 0$|
-|Rauher Stoss | Im Berührungspunkt wirkende Reibungskraft|
+|             | Impulsübertrag $\Delta p_{1,\perp} = \Delta p_{2,\perp} = 0$|
+|Rauer Stoss | Im Berührungspunkt wirkende Reibungskraft|
 |             | Reibungskräfte müssen in der Energiebilanz berücksichtigt werden|
 |             | Impulsübertragung nicht $\perp$ zur Berührungsebene|
-|              | $p_{1,\perp} = - p_{2,\perp} \not= 0$|
+|              | Impulsübertrag $\Delta p_{1,\perp} = - \Delta p_{2,\perp} \not= 0$|
 |Zentraler Stoß| Impulsübertragung entlang $p_\parallel$ (entlang der Verbindungslinie der Schwerpunkte)|
 |           | Glatte Kugeln stoßen stets zentral|
 |Dezentraler Stoß |Impulsübertragung nicht entlang $p_\parallel$ (nicht entlang der Verbindungslinie der Schwerpunkte)|

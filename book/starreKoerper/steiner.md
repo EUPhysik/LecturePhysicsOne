@@ -1,7 +1,7 @@
 # Satz von Steiner
 
-Oft ist das Drehmoment eines Körpers um eine Drehachse durch den Schwerpunkt bekannt.
-Das Drehmoment um eine parallel dazu verschobene Drehachse kann mittels des bekannten Drehmomentes durch den Schwerpunkt und dem Satz von Steiner berechnet werden
+Oft ist das Trägheitsmoment eines Körpers um eine Drehachse durch den Schwerpunkt bekannt.
+Das Trägheitsmoment um eine parallel dazu verschobene Drehachse kann mittels des bekannten Trägheitsmomentes durch den Schwerpunkt und dem Satz von Steiner berechnet werden
 
 Sei $\Theta_1 = \Theta_{1, Schwerpunkt}$ das bekannte Trägheitsmoment durch den Schwerpunkt und der Abstand zwischen den Drehachsen $= \Delta$
 Dann gilt für das Trägheitsmoment um die parallel dazu verschobene Drehachse 2

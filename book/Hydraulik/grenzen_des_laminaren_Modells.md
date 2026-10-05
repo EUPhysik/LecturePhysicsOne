@@ -1,8 +1,9 @@
 # Grenzen des einfachen Modells
 
 Bislang wurden reibungsfreie und laminare Strömungen betrachtet. In Realität treten jedoch Phänomene wie Reibung und Turbulenz auf. 
-Im folgenden werden diese Inhalte soweit bearbeitet, wie es notwendig ist, um zu verstehen, in welchen Grenzen das einfach Modell der laminaren Strömung gilt und welche Effekte darüber hinaus auftretende Phänomene wie Reibung und Turbulenz haben.
+Im Folgenden werden diese Inhalte soweit bearbeitet, wie es notwendig ist, um zu verstehen, in welchen Grenzen das einfache Modell der laminaren Strömung gilt und welche Effekte darüber hinaus auftretende Phänomene wie Reibung und Turbulenz haben.
 
+(viskositaet)=
 ## Viskosität
 
 Bei realen Strömungen muss der Reibungswiderstand berücksichtigt werden.
@@ -34,18 +35,18 @@ name: reibung-1
 Infinitesimale Schichten in einer Rohrströmung
  ```
 Die dynamische Viskosität ist definiert als $F = \eta \cdot A \frac{\Delta v}{\Delta y}$ 
-Da es sich immer noch um eine lamiare Strömung handelt, bedeutet dies, dass $\perp$ zu Strömunggeschwingungkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet, d.h. es findet keine Durchmischung der einzelnen Schichten statt.
+Da es sich immer noch um eine laminare Strömung handelt, bedeutet dies, dass $\perp$ zu Strömungsgeschwindigkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet, d.h. es findet keine Durchmischung der einzelnen Schichten statt.
 
 Dies bedeutet folgendes für eine Rohrströmung:
-* die Reibung zwischen den Wänden und der ersten Fluidschicht sorgt dafür, dass diese Fluischicht abgebremst wird
+* die Reibung zwischen den Wänden und der ersten Fluidschicht sorgt dafür, dass diese Fluidschicht abgebremst wird
 * die Reibung zwischen der ersten und zweiten Fluidschicht sorgt dafür, dass versetzt zur ersten Fluidschicht die zweite Fluidschicht abgebremst wird
 * die Reibung zwischen der zweiten und dritten Fluidschicht sorgt dafür, dass versetzt zur zweiten Fluidschicht die dritte Fluidschicht abgebremst wird
 * ...
-* Es bildet sich somit ein Profil aus, bei dem die an den Rand liegenden Schichten hinter den weiter in der Mitte liegenden Schichten hinterherlaufen.
+* Es bildet sich somit ein Profil aus, bei dem die am Rand liegenden Schichten hinter den weiter in der Mitte liegenden Schichten hinterherlaufen.
 
 Die Form dieses Profils lässt sich über eine Kräftebilanz bestimmen. 
 Zum einen wirken Druckkräfte, die das Fluid durch die Rohrleitung drücken. Diese sind gegeben durch 
-$F_D = A \cdot \Delta p = r^2 \cdot \pi \cdot \left( p_2 - p_1 \right)$ 
+$F_D = A \cdot \Delta p = r^2 \cdot \pi \cdot \Delta p$ mit $\Delta p = p_1 - p_2$ (Druck am Rohranfang minus Druck am Rohrende) 
 
 Die Reibungskräfte wirken der Bewegung entgegen. Sie sind gegeben durch
 $F_R = U\cdot l \left( - \eta \frac{du}{dr}\right) = 2 \cdot \pi \cdot r \cdot l \left( - \eta \frac{du}{dr}\right)$, wobei der Term $- \eta \frac{du}{dr}$ den Impulsübertrag in radiale Richtung beschreibt. 
@@ -58,7 +59,7 @@ Die maximale Geschwindigkeit ist bei $r = 0$: $u_{max} = \frac{\Delta p \cdot R^
 
 Und die mittlere Geschwindigkeit $\bar{u} = \frac{u_{max}}{2}$
 
-Dies ist auch bekannt als das Gesetz von Hagen-Poseuille. 
+Dies ist auch bekannt als das Gesetz von Hagen-Poiseuille. 
 
 ```{figure} Bilder/laminar2.svg
 ---
@@ -71,7 +72,7 @@ Laminare Rohrströmung mit Geschwindigkeitsprofil
 
 ## Turbulenz
 
-Bislang wurden laminare Strômungen betrachtet. Kennzeichnend hierfür war, das $\perp$ zu Strömunggeschwingungkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. Ab einer bestimmten Strömungsgeschwindigkeit ist das nicht mehr der Fall, sondern es kommt zu Verwirbelungen. Dies wird auch als Turbulenz bezeichnet. 
+Bislang wurden laminare Strömungen betrachtet. Kennzeichnend hierfür war, das $\perp$ zu Strömungsgeschwindigkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. Ab einer bestimmten Strömungsgeschwindigkeit ist das nicht mehr der Fall, sondern es kommt zu Verwirbelungen. Dies wird auch als Turbulenz bezeichnet. 
 
 ```{figure} Bilder/False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg
 ---
@@ -82,7 +83,7 @@ name: turbulenz-1
 Turbulenz [Von C. Fukushima and J. Westerweel, Technical University of Delft](https://commons.wikimedia.org/w/index.php?curid=3082535)
  ```
 
-1883 machte Reynolds grundlegende Expermiente zur Turbulenz und lieferte wichtige theoretische Grundlagen. Er lies einen starken Farbstoff durch eine Fluidströmung mitlaufen und analysierte die dadurch sichtbar gemachten Schichten. Dennoch sind viele Aspekte der Turbulenz auch heute noch ein aktives Forschungsfeld.
+1883 machte Reynolds grundlegende Experimente zur Turbulenz und lieferte wichtige theoretische Grundlagen. Er lies einen starken Farbstoff durch eine Fluidströmung mitlaufen und analysierte die dadurch sichtbar gemachten Schichten. Dennoch sind viele Aspekte der Turbulenz auch heute noch ein aktives Forschungsfeld.
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/f/f3/Reynolds_fluid_turbulence_experiment_1883.jpg
 ---
@@ -114,7 +115,7 @@ $\nu = $ kinematische Viskosität
 
 
 Turbulenz führt zu Massenaustausch zwischen den einzelnen Schichten. Dies hat zur Folge, dass 
- erhöhte Reibungsverluste auftregen, sodass das in {numref}`Abbildung %s <reibung-2>` abgeflacht wird ({numref}`siehe Abbildung %s <reynolds-2>`).
+ erhöhte Reibungsverluste auftreten, sodass das in {numref}`Abbildung %s <reibung-2>` abgeflacht wird ({numref}`siehe Abbildung %s <reynolds-2>`).
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/6/61/Flow-profile-roughness.svg
 ---
@@ -125,11 +126,11 @@ name: reynolds-2
 Verbreiterung des Geschwindigkeitsprofils durch Turbulenz [Von Svebert](https://commons.wikimedia.org/w/index.php?curid=39278179)
  ```
 
-Bei Rohrströmungen werden als charakteristische Größen üblicherweise der Innendurchmesser $d$, der Betrag der über den Querschnitt gemittelten Geschwindigkeit $v_m$ und die Viskosität des Fluids $\nu = \eta$ verwendet.
+Bei Rohrströmungen werden als charakteristische Größen üblicherweise der Innendurchmesser $d$, der Betrag der über den Querschnitt gemittelten Geschwindigkeit $v_m$ und die kinematische Viskosität $\nu = \frac{\eta}{\rho}$ verwendet.
 
 $Re_{Rohr} = \frac{v_m \cdot d}{\nu}$
 
-Für Wasser gilt: $Re_{Rohr} = 2040 \pm 10 $
+Für Rohrströmungen liegt die kritische Reynoldszahl bei $Re_{krit} \approx 2040 \pm 10$ (häufig wird auch $\approx 2300$ angegeben). Darunter ist die Strömung laminar.
 
 
 

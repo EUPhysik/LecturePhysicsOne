@@ -38,7 +38,7 @@ name: massenpunkt-1
 Darstellung einer Bewegung in 1 Dimension.
  ```
 
-In der Kinematik werden zur Darstellung Weg-Zeit Diagramme verwendet. Dabei wird auf der x-Achse die Zeit und auf der y-Achse die zurückgelegte Strecke aufgetragen. Entsprechend werden diese Diagramme auch als x-t-Diagramm bezeichnet.
+In der Kinematik werden zur Darstellung Ort-Zeit-Diagramme verwendet. Dabei wird auf der waagerechten Achse die Zeit und auf der senkrechten Achse der Ort aufgetragen. Entsprechend werden diese Diagramme auch als x-t-Diagramm bezeichnet.
 
 ```{figure} Bilder/1-dim-movement.png
 ---
@@ -59,7 +59,7 @@ $v(t) = \frac{dx}{dt} = \frac{d t^2}{dt} = 2 t$
 
 Während sich die Position des Massenpunktes quadratisch mit der Zeit ändert, ändert sich die Geschwindigkeit also linear.
 
-Die Beschleunigung, die auf diesen Massenpunkt wirkt, die zeitliche Änderung der Geschwindigkeit. Damit gilt in gleicher Weise
+Die Beschleunigung, die auf diesen Massenpunkt wirkt, ist die zeitliche Änderung der Geschwindigkeit. Damit gilt in gleicher Weise
 
 $a(t) = \frac{dv}{dt} = \dot{v}(t) = \ddot{x}(t)$
 
@@ -73,7 +73,7 @@ Die Beschleunigung ist also in diesem Beispiel konstant.
 
 Einfache Spezialfälle sind die gleichförmige Bewegung und die gleichmäßig beschleunigte Bewegung
 
-## gleichförmige Bewegung
+## Gleichförmige Bewegung
 
 Die gleichförmige Bewegung ist diejenige Bewegung die auftritt, wenn die wirkende Beschleunigung =0 ist. 
 Dies bedeutet
@@ -82,11 +82,11 @@ $a (t) = 0$
 
 $v (t) = v_0 = $ konstant
 
-$x (t) = v_0 \cdot t$
+$x (t) = v_0 \cdot t + x_0$
 
-Die Geschwindigkeit ist also konstant und Strecke und Zeit hängen linear über die konstante Geschwindigkeit zusammen. Nur in diesem Fall gilt $v = \frac{s}{t}$.
+Die Geschwindigkeit ist also konstant und Strecke und Zeit hängen linear über die konstante Geschwindigkeit zusammen. Nur in diesem Fall gilt $v = \frac{\Delta x}{\Delta t}$ bzw. $v = \frac{s}{t}$ mit der zurückgelegten Strecke $s = x - x_0$.
 
-## gleichmäßig beschleunigte Bewegung
+## Gleichmäßig beschleunigte Bewegung
 
 Die gleichmäßig beschleunigte Bewegung tritt auf, wenn die wirkende Beschleunigung konstant ist.
 Dies bedeutet
@@ -95,7 +95,7 @@ $a (t) = a$
 
 $v (t) = a \cdot t + v_0$ 
 
-$x (t) = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + x_0 \cdot t$
+$x (t) = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + x_0$
 
-Im Fall der gleichmäßig beschleunigten Bewegung gilt dann bei vernachlässigbarer Anfangsgeschwindigkeit $a \frac{v}{t}$. Die Strecke hängt quadratisch von der Zeit ab. 
+Im Fall der gleichmäßig beschleunigten Bewegung gilt dann bei vernachlässigbarer Anfangsgeschwindigkeit $a = \frac{v}{t}$. Die Strecke hängt quadratisch von der Zeit ab. 
 Diese Art der Bewegung tritt beispielsweise beim freien Fall auf. Hier wirkt die konstante Erdbeschleunigung $g=9.81 \, \frac{m}{s^2}$.

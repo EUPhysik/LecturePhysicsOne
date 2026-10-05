@@ -80,7 +80,7 @@ parts:
   - file: book/Hydraulik/diffusion
   - file: book/Hydraulik/stroemungen
   - file: book/Hydraulik/grenzen_des_laminaren_Modells
-- caption: Ärostatik und Ärodynamik
+- caption: Aerostatik und Aerodynamik
   numbered: True  
   chapters:
   - file: book/Gase/gase

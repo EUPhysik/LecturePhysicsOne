@@ -12,7 +12,7 @@ $F(x) = \int x^2 \, dx = \frac{1}{3} x^3 + C$
 |- | - |
 |![drawing](Beispiel_Funktion.png) | ![drawing](Beispiel_Integral.png)|
 
-Das finden von Stammfunktionen ist schwieriger als das Bilden von Ableitungen, da hier nicht für alle Fälle Rechenregeln zur Verfügung stehen. 
+Das Finden von Stammfunktionen ist schwieriger als das Bilden von Ableitungen, da hier nicht für alle Fälle Rechenregeln zur Verfügung stehen. 
 Es gibt jedoch einige Ansätze, die beim Finden der Stammfunktion helfen können.
 
 Die wichtigsten sind {download}`hier <Formelsammlung_Physik_1.pdf>` zusammengefasst.
@@ -23,12 +23,12 @@ Eine besondere Bedeutung hat das bestimmte Integral $\int_a^b f(x) \, dx$. Für 
 
 $\int_a^b f(x) \, dx = F(b) - F(a)$.
 
-Es beschreibt die Fläche S, die von der Funktion f(x) eingeschlossen wird. 
+Es beschreibt die (orientierte) Fläche S zwischen dem Graphen von $f(x)$ und der $x$-Achse im Intervall $[a,b]$. Flächenstücke unterhalb der $x$-Achse zählen dabei negativ. 
 
 ```{figure} Integral_as_region_under_curve.svg
 ---
 width: 300px
 name: best_int-fig
 ---
-Beispiel für ein Flächenintegral ([von 4C](https://commons.wikimedia.org/w/index.php?curid=1039841))
+Beispiel für ein bestimmtes Integral ([von 4C](https://commons.wikimedia.org/w/index.php?curid=1039841))
 ```

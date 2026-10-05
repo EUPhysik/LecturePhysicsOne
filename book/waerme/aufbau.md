@@ -14,7 +14,7 @@ Temperaturabhängige Häufigkeit der Aggregatzustände der Elemente [Von RokerHR
 
 ## Festkörper
 
-Festkörper sind Stoffe, deren Moleküle/Atome in einer festen Stuktur eingebunden sind. Bewegungen der Teilchen finden durch Schwingungen um ihre Ruhelage statt oder in eingeschränkter Form durch Diffusion.
+Festkörper sind Stoffe, deren Moleküle/Atome in einer festen Struktur eingebunden sind. Bewegungen der Teilchen finden durch Schwingungen um ihre Ruhelage statt oder in eingeschränkter Form durch Diffusion.
 
 Der Zusammenhalt eines Festkörpers beruht auf einer attraktiven(anziehenden) Wechselwirkung zwischen den Atomen bzw. Molekülen auf großen Distanzen und einer repulsiven auf kurzen. Den energetisch günstigsten Abstand nennt man Gleichgewichtsabstand ({numref}`siehe Abbildung %s <pot-1>`). Bewegt sich ein Molekül/Atom von seiner Gleichgewichtslage weg, so überwiegen je nach Richtung anziehende oder abstoßende Kräfte, die das Molekül/Atom wieder in Richtung Gleichgewichtslage bewegen.
 
@@ -27,15 +27,15 @@ name: pot-1
 Potentielle Energie im Festkörper
  ```
 
-Die genaue Struktur eines Festkörpers kann sehr komplex werden. Im Folgenden werden nur die wichtigsten Bindungen beschrieben, die zur Bildung einer Festkörperstruktor führen.
+Die genaue Struktur eines Festkörpers kann sehr komplex werden. Im Folgenden werden nur die wichtigsten Bindungen beschrieben, die zur Bildung einer Festkörperstruktur führen.
 
 Da die auftretenden Bindungen allein von der Anzahl der Elektronen in der äußeren Schale abhängen, können die Strukturen mit Hilfe des [Periodensystems der Elemente](https://de.wikipedia.org/wiki/Periodensystem) ermittelt werden. 
 
 ### Ionenbindung
 
-Diese Art der Bindung tritt auf, wenn der Festkörper aus unterschiedlichen Elementen aufgebaut ist, welche eine unterschiedliche Elektronegativität besitzen. Dabei gibt das eine Element dem anderen ein Elektron ab, also das eine zum Anion und das andere zum Kation wird. Die unterschiedlichen Ladungen bewirken eine elektrostatische Anziehung. Salze sind ein typischer Vertreter dieser Bindungsart.
+Diese Art der Bindung tritt auf, wenn der Festkörper aus unterschiedlichen Elementen aufgebaut ist, welche eine unterschiedliche Elektronegativität besitzen. Dabei gibt das eine Element dem anderen ein Elektron ab, sodass das abgebende zum Kation und das aufnehmende zum Anion wird. Die unterschiedlichen Ladungen bewirken eine elektrostatische Anziehung. Salze sind ein typischer Vertreter dieser Bindungsart.
 
-In den folgenden Abbildungen ({numref}`Abbildung %s <nacl-1>`, {numref}`Abbildung %s <nacl-2>`,{numref}`Abbildung %s <nacl-3>`) wird die Ionenbindung anhand des Moleküls Natriumchlorid (NaCl) dargestellt.
+In den folgenden Abbildungen ({numref}`Abbildung %s <nacl-1>`, {numref}`Abbildung %s <nacl-2>`,{numref}`Abbildung %s <nacl-3>`) wird die Ionenbindung anhand von Natriumchlorid (NaCl) dargestellt.
 
 ```{figure} Bilder/NaCl_1.png
 ---
@@ -43,7 +43,7 @@ width: 60%
 alt: NatriumChlorid
 name: nacl-1
 ---
-Natrium-Atome haben ein Elektron, welches sich allein auf einer äußeren "Umlaufbahn" (Schale) befindet. Chlorid-Atome haben auf dieser äußeren Schale gerade noch Platz für ein weiteres Elektron. Die Entstehung dieser Schalen wird in ihrer einfachsten Form durch das [Bohr'sche Atommodell](https://de.wikipedia.org/wiki/Bohrsches_Atommodell) beschrieben.
+Natrium-Atome haben ein Elektron, welches sich allein auf einer äußeren "Umlaufbahn" (Schale) befindet. Chlor-Atome haben auf dieser äußeren Schale gerade noch Platz für ein weiteres Elektron. Die Entstehung dieser Schalen wird in ihrer einfachsten Form durch das [Bohr'sche Atommodell](https://de.wikipedia.org/wiki/Bohrsches_Atommodell) beschrieben.
  ```
 
 
@@ -62,7 +62,7 @@ width: 60%
 alt: NatriumChlorid
 name: nacl-3
 ---
-Durch die unterschiedliche Ladung werden die beiden Atome elektromagnetisch angezogen und bilden ein $Na^+Cl^-$ Molekül.
+Durch die unterschiedliche Ladung werden die beiden Atome elektromagnetisch angezogen und bilden ein Ionenpaar $Na^+Cl^-$. Im Festkörper ordnen sich die Ionen zu einem Ionengitter an.
  ```
 
 
@@ -92,7 +92,7 @@ Kovalente Bindung beim Wassermolekül $H_2O$.
 
 ### Metalle
 
-Eine Metallbindung enteht, wenn alle Atome, die sich verbinden wollen, einen Überschuss an Elektronen in der äußeren Schale haben. Die Metallbindung ist ein Extremfall der Atombindung. Auch diese Bindung ist in einer Absenkung der Gesamtebenergie bedingt. Die Überlappung der Wechselwirkung zwischen den Atomen ist hierbei zo groß, dass nicht nur Wechselwirkungen zwischen den nächsten Nachbarn, sondern auch darüber hinaus signifikant sind.
+Eine Metallbindung entsteht, wenn die Atome nur wenige Valenzelektronen besitzen, die sie leicht abgeben. Diese bilden ein über den ganzen Festkörper delokalisiertes „Elektronengas“. Die Metallbindung ist ein Extremfall der Atombindung. Auch diese Bindung ist in einer Absenkung der Gesamtenergie bedingt. Die Überlappung der Wechselwirkung zwischen den Atomen ist hierbei so groß, dass nicht nur Wechselwirkungen zwischen den nächsten Nachbarn, sondern auch darüber hinaus signifikant sind.
 Eine anschauliche Vorstellung ist, dass die Ionenrümpfe der Atome in einen Elektronensee eingebettet sind ({numref}`siehe Abbildung %s <metall>`). Diese Art der Bindung ist in der elektrotechnik besonders wichtig, hieraus resultiert beispielsweise auch das [Bändermodell](https://de.wikipedia.org/wiki/B%C3%A4ndermodell), mit dem sich die elektrischen Eigenschaften (Leiter, Isolator, Halbleiter) von Materialien erklären lassen.
 
 ```{figure} Bilder/Metallbindung2.svg
@@ -116,16 +116,16 @@ Edelgaskristalle haben vollständig gefüllte Schalen werden daher nur durch Van
 
 ## Flüssigkeiten
 
-Bei Flüssigkeiten ist die Temperatur so groß, dass die kinetische Energie der Moleküle/Atome die größer ist, als die Energie mit der die Moleküle/Atome in ihrer bevorzugten Gitterstruktur gebunden sind. Die Moleküle/Atome sind daher beweglich. Dennoch ist der Abstand der Moleküle/Atome gering und es findet weiter eine e;elektromagnetische Wechselwirkung statt, dies bedeutet elektromagnetische Kräfte bleiben weiterhin wichtig. 
+Bei Flüssigkeiten ist die Temperatur so groß, dass die kinetische Energie der Moleküle/Atome die größer ist, als die Energie mit der die Moleküle/Atome in ihrer bevorzugten Gitterstruktur gebunden sind. Die Moleküle/Atome sind daher beweglich. Dennoch ist der Abstand der Moleküle/Atome gering und es findet weiter eine elektromagnetische Wechselwirkung statt, dies bedeutet elektromagnetische Kräfte bleiben weiterhin wichtig. 
 
 Von außen betrachtet sind Flüssigkeiten Stoffe, die
 * einer Formänderung so gut wie keinen,
-* einer Volumenänderung hingegen einen recht großen Widerstand entgegensetzt
+* einer Volumenänderung hingegen einen recht großen Widerstand entgegensetzen
 
 $\Longrightarrow$ Flüssigkeiten passen sich der Form an, sind jedoch inkompressibel
 
 ## Gase
-In Gasen ist die mittlere kinetische Energie der Teilchen so groß, dass elektromagnetische oder chemische Wechselwirkungen ein vernachlässigbar kleine Rolle spielen. Die Wechselwirkung findet hauptsächlich durch Stoßprozesse statt. Dies bedeutet aber auch, dass der Stoff, aus dem das Gas besteht, für die Welchselwirkung eine vernachlässigbar kleine Rolle darstellt. Derartige Gase bezeichnet man als ideale Gase, sie können unabhängig vom ihrer atomaren Struktur durch dieselben Gleichungen beschrieben werden. 
+In Gasen ist die mittlere kinetische Energie der Teilchen so groß, dass elektromagnetische oder chemische Wechselwirkungen eine vernachlässigbar kleine Rolle spielen. Die Wechselwirkung findet hauptsächlich durch Stoßprozesse statt. Dies bedeutet aber auch, dass der Stoff, aus dem das Gas besteht, für die Wechselwirkung eine vernachlässigbar kleine Rolle darstellt. Derartige Gase bezeichnet man als ideale Gase, sie können unabhängig von ihrer atomaren Struktur durch dieselben Gleichungen beschrieben werden. 
 
 Ein Gas oder gasförmiger Stoff verteilt sich schnell in einem Raum.
 

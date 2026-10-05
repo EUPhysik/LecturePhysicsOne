@@ -1,9 +1,9 @@
 # Statik
 
 Die Statik beschäftigt sich mit Massen, die unbewegt, also in Ruhe sind. 
-In einem statischen Kräftegleichgewicht ist die Summe aller angreifenden Käfte = 0. Es gilt also
+In einem statischen Kräftegleichgewicht ist die Summe aller angreifenden Kräfte = 0. Es gilt also
 
-$\vec{F}_{ges} = \sum_{i=1}^N \vec{F}_i $
+$\vec{F}_{ges} = \sum_{i=1}^N \vec{F}_i = \vec{0}$
 
 Diese Bedingung kann genutzt werden, um Kräfte in Relation zueinander zu setzen und somit Bedingungen zwischen physikalischen Größen herzuleiten.
 
@@ -17,7 +17,7 @@ name: force-2
 Die Kiste auf dem Tisch befindet sich im statischen Gleichgewicht. 
  ```
 
- Damit gilt für die angreifenden Käfte
+ Damit gilt für die angreifenden Kräfte
 
  $\vec{F}_{ges} = 0 = \vec{F}_{Tisch} + \vec{F}_{Gewicht} \Rightarrow \vec{F}_{Tisch} = - \vec{F}_{Gewicht} $
 
@@ -25,7 +25,7 @@ Die Kiste auf dem Tisch befindet sich im statischen Gleichgewicht.
 
 $v = v_0$ wenn $a = 0$
 
-Auch hier ist die resultierenden Gesamtkraft $=0$, eine resultierende Gesamtkraft $\not =0$ würde zu einer Geschwindigkeitsänderung führen. 
+Auch hier ist die resultierende Gesamtkraft $=0$, eine resultierende Gesamtkraft $\not =0$ würde zu einer Geschwindigkeitsänderung führen. 
 
 ```{figure} Bilder/auto.png
 ---
@@ -60,7 +60,7 @@ Prinzip einer Federwaage.
 
  $F_{F,x} = - k \cdot x$
 
- $F_{g,x} = m \cdot x$
+ $F_{g,x} = m \cdot g$
 
  Wenn die Masse an der Federwaage im statischen Gleichgewicht ist, gilt:
 
@@ -89,7 +89,7 @@ Darstellung der Kräfte an einer Wandhalterung.
 
  Mit Hilfe des Seils kann die Masse auf- und abbewegt werden. Zu jedem bestimmten Zeitpunkt herrscht entlang des Seils ein statisches Kräftegleichgewicht, die Masse bewirkt eine Gewichtskraft $F_g$, das Seil kompensiert diese Kraft durch die Seilkraft $F_S$. Wäre das nicht so, würde das Gewicht nach unten abstürzen. Es gilt also entlang des Seils für die Beträge dieser beiden Kräfte $F_g = F_S$.
  
- Auf die Wandhalterung wirkt die Resultierende der beiden Kräfte $\vec{F}_g + \vec{F}_S$. Beide Kräfte sind gegenüber der Resultierenden $\vec{F}_R$ um einen Winkel von $\frac{\alpha}{2}$ verschoben. In $\vec{F}_R$-Richtung wirkt also jeweils der Anteil $F_g \cdot cos\left( \frac{\alpha}{2} \right)$
+ Auf die Wandhalterung wirkt die Resultierende der beiden Kräfte $\vec{F}_g + \vec{F}_S$. Beide Kräfte sind gegenüber der Resultierenden $\vec{F}_R$ um einen Winkel von $\frac{\alpha}{2}$ verschoben. In $\vec{F}_R$-Richtung wirkt also jeweils der Anteil $F_g \cdot \cos\left( \frac{\alpha}{2} \right)$
 
 
 
@@ -104,7 +104,7 @@ Resultierende Kraft an Wandhalterung.
 
 Mit $\vec{F}_g = m \cdot \vec{g}$ und $F_g = F_S$  ist also 
 
-$F_R = 2 \cdot F_g \cdot cos\left( \frac{\alpha}{2} \right)= 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)$
+$F_R = 2 \cdot F_g \cdot \cos\left( \frac{\alpha}{2} \right)= 2 \cdot m \cdot g \cdot \cos\left( \frac{\alpha}{2} \right)$
 
 Zur Betrachtung der Kraft auf die Wandhalterung muss zunächst ein Koordinatensystem festgelegt werden. In diesem Beispiel wird es so gewählt, dass die x-Richtung entlang der Strebe 2 verläuft, die y-Richtung senkrecht dazu. (siehe {numref}`Abbildung %s <statik_wandhalterung-2>`)
 
@@ -118,15 +118,15 @@ Darstellung der Kräfte an einer Wandhalterung.
  ```
 
 
-Nur wird die Resultierende Kraft $\vec{F}_R$ in die Komponenten bezüglich des gewählten Koordinatensystems betrachtet. 
+Nun wird die resultierende Kraft $\vec{F}_R$ in die Komponenten bezüglich des gewählten Koordinatensystems zerlegt. 
 
 In x-Richtung wirkt
 
-$\left|F_{R,x} \right| = F_R \cdot sin \left( \frac{\alpha}{2} \right) =  2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right)$
+$\left|F_{R,x} \right| = F_R \cdot \sin \left( \frac{\alpha}{2} \right) =  2 \cdot m \cdot g \cdot \cos\left( \frac{\alpha}{2} \right)\cdot \sin \left( \frac{\alpha}{2} \right)$
 
 In y-Richtung wirkt
 
-$\left|F_{R,y} \right| = F_R \cdot cos \left( \frac{\alpha}{2} \right) = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right)$
+$\left|F_{R,y} \right| = F_R \cdot \cos \left( \frac{\alpha}{2} \right) = 2 \cdot m \cdot g \cdot \cos^2\left( \frac{\alpha}{2} \right)$
 
 
 ```{figure} Bilder/statik_wandhalterung_res_2.png
@@ -137,22 +137,26 @@ name: statik_wandhalterung_res_2-2
 Aufteilung der Kraft in y-Richtung
  ```
 
-Die Kraft in y-Richtung über Strebe 1 aufgenommen. Zusätzlich wird ein Teil der Kraft in x-Richtung von Strebe 1 aufgenommen.
+Die Kraft in y-Richtung wird über Strebe 1 aufgenommen. Zusätzlich wird ein Teil der Kraft in x-Richtung von Strebe 1 aufgenommen.
 Es gilt
 
-$sin \left( \beta \right) = \frac{\left|F_{R,y} \right|}{F_{1,y}} \Leftrightarrow F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} $
+$\sin \left( \beta \right) = \frac{\left|F_{R,y} \right|}{F_1} \Leftrightarrow F_1 = \frac{\left|F_{R,y} \right|}{\sin \left( \beta \right)} $
 
-$cos \left( \beta \right) = \frac{F_{1,x}}{F_{1,y}} \Leftrightarrow F_{1,x} = F_{1,y} \cdot cos \left( \beta \right)$
+$\cos \left( \beta \right) = \frac{F_{1,x}}{F_1} \Leftrightarrow F_{1,x} = F_1 \cdot \cos \left( \beta \right)$
 
 wobei $F_{1,x}$ der Teil ist, der von Strebe 1 in x-Richtung aufgenommen wird.
 Damit ist 
 
-$F_1 = F_{1,y} = \frac{\left|F_{R,y} \right|}{sin \left( \beta \right)} = 2 \cdot m \cdot g \cdot cos^2\left( \frac{\alpha}{2} \right) \cdot \frac{1}{sin \left( \beta \right)}$
+$F_1 = \frac{\left|F_{R,y} \right|}{\sin \left( \beta \right)} = \frac{F_R \cdot \cos\left( \frac{\alpha}{2} \right)}{\sin \left( \beta \right)} = 2 \cdot m \cdot g \cdot \frac{\cos^2\left( \frac{\alpha}{2} \right)}{\sin \left( \beta \right)}$
 
-$F_2 = \left| \left|F_{R,x} \right| - F_{1,x} \right| = \left|2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) - 2 \cdot m \cdot g \cdot cos\left( \frac{\alpha}{2} \right)\cdot sin \left( \frac{\alpha}{2} \right) cos \left( \beta \right) \right|$
+$F_{1,x} = F_1 \cdot \cos \left( \beta \right) = 2 \cdot m \cdot g \cdot \frac{\cos^2\left( \frac{\alpha}{2} \right)}{\sin \left( \beta \right)} \cdot \cos \left( \beta \right) = 2 \cdot m \cdot g \cdot \frac{\cos^2\left( \frac{\alpha}{2} \right)}{\tan \left( \beta \right)}$
+
+$F_2 = \left|F_{R,x} \right| - F_{1,x} = 2 \cdot m \cdot g \cdot \cos\left( \frac{\alpha}{2} \right)\cdot \sin \left( \frac{\alpha}{2} \right) - 2 \cdot m \cdot g \cdot \frac{\cos^2\left( \frac{\alpha}{2} \right)}{\tan \left( \beta \right)}$
 
 Für $\alpha = 40^\circ$, $\beta = 45^\circ$ und $m = 50 \, kg$ ergibt dies
 
-$F_1 = 1071 \, N$
+$F_1 \approx 1225 \, N$
 
-$F_2 = 314 \, N$
+$F_2 \approx -551 \, N$
+
+Das negative Vorzeichen zeigt, dass Strebe 2 auf Druck belastet wird.

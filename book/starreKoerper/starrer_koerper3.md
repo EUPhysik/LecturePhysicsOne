@@ -13,7 +13,7 @@ Kreisbewegung einer Punktmasse.
 
 Der Drehimpuls ist dabei:
 
-$\vec{L} = m \cdot \left( \vec{v} \times \vec{r} \right)$
+$\vec{L} = m \cdot \left( \vec{r} \times \vec{v} \right)$
 
 Da bei der Kreisbewegung $\vec{v} \perp \vec{r}$ ist, gilt:
 
@@ -24,11 +24,11 @@ Analog zum Impuls $ \vec{p} = m \cdot \vec{v}$ definiert man dann das Trägheits
 $\vec{L} = \Theta \vec{\omega}$
 
 Für eine Punktmasse auf einer Kreisbahn ist demnach
-$ =: \Theta \omega$
+$L = m r^2 \omega =: \Theta \omega$ mit $\Theta = m r^2$
 
 Für Drehimpuls und Drehmoment gilt der Zusammenhang
 
-$\vec{M} = \frac{d \vec{L}}{dt} = \Theta \frac{d \vec{omega}}{dt} = \Theta \vec{\alpha}$
+$\vec{M} = \frac{d \vec{L}}{dt} = \Theta \frac{d \vec{\omega}}{dt} = \Theta \vec{\alpha}$
 
 wobei $\vec{\alpha}$ die Winkelbeschleunigung ist.
 
@@ -38,7 +38,7 @@ wobei $\vec{\alpha}$ die Winkelbeschleunigung ist.
 |Kraft|$\vec{F} = \frac{d \vec{p}}{dt}$|Drehmoment|$\vec{M} = \frac{d \vec{L}}{dt}$|
 ||$\vec{F} = m \cdot \vec{a}$||$\vec{M} = \Theta \cdot \vec{\alpha}$| 
 |Impuls|$\vec{p}$|Drehimpuls|$\vec{L} = \vec{r} \times \vec{p}$|
-||$\vec{p} = m \cdot \vec{v}$||$\vec{L} =\Theta \cdot \omega$|
+||$\vec{p} = m \cdot \vec{v}$||$\vec{L} =\Theta \cdot \vec{\omega}$|
 
 Wie der Impuls bei der Translationsbewegung, ist der Drehimpuls bei der Drehbewegung eine Erhaltungsgröße, wenn kein äußeres Drehmoment anliegt.
 
@@ -57,7 +57,7 @@ Drehbewegung eines starren Körpers aus mehreren diskreten Massenpunkten.
 
 Für $m_1$ gilt:
 
-$\vec{M}_{1} = \vec{r}_{1} \times \left( \vec{F}_{1,e} + \vec{F}_{12,i} + \vec{F}_{12,i} \right)$
+$\vec{M}_{1} = \vec{r}_{1} \times \left( \vec{F}_{1,e} + \vec{F}_{12,i} + \vec{F}_{13,i} \right)$
 
 Und äquivalent gilt nach Newton für $\vec{M}_2$ und $\vec{M}_3$
 
@@ -71,7 +71,7 @@ da $\left( \vec{r}_1 - \vec{r}_2 \right) \parallel \vec{F}_{12,i}$
 
 Damit gilt $\vec{M} = \sum_k \vec{M}_k = \sum_k \vec{M}_{k,e} $
 
-mit $\vec{M}_k = \frac{d \vec{L}_k}{dt} = \vec{r}_k \times \left( \vec{F}_{k,e} + \sum_{k \not= j} \vec{F}_{kj,i} \right)$
+mit $\vec{M}_k = \frac{d \vec{L}_k}{dt} = \vec{r}_k \times \left( \vec{F}_{k,e} + \sum_{j \not= k} \vec{F}_{kj,i} \right)$
 
 da die inneren Kräfte sich aufheben. Es gilt:
 
@@ -81,17 +81,17 @@ Greift kein äußeres Drehmoment an, ist der Gesamtdrehimpuls erhalten:
 
 $\vec{M} = 0 \Rightarrow \vec{L} = \sum_k \vec{L}_k = \text{konstant}$
 
-Für die Drehimpulse gilt $\vec{L}_k = \Theta_k \omega_k$
+Für die Drehimpulse gilt $\vec{L}_k = \Theta_k \vec{\omega}_k$
 
-Und damit $\vec{L} = \Theta_1 \omega_1 + \Theta_2 \omega_2 + \Theta_3 \omega_3$
+Und damit $\vec{L} = \Theta_1 \vec{\omega}_1 + \Theta_2 \vec{\omega}_2 + \Theta_3 \vec{\omega}_3$
 
-Da die Massen einen festen Abstand zueinander haben, gilt $\omega_1 = \omega_2 = \omega_3 =:\omega$ und somit $\vec{L} = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)\omega$
+Da die Massen einen festen Abstand zueinander haben, gilt $\vec{\omega}_1 = \vec{\omega}_2 = \vec{\omega}_3 =:\vec{\omega}$ und somit $\vec{L} = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)\vec{\omega}$
 
 Das gesamte Trägheitsmoment $\Theta = \left(\Theta_1  + \Theta_2  + \Theta_3 \right)$ ist also die Summe der Trägheitsmomente der Massenpunkte. 
 
 ## Trägheitsmoment von starren Körpern
 
-Wie in [](#trägheitsmoment) dargestell, ist das Trägheitsmoment einer Punktmasse mit Abstand $r$ zur Drehachse und Masse $m$ 
+Wie oben dargestellt, ist das Trägheitsmoment einer Punktmasse mit Abstand $r$ zur Drehachse und Masse $m$ 
 
 $\Theta = m \cdot r^2$
 
@@ -123,17 +123,17 @@ name: Duenner_Stab-1
 Modell eines dünnen Stabes  
  ```
 
-Das Trägheitsmoment eines dünnen Stabes soll berechnen werden. 
+Das Trägheitsmoment eines dünnen Stabes soll berechnet werden. 
 
 Allgemein gilt $\Theta = \int_V \, r^2 \rho \, dV$
 
-Da da radiale Ausdehnung des Stabs vernachlässigbar ist $\left( l \gg d \right)$ Daher wird das Volumenintegtal zum Längenintegral und die Dichte ist $\rho = \frac{l}{m}$.
+Da die radiale Ausdehnung des Stabs vernachlässigbar ist $\left( l \gg d \right)$ Daher wird das Volumenintegral zum Längenintegral und an die Stelle der Dichte tritt die lineare Dichte $\lambda = \frac{m}{l}$.
 
-$\Rightarrow \Theta = \int_l \, r^2 \rho \, dl$
+$\Rightarrow \Theta = \int_l \, r^2 \lambda \, dl$
 
 Dabei ist der Abstand $r$ zur Drehachse ($y$-Achse) $r = r_\perp \rightarrow x = \left[ -\frac{l}{2} .. \frac{l}{2} \right]$
 
-Und somit $\Theta = \int_V r_\perp^2 \rho dV = \int_{-\frac{l}{2}}^{\frac{l}{2}} x^2 \frac{m}{l} \, dx = \left| \frac{1}{3} x^3 \frac{m}{l} \right|_{-\frac{l}{2}}^{\frac{l}{2}} = \frac{m}{3l} \left( \left( \frac{l}{2} \right)^3 - \left(- \frac{l}{2} \right)^3\right) = \frac{m}{3l} 2 \frac{l^3}{8} = \frac{m}{12} l^2$
+Und somit $\Theta = \int_l r_\perp^2 \lambda \, dl = \int_{-\frac{l}{2}}^{\frac{l}{2}} x^2 \frac{m}{l} \, dx = \left| \frac{1}{3} x^3 \frac{m}{l} \right|_{-\frac{l}{2}}^{\frac{l}{2}} = \frac{m}{3l} \left( \left( \frac{l}{2} \right)^3 - \left(- \frac{l}{2} \right)^3\right) = \frac{m}{3l} 2 \frac{l^3}{8} = \frac{m}{12} l^2$
 
 ## Beispiel: Trägheitsmoment einer Kugel
 
@@ -142,20 +142,22 @@ Und somit $\Theta = \int_V r_\perp^2 \rho dV = \int_{-\frac{l}{2}}^{\frac{l}{2}}
 width: 300px
 name: Kugel-1
 ---
-Modell eines=r homogenen Kugel
+Modell einer homogenen Kugel
  ```
 
 Dichte einer homogenen Kugel: $\rho = \frac{m}{V} = \frac{m}{\frac{4}{3}\pi R^3}$
 
-Abstand zur Rotationsachse (z.B. $z$-Achse) $r_\perp^2 = x^2+y^2 = r^2 \, sin^2(\theta)$
+Abstand zur Rotationsachse (z.B. $z$-Achse) $r_\perp^2 = x^2+y^2 = r^2 \, \sin^2(\theta)$
 
-Integration in Kugelkoordinaten: $dxdydz=r^2sin(\theta)d\theta d \phi$
+Integration in Kugelkoordinaten: $dx\,dy\,dz=r^2\sin(\theta)\,dr\,d\theta\,d\phi$
 
-$x = r \, sin(\theta) \, cos (\phi)$
-$y = r \, sin(\theta) \, sin(\phi)$
-$z = r \, cos (\theta)$
+$x = r \, \sin(\theta) \, \cos (\phi)$
+$y = r \, \sin(\theta) \, \sin(\phi)$
+$z = r \, \cos (\theta)$
 
-$\Theta = \int dV \rho r_\perp^2 = \frac{3 \,m}{4\pi R^3} \int_0^R \int_0^\pi \int_0^{2\pi} r^2 sin(\theta) r^2 sin^2(\theta) dr\, d\theta \, d\phi = \frac{3 \,m}{4\pi R^3} 2\pi \int_0^Rdr \, r^4 \int_0^\pi sin^3(\theta)\, d\theta = \frac{2}{3}m R^2$
+$\Theta = \int dV \rho r_\perp^2 = \frac{3 \,m}{4\pi R^3} \int_0^R \int_0^\pi \int_0^{2\pi} r^2 \sin(\theta) r^2 \sin^2(\theta) dr\, d\theta \, d\phi = \frac{3 \,m}{4\pi R^3} 2\pi \int_0^Rdr \, r^4 \int_0^\pi \sin^3(\theta)\, d\theta = \frac{3 \,m}{4\pi R^3} \cdot 2\pi \cdot \frac{R^5}{5} \cdot \frac{4}{3} = \frac{2}{5}m R^2$
+
+mit $\int_0^\pi \sin^3(\theta)\, d\theta = \frac{4}{3}$.
 
 
 ## Übersicht Trägheitsmomente
@@ -229,7 +231,7 @@ $\Theta = \frac{1}{3}ml^2$
 width: 120px
 name: TM_Hohlzylinder
 ---
-$\Theta = \frac{1}{2}m \left(r_a^2 +r_i^2\right)$}
+$\Theta = \frac{1}{2}m \left(r_a^2 +r_i^2\right)$
  ```
 
 ```{figure} Bilder/Trägheitsmomente_Uebersicht/TM_Zylinderwand.png

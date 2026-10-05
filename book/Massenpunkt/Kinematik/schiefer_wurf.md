@@ -16,16 +16,16 @@ In x-Richtung gilt:
 
 $a_x = 0$
 
-$v_x (t) = v_{0,x}$
+$v_x (t) = v_{x,0}$
 
-$x(t) = v_{0,x} \cdot t + x_0$
+$x(t) = v_{x,0} \cdot t + x_0$
 
 In y-Richtung gilt:
 
 $a_y = -g$
 
-$v_y (t) = -g\cdot t + v_{0,y}$
+$v_y (t) = -g\cdot t + v_{y,0}$
 
-$y(t) = - \frac{1}{2} \cdot g \cdot t^2 +   v_{0,y} \cdot t + y_0$
+$y(t) = - \frac{1}{2} \cdot g \cdot t^2 +   v_{y,0} \cdot t + y_0$
 
-Die Größen $v_{0,x}$, $v_{0,y}$, $x_0$ und $y_0$ ergeben sich aus den Anfangsbedingungen. 
+Die Größen $v_{x,0}$, $v_{y,0}$, $x_0$ und $y_0$ ergeben sich aus den Anfangsbedingungen. 
