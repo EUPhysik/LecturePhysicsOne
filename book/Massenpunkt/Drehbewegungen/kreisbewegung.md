@@ -1,6 +1,6 @@
 # Kreisbewegungen
 
-Ist die [statische Bedingung](./drehmoment.html#gleichgewichtsbedingung) nicht erfüllt, gibt es ein resultierendes Drehmoment, welches $\not = 0$ ist.
+Ist die {ref}`statische Bedingung <gleichgewichtsbedingung>` nicht erfüllt, gibt es ein resultierendes Drehmoment, welches $\not = 0$ ist.
 Das resultierende Drehmoment führt dann zu einer Drehbewegung. Dies wird im Folgenden am Beispiel eines Massenpunktes betrachtet. 
 
 Ein Massenpunkt sei im Abstand $r$ von einer festen Drehachse drehbar gelagert ({numref}`Abbildung %s <kreis-1>`). 

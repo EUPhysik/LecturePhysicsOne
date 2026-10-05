@@ -24,6 +24,7 @@ Der Drehimpuls ist eine Erhaltungsgröße, die die Drehbewegung eines Körpers b
 |Kraft|$\vec{F} = \frac{d \vec{p}}{dt}$|Drehmoment|$\vec{M} = \frac{d \vec{L}}{dt}$|
 |Impuls|$\vec{p}$|Drehimpuls|$\vec{L} = \vec{r} \times \vec{p}$|
 
+(gleichgewichtsbedingung)=
 ## Gleichgewichtsbedingung
 
 ```{figure} Bilder/gleichgewich_dreh.png
