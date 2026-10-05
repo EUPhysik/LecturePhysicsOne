@@ -3,7 +3,7 @@ Neben den Grund- oder Basisgrößen gibt es noch eine Vielzahl abgeleiteter Grö
 
 Abgeleitete Größen werden durch physikalische Gesetzmäßigkeiten aus Grundgrößen oder anderen abgeleiteten Größen festgelegt.
 
-Man braucht somit keine Messvorschrift angeben, da sich Einheit, Gleichheit und Vielfachheit der abgeleiteten Größe aus der Gesetzmäßigkeit ergeben.
+Man braucht somit keine Messvorschrift anzugeben, da sich Einheit, Gleichheit und Vielfachheit der abgeleiteten Größe aus der Gesetzmäßigkeit ergeben.
 
 Ein Beispiel für eine abgeleitete Einheit ist das Newton. Newton ist die Einheit der Kraft. Für diese gilt:
 

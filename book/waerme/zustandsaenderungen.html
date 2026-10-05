@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/waerme/zustandsaenderungen';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/waerme/zustandsaenderungen.html" />
     <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="8. Grundlagen der Thermodynamik" href="hauptsaetze.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 1 - Home"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 1 - Home"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark pst-js-only" alt="Skript Physik 1 - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
@@ -211,7 +251,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">2.1. Kinematik eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">2.2. Eindimensionale Bewegung eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. 2 dimensionale Bewegungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. Zweidimensionale Bewegungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">2.5. Schiefer Wurf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">2.6. Beispielaufgaben zum Schiefen Wurf</a></li>
 </ul>
@@ -285,9 +325,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -434,7 +479,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -448,25 +493,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -488,7 +525,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isochore-zustandsanderung">9.1. Isochore Zustandsänderung</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-mit-luft-gefullte-flasche">9.1.1. Beispiel: Mit Luft gefüllte Flasche</a></li>
 </ul>
@@ -520,8 +557,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="thermodynamische-zustandsanderungen">
 <h1><span class="section-number">9. </span>Thermodynamische Zustandsänderungen<a class="headerlink" href="#thermodynamische-zustandsanderungen" title="Link to this heading">#</a></h1>
-<p>Im Folgenden werden die vier grundlegenden Zustandsänderungen genauer analysiert. Mit Hilfe dieser grundlegenden Zustandsänderungen könnnen viele Thermodynamische Prozesse in sogenannte Vergleichsprozesse übersetzt und damit berechenbar gemacht werden.</p>
-<p>Zuvor seien noch einmal die wichtigsten für nachfolgende Betrachtungen notwengigen Gleichungen wiederholt:</p>
+<p>Im Folgenden werden die vier grundlegenden Zustandsänderungen genauer analysiert. Mit Hilfe dieser grundlegenden Zustandsänderungen können viele Thermodynamische Prozesse in sogenannte Vergleichsprozesse übersetzt und damit berechenbar gemacht werden.</p>
+<p>Zuvor seien noch einmal die wichtigsten für nachfolgende Betrachtungen notwendigen Gleichungen wiederholt:</p>
 <p>Wärmekapazitäten:</p>
 <p><span class="math notranslate nohighlight">\(C_V = \left(\frac{dU}{dT} \right)_{V = \text{konst.}}\Leftrightarrow dU = C_V \cdot dT |_{V = \text{konst.}}= m \cdot c_V \cdot dT |_{V = \text{konst.}}\)</span></p>
 <p><span class="math notranslate nohighlight">\(C_p = \left(\frac{dH}{dT} \right)_{p = \text{konst.}}\Leftrightarrow dH = C_p \cdot dT |_{p = \text{konst.}}= m \cdot c_p \cdot dT |_{p = \text{konst.}}\)</span></p>
@@ -532,8 +569,8 @@ document.write(`
 <p>Allgemeine Gasgleichung:</p>
 <p><span class="math notranslate nohighlight">\(p\cdot V = n \cdot R \cdot T =  N \cdot k_B \cdot T = m \cdot R_S \cdot T\)</span></p>
 <p>Bei thermodynamischen Prozessen bzw. Zustandsänderungen wird Arbeit verrichtet.
-Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/energie.html"><span class="std std-doc">Kapitel zur Energie</span></a> erläutert. Bei thermodynamischen Zustandsänderungen ist dies eine Volumenänderungsarbeit, dies ist die Arbeit, die verrichtet wird, um eine Volumenänderung durch Kompression zu erzeugen. Diese ist</p>
-<p><span class="math notranslate nohighlight">\(W_{V,12} = \int_1^2 F \cdot ds = \int_1^2 p \cdot A \cdot ds = \int_1^2 p \cdot dV\)</span></p>
+Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/energie.html"><span class="std std-doc">Kapitel zur Energie</span></a> erläutert. Bei thermodynamischen Zustandsänderungen ist dies eine Volumenänderungsarbeit, dies ist die Arbeit, die verrichtet wird, um eine Volumenänderung durch Kompression zu erzeugen. Als am System verrichtete Arbeit (positiv bei Kompression, <span class="math notranslate nohighlight">\(dV &lt; 0\)</span>) ist sie</p>
+<p><span class="math notranslate nohighlight">\(W_{V,12} = - \int_1^2 p \cdot dV\)</span></p>
 <p>Unterschieden werden vier grundlegende Zustandsänderungen, die Isochore, die Isobare, die Isotherme und die Adiabate, bzw. Isentrope. Diese werden nun einzeln betrachtet und erläutert.</p>
 <p>Wichtiges Hilfsmittel zur Betrachtung thermodynamischer Zustandsänderungen sind <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramme und <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramme.</p>
 <p>Beim <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm wird der Druck gegenüber dem Volumen aufgetragen, beim <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm die Temperatur gegenüber der Entropie. Mit diesen Diagrammen lassen sich thermodynamische Zustandsänderungen beschreiben und vergleichen.</p>
@@ -542,9 +579,10 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <p>Bei der isochoren Zustandsänderung (kurz: Isochore) wird eine Zustandsänderung betrachtet, die bei konstantem Volumen erfolgt.</p>
 <p><span class="math notranslate nohighlight">\(\Rightarrow V = \)</span> konstant</p>
 <p>Dies wird im Folgenden anhand der Wärmezufuhr bei konstantem Volumen betrachtet, analog in umgekehrter Richtung verläuft die Wärmeabfuhr bei konstantem Volumen.</p>
-<p>Die Wärmezufuhr bei konstantem Volumen ist in <a class="reference internal" href="#isochor"><span class="std std-numref"> Abbildung 9.1</span></a> dargestellt, hier ist <span class="math notranslate nohighlight">\(V_1 = V_2\)</span></p>
+<p>Die Wärmezufuhr bei konstantem Volumen ist in <a class="reference internal" href="#isochor"><span class="std std-numref">Abbildung 9.1</span></a> dargestellt, hier ist <span class="math notranslate nohighlight">\(V_1 = V_2\)</span></p>
 <figure class="align-default" id="isochor">
-<a class="reference internal image-reference" href="../../_images/isochore.png"><img alt="Isochore Zustandsänderung" src="../../_images/isochore.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/isochore.png"><img alt="Isochore Zustandsänderung" src="../../_images/isochore.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">Wärmezufuhr bei konstantem Volumen</span><a class="headerlink" href="#isochor" title="Link to this image">#</a></p>
 </figcaption>
@@ -556,23 +594,25 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <p>In diesem Prozess ändert sich die innere Energie des Systems, da Wärme hinzugefügt wird.</p>
 <p><span class="math notranslate nohighlight">\(\Delta U = \Delta Q + \Delta W \)</span></p>
 <p>Da das Volumen konstant bleibt, ist <span class="math notranslate nohighlight">\(\Delta W = 0\)</span> und somit <span class="math notranslate nohighlight">\(\Delta U = \Delta Q\)</span>.</p>
-<p>Die hinzugefügte Wärmemänge kann über die Temperaturänderung und die Wärmekapazität ermittelt werden. Da <span class="math notranslate nohighlight">\(V = \)</span> konstant, muss natürlich die Wärmekapazität bei konstantem Volumen betrachtet werden.</p>
+<p>Die hinzugefügte Wärmemenge kann über die Temperaturänderung und die Wärmekapazität ermittelt werden. Da <span class="math notranslate nohighlight">\(V = \)</span> konstant, muss natürlich die Wärmekapazität bei konstantem Volumen betrachtet werden.</p>
 <p><span class="math notranslate nohighlight">\(C_V = \left( \frac{dU}{dT}\right)_{V=\text{konst.}} \Rightarrow dU = C_V \cdot dT = m \cdot c_V \cdot dT |_{V=\text{konst.}} = dQ \Rightarrow \Delta Q = m \cdot c_V \cdot \Delta T |_{V=\text{konst.}} \)</span></p>
 <p>Das zugehörige <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm sieht daher wie folgt aus:</p>
 <figure class="align-default" id="pv-isochor">
-<a class="reference internal image-reference" href="../../_images/pv-isochor.svg"><img alt="Isochore Zustandsänderung" src="../../_images/pv-isochor.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pv-isochor.svg"><img alt="Isochore Zustandsänderung" src="../../_images/pv-isochor.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.2 </span><span class="caption-text"><span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm der isochoren Zustandsänderung</span><a class="headerlink" href="#pv-isochor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Für einen reibungsfreien Prozess ist die Änderung der Entropie: <span class="math notranslate nohighlight">\(dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}\)</span></p>
-<p>Mit <span class="math notranslate nohighlight">\(\Delta U = \Delta Q \Rightarrow \)</span>dU = dQ$ ist</p>
+<p>Mit <span class="math notranslate nohighlight">\(\Delta U = \Delta Q \Rightarrow dU = dQ\)</span> ist</p>
 <p><span class="math notranslate nohighlight">\(\Rightarrow dS = \frac{dQ}{T}  = \frac{dU}{T} = m \cdot c_V \cdot \frac{dT}{T}\)</span></p>
 <p>Wenn <span class="math notranslate nohighlight">\(c_V = \text{konst.}\)</span> folgt daraus</p>
-<p><span class="math notranslate nohighlight">\(S = m \cdot c_V \cdot ln \left(T \right)= m \cdot ln \left(T^{c_V} \right) \Rightarrow T \propto \sqrt[c_V]{e^S}\)</span></p>
+<p><span class="math notranslate nohighlight">\(S - S_0 = m \cdot c_V \cdot \ln \left(\frac{T}{T_0} \right) \Rightarrow T \propto e^{S/(m \cdot c_V)}\)</span></p>
 <p>Das zugehörige <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm sieht daher wie folgt aus:</p>
 <figure class="align-default" id="ts-isochor">
-<a class="reference internal image-reference" href="../../_images/ts-isochor.svg"><img alt="Isochore Zustandsänderung" src="../../_images/ts-isochor.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/ts-isochor.svg"><img alt="Isochore Zustandsänderung" src="../../_images/ts-isochor.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.3 </span><span class="caption-text"><span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm der isochoren Zustandsänderung</span><a class="headerlink" href="#ts-isochor" title="Link to this image">#</a></p>
 </figcaption>
@@ -580,13 +620,14 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <section id="beispiel-mit-luft-gefullte-flasche">
 <h3><span class="section-number">9.1.1. </span>Beispiel: Mit Luft gefüllte Flasche<a class="headerlink" href="#beispiel-mit-luft-gefullte-flasche" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="bsp-isochor">
-<a class="reference internal image-reference" href="../../_images/beispiel-isochor.png"><img alt="Isochore Zustandsänderung" src="../../_images/beispiel-isochor.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/beispiel-isochor.png"><img alt="Isochore Zustandsänderung" src="../../_images/beispiel-isochor.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.4 </span><span class="caption-text">Beispiel für eine isochore Zustandsänderung</span><a class="headerlink" href="#bsp-isochor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Sonne scheint auf eine mit Luft gefüllte Flasche, die sich nicht ausdehnen kann. Die Sonne fügt der Luft eine bestimmte Wärmemenge <span class="math notranslate nohighlight">\(\Delta W\)</span> hinzu.</p>
-<p>Damit ändert sich die innere Energie entsprechen der Isochoren</p>
+<p>Sonne scheint auf eine mit Luft gefüllte Flasche, die sich nicht ausdehnen kann. Die Sonne fügt der Luft eine bestimmte Wärmemenge <span class="math notranslate nohighlight">\(\Delta Q\)</span> hinzu.</p>
+<p>Damit ändert sich die innere Energie entsprechend der Isochoren</p>
 <p><span class="math notranslate nohighlight">\(\Delta U = \Delta Q = c_V \cdot m \cdot \Delta T\)</span></p>
 <p>Aus der idealen Gasgleichung folgt</p>
 <p><span class="math notranslate nohighlight">\(\frac{p}{T} = \text{konst.} =  \frac{p_{vorher}}{T_{vorher}} = \frac{p_{nachher}}{T_{nachher}}\)</span></p>
@@ -596,13 +637,14 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 </section>
 </section>
 <section id="isobare-zustandsanderung">
-<h2><span class="section-number">9.2. </span>Isobare Zustandsänderung<a class="headerlink" href="#isobare-zustandsanderung" title="Link to this heading">#</a></h2>
+<span id="isobare-zustandsaenderung"></span><h2><span class="section-number">9.2. </span>Isobare Zustandsänderung<a class="headerlink" href="#isobare-zustandsanderung" title="Link to this heading">#</a></h2>
 <p>Bei der isobaren Zustandsänderung (kurz: Isobare) wird eine Zustandsänderung betrachtet, die bei konstantem Druck erfolgt. Dies ist derselbe Prozess, der bei der Ermittlung des Gesetzes von Gay-Lussac verwendet wurde.</p>
 <p><span class="math notranslate nohighlight">\(\Rightarrow p = \)</span> konstant</p>
 <p>Dies wird im Folgenden anhand der Wärmezufuhr bei konstantem Druck betrachtet, analog in umgekehrter Richtung verläuft die Wärmeabfuhr bei konstantem Druck.</p>
-<p>Die Wärmezufuhr bei konstantem Druck ist in <a class="reference internal" href="#isobar"><span class="std std-numref"> Abbildung 9.5</span></a> dargestellt, hier ist <span class="math notranslate nohighlight">\(p_1 = p_2\)</span></p>
+<p>Die Wärmezufuhr bei konstantem Druck ist in <a class="reference internal" href="#isobar"><span class="std std-numref">Abbildung 9.5</span></a> dargestellt, hier ist <span class="math notranslate nohighlight">\(p_1 = p_2\)</span></p>
 <figure class="align-default" id="isobar">
-<a class="reference internal image-reference" href="../../_images/isobare.png"><img alt="Isobare Zustandsänderung" src="../../_images/isobare.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/isobare.png"><img alt="Isobare Zustandsänderung" src="../../_images/isobare.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.5 </span><span class="caption-text">Wärmezufuhr bei konstantem Druck</span><a class="headerlink" href="#isobar" title="Link to this image">#</a></p>
 </figcaption>
@@ -613,24 +655,26 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <p><span class="math notranslate nohighlight">\(T_2 &gt; T_1 \Rightarrow V_2 &gt; V_1\)</span></p>
 <p>Das zugehörige <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm sieht daher wie folgt aus:</p>
 <figure class="align-default" id="pv-isobar">
-<a class="reference internal image-reference" href="../../_images/pv-isobar.svg"><img alt="Isobare Zustandsänderung" src="../../_images/pv-isobar.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pv-isobar.svg"><img alt="Isobare Zustandsänderung" src="../../_images/pv-isobar.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.6 </span><span class="caption-text"><span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm der isobaren Zustandsänderung</span><a class="headerlink" href="#pv-isobar" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Die mit der <span class="math notranslate nohighlight">\(V\)</span> -Achse eingeschlossene Fläche entspricht der Volumenänderungsarbeit.</p>
 <figure class="align-default" id="pv-isobar-2">
-<a class="reference internal image-reference" href="../../_images/pv-isobar2.svg"><img alt="Isobare Zustandsänderung" src="../../_images/pv-isobar2.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pv-isobar2.svg"><img alt="Isobare Zustandsänderung" src="../../_images/pv-isobar2.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.7 </span><span class="caption-text"><span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm der isobaren Zustandsänderung</span><a class="headerlink" href="#pv-isobar-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Da in diesem Fall Volumenänderungsarbeit verrichtet wird gilt:</p>
 <p><span class="math notranslate nohighlight">\(dU = dQ + dW = dQ - p\cdot dV\)</span></p>
-<p>Anmerkung <span class="math notranslate nohighlight">\(dW = -p \cdot dV\)</span>, da das Gas Volumenänderungsarbeit am System verrichtet.</p>
+<p>Anmerkung: <span class="math notranslate nohighlight">\(dW = -p \cdot dV\)</span>, da <span class="math notranslate nohighlight">\(W\)</span> die am System verrichtete Arbeit ist. Dehnt sich das Gas aus (<span class="math notranslate nohighlight">\(dV &gt; 0\)</span>), verrichtet es Arbeit an der Umgebung.</p>
 <p><span class="math notranslate nohighlight">\(dU = dQ + dW = dQ - p\cdot dV \Leftrightarrow dQ = dU + p \cdot dV = m \cdot c_V \cdot dT + p \cdot dV\)</span></p>
 <p>Änderung der Entropie <span class="math notranslate nohighlight">\(dS\)</span> ist für einen reibungsfreien Prozess: <span class="math notranslate nohighlight">\(dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}\)</span></p>
-<p>Mit <span class="math notranslate nohighlight">\(H = U + p\cdot V = \)</span> ist die Änderung der Enthalpie <span class="math notranslate nohighlight">\(dH\)</span></p>
+<p>Mit <span class="math notranslate nohighlight">\(H = U + p\cdot V\)</span> ist die Änderung der Enthalpie <span class="math notranslate nohighlight">\(dH\)</span></p>
 <p><span class="math notranslate nohighlight">\(dH = dU + p\cdot dV + V \cdot dp \Leftrightarrow dH - V \cdot dp = dU + p\cdot dV\)</span></p>
 <p>mit <span class="math notranslate nohighlight">\(dU = dQ + dW = dQ - p\cdot dV \Leftrightarrow dQ = dU + pdV\)</span></p>
 <p>ist dann <span class="math notranslate nohighlight">\(dQ = dH - V dp = dH\)</span>, da <span class="math notranslate nohighlight">\(dp = 0\)</span> (Druck konstant!)</p>
@@ -639,10 +683,11 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <p>Dies entspricht bei konstantem Druck gerade der Definition der Wärmekapazität bei konstantem Druck</p>
 <p><span class="math notranslate nohighlight">\(\frac{dH}{T} = \left| \frac{C_p \cdot dT }{T} \right| _{p = \text{konst.}} = m \cdot c_p \frac{dT}{T}\)</span></p>
 <p>Somit ergibt sich der Zusammenhang bei konstantem <span class="math notranslate nohighlight">\(c_p\)</span></p>
-<p><span class="math notranslate nohighlight">\(S = m \cdot c_p \cdot ln \left(T \right) = m \cdot ln \left(T^{c_p} \right) \Rightarrow T \propto \sqrt[c_p]{e^S}\)</span></p>
-<p>Dies bedeutet das der Verlauf der Isobaren <span class="math notranslate nohighlight">\(T-S\)</span> -Diagramm flacher ist, als der der Isochoren.</p>
+<p><span class="math notranslate nohighlight">\(S - S_0 = m \cdot c_p \cdot \ln \left(\frac{T}{T_0} \right) \Rightarrow T \propto e^{S/(m \cdot c_p)}\)</span></p>
+<p>Dies bedeutet, dass der Verlauf der Isobaren im <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm flacher ist, als der der Isochoren.</p>
 <figure class="align-default" id="ts-isobar">
-<a class="reference internal image-reference" href="../../_images/ts-isobar.svg"><img alt="Isobare Zustandsänderung" src="../../_images/ts-isobar.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/ts-isobar.svg"><img alt="Isobare Zustandsänderung" src="../../_images/ts-isobar.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.8 </span><span class="caption-text"><span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm der isobaren Zustandsänderung</span><a class="headerlink" href="#ts-isobar" title="Link to this image">#</a></p>
 </figcaption>
@@ -650,7 +695,8 @@ Der Begriff der Arbeit wurde im <a class="reference internal" href="../Energie/e
 <section id="beispiel-hubkolben">
 <h3><span class="section-number">9.2.1. </span>Beispiel: Hubkolben<a class="headerlink" href="#beispiel-hubkolben" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="bsp-isobar">
-<a class="reference internal image-reference" href="../../_images/beispiel-isobar.png"><img alt="Isobare Zustandsänderung" src="../../_images/beispiel-isobar.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/beispiel-isobar.png"><img alt="Isobare Zustandsänderung" src="../../_images/beispiel-isobar.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.9 </span><span class="caption-text">Beispiel für eine isobare Zustandsänderung</span><a class="headerlink" href="#bsp-isobar" title="Link to this image">#</a></p>
 </figcaption>
@@ -665,10 +711,11 @@ $W = F \cdot \Delta s = m \cdot g \cdot \Delta s$
 </section>
 <section id="adiabate-beziehungsweise-isentrope-zustandsanderung">
 <h2><span class="section-number">9.3. </span>Adiabate beziehungsweise isentrope Zustandsänderung<a class="headerlink" href="#adiabate-beziehungsweise-isentrope-zustandsanderung" title="Link to this heading">#</a></h2>
-<p>Unter einer adiabaten Zustandsänderung (kurz: Adiabate) versteht man eine Zustandsänderung, bei der mit der Umgebung keine Wärme ausgetauscht wird. Es gilt als <span class="math notranslate nohighlight">\(\Delta Q = 0\)</span>. Ist der Prozess zusätzlich noch reibungsfrei, sprich man von einem isentropen Prozess.</p>
+<p>Unter einer adiabaten Zustandsänderung (kurz: Adiabate) versteht man eine Zustandsänderung, bei der mit der Umgebung keine Wärme ausgetauscht wird. Es gilt also <span class="math notranslate nohighlight">\(\Delta Q = 0\)</span>. Ist der Prozess zusätzlich noch reibungsfrei, spricht man von einem isentropen Prozess.</p>
 <p>Dies wird im folgenden am Beispiel der adiabaten Kompression dargestellt.</p>
 <figure class="align-default" id="adiabat">
-<a class="reference internal image-reference" href="../../_images/adiabat.png"><img alt="Adiabate Zustandsänderung" src="../../_images/adiabat.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/adiabat.png"><img alt="Adiabate Zustandsänderung" src="../../_images/adiabat.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.10 </span><span class="caption-text">Adiabate Kompression, wichtig ist eine sehr gute Isolation der Wände, damit <span class="math notranslate nohighlight">\(\Delta Q = 0\)</span> gilt.</span><a class="headerlink" href="#adiabat" title="Link to this image">#</a></p>
 </figcaption>
@@ -678,22 +725,23 @@ $W = F \cdot \Delta s = m \cdot g \cdot \Delta s$
 <p>Da <span class="math notranslate nohighlight">\(\Delta Q = 0\)</span> folgt daraus</p>
 <p><span class="math notranslate nohighlight">\(\rightarrow dU = dW\)</span></p>
 <p>Das Volumen ändert sich, bei der Kompression wird am System Volumenänderungsarbeit verrichtet.</p>
-<p><span class="math notranslate nohighlight">\(W = \int F \cdot ds = \int p\cdot A \cdot ds = - \int p\cdot dV\)</span></p>
+<p><span class="math notranslate nohighlight">\(W = - \int p\cdot dV\)</span></p>
 <p>Mit Hilfe der idealen Gasgleichung ist</p>
 <p><span class="math notranslate nohighlight">\(p \cdot V = n \cdot R \cdot T \Leftrightarrow p = \frac{n \cdot R \cdot T}{V}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\Rightarrow W  = - \int \frac{n \cdot R \cdot T}{V}\cdot dV\)</span></p>
 <p>somit ist</p>
 <p><span class="math notranslate nohighlight">\(dW = -\frac{n \cdot R \cdot T}{V}\cdot dV\)</span></p>
 <p>Gleichzeitig folgt aus der Definition der Wärmekapazität bei konstantem Volumen</p>
-<p><span class="math notranslate nohighlight">\(dU=n \cdot c_{v}dT\)</span></p>
-<p>Da <span class="math notranslate nohighlight">\(dU = dW\)</span> folgt daraus <span class="math notranslate nohighlight">\(n \cdot c_{v}dT + \int \frac{n \cdot R \cdot T}{V}\cdot dV = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(dU=n \cdot c_{v}dT\)</span> (hier mit der molaren Wärmekapazität <span class="math notranslate nohighlight">\(c_v\)</span>)</p>
+<p>Da <span class="math notranslate nohighlight">\(dU = dW\)</span> folgt daraus <span class="math notranslate nohighlight">\(n \cdot c_{v}dT + \frac{n \cdot R \cdot T}{V}\cdot dV = 0\)</span></p>
 <p>Diese Gleichung ist nur erfüllt, wenn</p>
 <p><span class="math notranslate nohighlight">\(T \cdot V^{R/c_V} = \)</span> konstant</p>
-<p>Mit Hilfe der idealen Gasgleichung und <span class="math notranslate nohighlight">\(\kappa = \frac{c_P}{c_V}\)</span> und <span class="math notranslate nohighlight">\(c_p = c_V +R\)</span> lässt sich dies umformulieren zur Possoin’schen Adiabatengleichung</p>
+<p>Mit Hilfe der idealen Gasgleichung und <span class="math notranslate nohighlight">\(\kappa = \frac{c_p}{c_V}\)</span> und <span class="math notranslate nohighlight">\(c_p = c_V +R\)</span> (molare Wärmekapazitäten) lässt sich dies umformulieren zur Poisson’schen Adiabatengleichung</p>
 <p><span class="math notranslate nohighlight">\(p\cdot V^\kappa = \)</span> konstant</p>
 <p>Damit sieht die Adiabate im <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm wie folgt aus:</p>
 <figure class="align-default" id="pv-adiabat">
-<a class="reference internal image-reference" href="../../_images/pv-adiabat.svg"><img alt="Adiabate Zustandsänderung" src="../../_images/pv-adiabat.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pv-adiabat.svg"><img alt="Adiabate Zustandsänderung" src="../../_images/pv-adiabat.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.11 </span><span class="caption-text">Adiabate Kompression im <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm.</span><a class="headerlink" href="#pv-adiabat" title="Link to this image">#</a></p>
 </figcaption>
@@ -706,7 +754,8 @@ $W = F \cdot \Delta s = m \cdot g \cdot \Delta s$
 Daher nennt man die Adiabaten ohne Reibung auch Isentropen, nämlich Zustandsänderungen mit konstanter Entropie. Isentropen sind damit reversible Prozesse.</p>
 <p>Das <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm ist daher sehr einfach</p>
 <figure class="align-default" id="ts-adiabat">
-<a class="reference internal image-reference" href="../../_images/ts-adiabat.svg"><img alt="Adiabate Zustandsänderung" src="../../_images/ts-adiabat.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/ts-adiabat.svg"><img alt="Adiabate Zustandsänderung" src="../../_images/ts-adiabat.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.12 </span><span class="caption-text">Adiabate Kompression im <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm.</span><a class="headerlink" href="#ts-adiabat" title="Link to this image">#</a></p>
 </figcaption>
@@ -721,20 +770,20 @@ Daher nennt man die Adiabaten ohne Reibung auch Isentropen, nämlich Zustandsän
 <h3><span class="section-number">9.3.1. </span>Beispiel: (schnelle) Luftpumpe<a class="headerlink" href="#beispiel-schnelle-luftpumpe" title="Link to this heading">#</a></h3>
 <p>In einer Luftpumpe wird <span class="math notranslate nohighlight">\(1 \, kg\)</span> Luft (<span class="math notranslate nohighlight">\(0^\circ C\)</span> und <span class="math notranslate nohighlight">\(1 \, bar\)</span>) auf den 10-fachen Druck isentrop verdichtet.
 Wie hoch ist die Temperatur der verdichteten Luft?</p>
-<p>Wie groß ist die Volumenändernderungsarbeit?</p>
+<p>Wie groß ist die Volumenänderungsarbeit?</p>
 <p><span class="math notranslate nohighlight">\(R_{Luft} = 287 \frac{J}{kg \cdot K}\)</span> und <span class="math notranslate nohighlight">\(\kappa_{Luft} = 1.4\)</span></p>
 <p>Da es sich um eine adiabate Zustandsänderung handelt, gilt</p>
 <p><span class="math notranslate nohighlight">\(p \cdot V^\kappa = \)</span> konst</p>
 <p>Darüber hinaus folgt aus der allgemeinen Gasgleichung</p>
 <p><span class="math notranslate nohighlight">\(p \cdot V = m \cdot R_{Luft} \cdot T \Leftrightarrow V = \frac{m \cdot R_{Luft} \cdot T}{p}\)</span></p>
 <p>Damit ergibt sich</p>
-<p><span class="math notranslate nohighlight">\(p \cdot \left( \frac{m \cdot R_{Luft} \cdot T}{p} \right)^\kappa = \left( m \cdot R_{Luft} \cdot T\right)^\kappa \cdot p^\left( 1 - \kappa \right)\)</span> = konst</p>
+<p><span class="math notranslate nohighlight">\(p \cdot \left( \frac{m \cdot R_{Luft} \cdot T}{p} \right)^\kappa = \left( m \cdot R_{Luft} \cdot T\right)^\kappa \cdot p^{1 - \kappa} = \text{konst.}\)</span></p>
 <p>Also ist mit</p>
-<p><span class="math notranslate nohighlight">\(p_1 = 1 \, bar\)</span>
-<span class="math notranslate nohighlight">\(p_2 = 10 \cdot p_1 = 10 \, bar\)</span>
-$T_1 = 0^\circ C = 273.15 , K</p>
-<p><span class="math notranslate nohighlight">\(\left( m \cdot R_{Luft} \cdot T_1\right)^\kappa \cdot p_1^\left( 1 - \kappa \right) = \left( m \cdot R_{Luft} \cdot T_2\right)^\kappa \cdot p_2^\left( 1 - \kappa \right)\)</span>
-<span class="math notranslate nohighlight">\(\Leftrightarrow \left(T_1\right)^\kappa \cdot p_1^\left( 1 - \kappa \right) = \left(T_2\right)^\kappa \cdot p_2^\left( 1 - \kappa \right)\)</span></p>
+<p><span class="math notranslate nohighlight">\(p_1 = 1 \, bar\)</span></p>
+<p><span class="math notranslate nohighlight">\(p_2 = 10 \cdot p_1 = 10 \, bar\)</span></p>
+<p><span class="math notranslate nohighlight">\(T_1 = 0^\circ C = 273.15 \, K\)</span></p>
+<p><span class="math notranslate nohighlight">\(\left( m \cdot R_{Luft} \cdot T_1\right)^\kappa \cdot p_1^{1 - \kappa} = \left( m \cdot R_{Luft} \cdot T_2\right)^\kappa \cdot p_2^{1 - \kappa}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Leftrightarrow \left(T_1\right)^\kappa \cdot p_1^{1 - \kappa} = \left(T_2\right)^\kappa \cdot p_2^{1 - \kappa}\)</span></p>
 <p>Damit ist</p>
 <p><span class="math notranslate nohighlight">\(T_2 = 254 ^\circ C\)</span></p>
 <p>Die Volumenänderungsarbeit ergibt sich wie folgt:</p>
@@ -766,13 +815,14 @@ $\frac{V_2}{V_1} = \frac{T_1 \cdot p_2}{T_2 \cdot p_1} \Leftrightarrow T_2 = T_1
 <p>Unter einer isothermen Zustandsänderung (kurz: Isotherme) versteht man eine Zustandsänderung, bei der die Temperatur des Systems konstant ist.</p>
 <p>Dies wird im folgenden am Beispiel der isothermen Kompression dargestellt.</p>
 <figure class="align-default" id="isotherm">
-<a class="reference internal image-reference" href="../../_images/isotherm.png"><img alt="Isotherme Zustandsänderung" src="../../_images/isotherm.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/isotherm.png"><img alt="Isotherme Zustandsänderung" src="../../_images/isotherm.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.13 </span><span class="caption-text">Isotherme Kompression</span><a class="headerlink" href="#isotherm" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Da eine Kompression stattfindet, wird Volumenänderungsarbeit geleistet.
-<span class="math notranslate nohighlight">\(W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot ln \left( \frac{V_1}{V_2}\right)\)</span></p>
+<span class="math notranslate nohighlight">\(W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot \ln \left( \frac{V_1}{V_2}\right)\)</span></p>
 <p>Die gesamte bei einer Kompression zugeführte Arbeit muss quantitativ als Wärme an die Umgebung abgegeben werden, damit die Temperatur im System konstant bleibt.</p>
 <p>Umgekehrt würde bei einer Expansion dieselbe Wärme aus der Umgebung aufgenommen werden.</p>
 <p>Ist <span class="math notranslate nohighlight">\(T = \)</span> konstant folgt aus der idealen Gasgleichung</p>
@@ -780,25 +830,28 @@ $\frac{V_2}{V_1} = \frac{T_1 \cdot p_2}{T_2 \cdot p_1} \Leftrightarrow T_2 = T_1
 <p>Damit ist wie beim Gesetz von Boyle-Mariotte <span class="math notranslate nohighlight">\(p \propto \frac{1}{V}\)</span></p>
 <p>Das zugehörige <span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm sieht daher wie folgt aus:</p>
 <figure class="align-default" id="pv-isotherm">
-<a class="reference internal image-reference" href="../../_images/pv-isotherm.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/pv-isotherm.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pv-isotherm.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/pv-isotherm.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.14 </span><span class="caption-text"><span class="math notranslate nohighlight">\(p-V\)</span>-Diagramm der isothermen Zustandsänderung</span><a class="headerlink" href="#pv-isotherm" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Änderung der Entropie <span class="math notranslate nohighlight">\(S\)</span> ist für einen reibungsfreien Prozess: <span class="math notranslate nohighlight">\(dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}\)</span></p>
-<p>Da <span class="math notranslate nohighlight">\(T = \)</span> konstanst ist, gilt</p>
+<p>Da <span class="math notranslate nohighlight">\(T = \)</span> konstant ist, gilt</p>
 <p><span class="math notranslate nohighlight">\(T \cdot dS = d Q \Rightarrow T \cdot \Delta S = \Delta  Q \Leftrightarrow \Delta S = \frac{\Delta Q}{T}\)</span></p>
 <p>Die hinzugefügte Wärme wirkt daher vollständig zur Erhöhung der Entropie.</p>
 <p>Das <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm ist daher wieder einfach</p>
 <figure class="align-default" id="ts-isotherm">
-<a class="reference internal image-reference" href="../../_images/ts-isotherm.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/ts-isotherm.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/ts-isotherm.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/ts-isotherm.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.15 </span><span class="caption-text">Isotherme Kompression im <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm.</span><a class="headerlink" href="#ts-isotherm" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Die mit der <span class="math notranslate nohighlight">\(S-\)</span> Achse eingeschlossene Fläche ergibt die abgegebene Wärmemenge.</p>
 <figure class="align-default" id="ts-isotherm2">
-<a class="reference internal image-reference" href="../../_images/ts-isotherm2.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/ts-isotherm2.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/ts-isotherm2.svg"><img alt="Isotherme Zustandsänderung" src="../../_images/ts-isotherm2.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.16 </span><span class="caption-text">Isotherme Kompression im <span class="math notranslate nohighlight">\(T-S\)</span>-Diagramm.</span><a class="headerlink" href="#ts-isotherm2" title="Link to this image">#</a></p>
 </figcaption>
@@ -807,20 +860,21 @@ $\frac{V_2}{V_1} = \frac{T_1 \cdot p_2}{T_2 \cdot p_1} \Leftrightarrow T_2 = T_1
 <h3><span class="section-number">9.4.1. </span>sehr langsame Luftpumpe<a class="headerlink" href="#sehr-langsame-luftpumpe" title="Link to this heading">#</a></h3>
 <p>Näherungsweise realisierbar durch langsam verlaufende Zustandsänderungen, um den Temperaturausgleich mit der Umgebung zu ermöglichen
 (Bsp.: langsame Luftpumpe)</p>
-<p><span class="math notranslate nohighlight">\(W_{12} = \int_1^2 p(V) \cdot dV = \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot ln \left( \frac{V_2}{V_1}\right)\)</span></p>
+<p><span class="math notranslate nohighlight">\(W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot \ln \left( \frac{V_1}{V_2}\right)\)</span></p>
 </section>
 </section>
 <section id="polytrope-zustandsanderungen">
 <h2><span class="section-number">9.5. </span>Polytrope Zustandsänderungen<a class="headerlink" href="#polytrope-zustandsanderungen" title="Link to this heading">#</a></h2>
 <p>Isotherme und Isentrope bilden extreme Zustandsänderungen.</p>
-<p>Bei der Isotherme ist <span class="math notranslate nohighlight">\(\kappa = 1 \text{ und } p\cdot V^1 = \text{konst.}\)</span></p>
+<p>Bei der Isotherme ist der Exponent <span class="math notranslate nohighlight">\(1 \text{ und } p\cdot V^1 = \text{konst.}\)</span></p>
 <p>Bei der Isentropen hingegen ist <span class="math notranslate nohighlight">\(\kappa = \frac{c_p}{c_V} \text{ und } p\cdot V^{\frac{c_p}{c_V}} = \text{konst.}\)</span></p>
-<p>Für ein ideales Gas ist <span class="math notranslate nohighlight">\(\kappa = \frac{c_p}{c_V} = \frac{5}{3}\)</span></p>
-<p>In der Realität kommen oft Zustandsänderungen vor, bei denen der Exponent zwischen <span class="math notranslate nohighlight">\(1\)</span> und <span class="math notranslate nohighlight">\(\frac{5}{3}\)</span> liegt.
+<p>Für ein einatomiges ideales Gas ist <span class="math notranslate nohighlight">\(\kappa = \frac{c_p}{c_V} = \frac{5}{3}\)</span>, für Luft (zweiatomig) ist <span class="math notranslate nohighlight">\(\kappa \approx 1.4\)</span>.</p>
+<p>In der Realität kommen oft Zustandsänderungen vor, bei denen der Exponent zwischen <span class="math notranslate nohighlight">\(1\)</span> und <span class="math notranslate nohighlight">\(\kappa\)</span> liegt.
 Man spricht dann von Polytropenexponenten <span class="math notranslate nohighlight">\(n\)</span> mit <span class="math notranslate nohighlight">\(1 \le n \le \kappa\)</span>.</p>
-<p>Beispielsweise ist für Luft <span class="math notranslate nohighlight">\(n = 1.4 \rightarrow p \cdot V^{1.4} = \text{konst.}\)</span></p>
+<p>Beispielsweise ist für die Verdichtung von Luft in realen Kompressoren <span class="math notranslate nohighlight">\(n \approx 1.3 \rightarrow p \cdot V^{1.3} = \text{konst.}\)</span></p>
 <figure class="align-default" id="polytrop">
-<a class="reference internal image-reference" href="../../_images/polytrop.png"><img alt="Polytrope Zustandsänderung" src="../../_images/polytrop.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../../_images/polytrop.png"><img alt="Polytrope Zustandsänderung" src="../../_images/polytrop.png" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 9.17 </span><span class="caption-text">Beispiel für eine polytrope Zustandsänderung anhand von Luft</span><a class="headerlink" href="#polytrop" title="Link to this image">#</a></p>
 </figcaption>
@@ -828,7 +882,7 @@ Man spricht dann von Polytropenexponenten <span class="math notranslate nohighli
 </section>
 <section id="umwandlungsenthalpie">
 <h2><span class="section-number">9.6. </span>Umwandlungsenthalpie<a class="headerlink" href="#umwandlungsenthalpie" title="Link to this heading">#</a></h2>
-<p>Bei einem Phasenübergang, beispielsweise vom flüssigen in den gasförmigen Zustand, wird Enthalpie aufgewand, um den Phasenübergang herbeizuführen.
+<p>Bei einem Phasenübergang, beispielsweise vom flüssigen in den gasförmigen Zustand, wird Enthalpie aufgewandt, um den Phasenübergang herbeizuführen.
 Die hinzugefügte Enthalpie führt dann beispielsweise nicht zur Erhöhung der Temperatur, sondern nur zur Umwandlung von einer Phase zur anderen.
 Diese Enthalpie bezeichnet man als Umwandlungsenthalpie.</p>
 </section>
@@ -889,15 +943,17 @@ Diese Enthalpie bezeichnet man als Umwandlungsenthalpie.</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isochore-zustandsanderung">9.1. Isochore Zustandsänderung</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-mit-luft-gefullte-flasche">9.1.1. Beispiel: Mit Luft gefüllte Flasche</a></li>
 </ul>
@@ -965,8 +1021,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

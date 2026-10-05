@@ -14,7 +14,7 @@ Die Moleküle bzw. Atome sind nicht wie beim Festkörper in eine Gitterstruktur 
 Die Abstände zwischen den Teilchen sind gering, die Teilchen wechselwirken weiter miteinander.
 
 Auf einer makroskopischen Skala betrachtet sind Flüssigkeiten Stoffe, die einer Formänderung so gut wie keinen,
-einer Volumenänderung hingegen einen recht großen Widerstand entgegensetzt
+einer Volumenänderung hingegen einen recht großen Widerstand entgegensetzen
 
 $\Rightarrow$ Flüssigkeiten passen sich der Form an, sind jedoch inkompressibel
 
@@ -49,7 +49,7 @@ name: Oberflächenspannung-2
 Darstellung der Oberflächenspannung
  ```
 
-Die Oberflächenspannung ist definiert als der Proportionalitätsfaktor $\sigma = \frac{\Delta W}{\Delta A}$ mit $\Delta W = F \Delta s$.
+Die Oberflächenspannung ist definiert als der Proportionalitätsfaktor $\sigma = \frac{\Delta W}{\Delta A}$ mit $\Delta W = F \cdot \Delta s$.
 
 ### Messung der Oberflächenspannung
 
@@ -72,7 +72,7 @@ $\sigma = \frac{\Delta W}{\Delta A} = \frac{F \cdot \Delta x}{2 \cdot \Delta x \
 
 Anmerkung: Faktor 2 bei der Fläche wegen Vorder- und Rückseite des Films.
 
-Die Oberflächenspannung von Wasser kann durch Zugaben von beispielsweise Spülmittel stark reduziert werden, so dass die Wasserhaut dann an der Zugabestelle auseinanderreisst. 
+Die Oberflächenspannung von Wasser kann durch Zugaben von beispielsweise Spülmittel stark reduziert werden, so dass die Wasserhaut dann an der Zugabestelle auseinanderreißt. 
 
 
 ```{figure} Videos/oberflaechenspannung.mp4
@@ -87,8 +87,8 @@ Reduktion der Oberflächenspannung durch Spülmittel
 
  ## Kohäsion und Adhäsion
 
-Nicht nur zwischen Flüssigkeiten und Gasen finden eine Wechsenwirkung statt, sondern auch die Wechselwirkung zwischen Feststoffen und Flüssigkeiten und führt zu Bindungskräften. 
-Die Theorie zur Berechnung der Kräfte ist sehr komplex, man kann jedoch qualitativ zwischen zwei verschiedene Effekten unterscheiden.
+Nicht nur zwischen Flüssigkeiten und Gasen finden eine Wechselwirkung statt, sondern auch die Wechselwirkung zwischen Feststoffen und Flüssigkeiten und führt zu Bindungskräften. 
+Die Theorie zur Berechnung der Kräfte ist sehr komplex, man kann jedoch qualitativ zwischen zwei verschiedenen Effekten unterscheiden.
 
 **Kohäsion**
 Beschreibt die Tendenz von Molekülen gleichen Typs innerhalb eines Stoffes zusammenzuhalten
@@ -114,7 +114,7 @@ Kohäsion < Adhäsion
 
 Die kapillare Steighöhe kann berechnet werden durch
 
-$h = \frac{2 \cdot \sigma \cdot cos \left( \alpha \right)}{\rho \cdot g \cdot r}$
+$h = \frac{2 \cdot \sigma \cdot \cos \left( \alpha \right)}{\rho \cdot g \cdot r}$
 
 mit
 $\sigma = $ Oberflächenspannung
@@ -123,13 +123,13 @@ $\rho = $ Dichte der Flüssigkeit
 
 $\alpha = $ Winkel der Adhäsion
 
-$g = $ Erbeschleunigung
+$g = $ Erdbeschleunigung
 
 $r = $ Radius der Kapillarröhre
 
 Beim Kapillareffekt ist $\alpha < 90^\circ$
 
-Für Wasser gilt $\alpha = 20 ^\circ \Rightarrow cos \left( \alpha \right) = 0.939... \approx 1$
+Für Wasser gilt $\alpha = 20 ^\circ \Rightarrow \cos \left( \alpha \right) = 0.939... \approx 1$
 
 $\Rightarrow h = \frac{2 \cdot \sigma}{\rho \cdot g \cdot r}$
 
@@ -169,7 +169,7 @@ Kapillareffekt beim Löten
 
 ### Kohäsion > Adhäsion
 
-Ist die Kohäsion größer als die Adhäsion, tritt ein umgekehtrer Effekt auf und $\alpha > 90^\circ$ 
+Ist die Kohäsion größer als die Adhäsion, tritt ein umgekehrter Effekt auf und $\alpha > 90^\circ$ 
 
 ```{figure} Bilder/kohaesion_groesser_adhaesion.png
 ---

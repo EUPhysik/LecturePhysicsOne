@@ -27,9 +27,9 @@ $\Delta W = \vec{F} \cdot \Delta \vec{s}$
 
 Das Skalarprodukt $\vec{F} \cdot \Delta \vec{s}$ bewirkt, dass nur diejenige Kraftkomponente beiträgt, die parallel zum zurückgelegten Weg wirkt ({numref}`siehe Abbildung %s <arbeit-2>`). 
 
-$\Delta W = \left|\vec{F} \right| \cdot \left| \Delta \vec{s} \right| \cdot cos \left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)$
+$\Delta W = \left|\vec{F} \right| \cdot \left| \Delta \vec{s} \right| \cdot \cos \left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)$
 
-Der $cos\left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)$ ist =1, wenn $\vec{F} \parallel \Delta\vec{s}$ und =0, wenn $\vec{F} \perp \Delta\vec{s}$.
+Der $\cos\left( \angle \left(\vec{F}, \Delta \vec{s}\right) \right)$ ist =1, wenn $\vec{F} \parallel \Delta\vec{s}$ und =0, wenn $\vec{F} \perp \Delta\vec{s}$.
 
 ```{figure} Bilder/arbeit2.png
 ---
@@ -54,6 +54,7 @@ Dann gilt
 
 $W_{12} = \int_1^2 \vec{F}(\vec{r}) d\vec{r} = \int_{x_1}^{x_2} F_x dx = F_x \int_{x_1}^{x_2} dx = F_x \left( x_2 - x_1 \right) = F_x \Delta x$
 
+(beispiel-hubarbeit)=
 ### Beispiel: Hubarbeit
 
 Hubarbeit ist die Arbeit, die verrichtet wird, wenn ein Gegenstand um eine Höhe $h$ gegen die Gewichtskraft $m\cdot g$ angehoben wird.
@@ -68,8 +69,9 @@ Hubarbeit: Die Kraft $\vec{F}$ bewirkt eine Anhebung der Masse $m$ um die Höhe 
 
 Dann gilt 
 
-$W_{12} = \int_1^2 \vec{F}(r) d \vec{r} = \int_1^2 \left( - m \cdot \vec{g} \right) \cdot d \vec{r} = - m g_y (y_2 - y_1) = - m g h$
+$W_{12} = \int_1^2 \vec{F}(r) d \vec{r} = \int_1^2 \left( - m \cdot \vec{g} \right) \cdot d \vec{r} = - m g_y (y_2 - y_1) = + m g h$ (mit $g_y = -g$)
 
+(beispiel-beschleunigungsarbeit)=
 ### Beispiel: Beschleunigungsarbeit
 
 Beschleunigungsarbeit wird verrichtet, wenn ein Gegenstand durch eine wirkende Kraft von einer Geschwindigkeit $v_1$ auf eine Geschwindigkeit $v_2$ beschleunigt wird.
@@ -92,13 +94,13 @@ $v = \frac{dx}{dt} \Leftrightarrow dx = v \cdot dt$
 $\Rightarrow W_{kin} = m \int_1^2 \frac{dv}{dt} v \, dt$
 
 Aufgrund der Kettenregel gilt:
-$\frac{d}{dt} f\left( g (t) \right) = \frac{\partial f}{\partial g} \frac{dg}{dt}$
+$\frac{d}{dt} f\left( g (t) \right) = \frac{df}{dg} \frac{dg}{dt}$
 
 und damit gilt beispielsweise mit
 
 $f = \frac{1}{2} \left(v(t)\right)^2 \Rightarrow \frac{d}{dt} \left( \frac{1}{2} v^2(t) \right) = v(t) \frac{dv(t)}{dt}$
 
-$\Rightarrow W_{kin} = m \int_1^2 \frac{dv}{dt} v \, dt = m \left|\frac{1}{2} \left( v(t) \right)^2 \right|_1^2 = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right)$ 
+$\Rightarrow W_{kin} = m \int_1^2 \frac{dv}{dt} v \, dt = m \left[\frac{1}{2} \left( v(t) \right)^2 \right]_1^2 = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right)$ 
 
 ## Leistung
 
@@ -113,11 +115,11 @@ Die Einheit der Leistung ist $[P] = 1\, \frac{J}{s} = 1 \, W = 1$ Watt.
 
 ### Beispiel: Mechanische Leistung
 
-Ein Wanderer wiegt $70 \, kg$ und trägt einen $7 \, kg$ schweren Rucksack auf einen um $200 \, m$ höher gelegenen Gipfel eines Berges hinauf. Er benötigt hierfür $30 \, min$. Welche Leistung bringt der Wanderer durchschnittlich auf, um den Rucksack auf den Berg zu tragen?
+Ein Wanderer wiegt $70 \, kg$ und trägt einen $7 \, kg$ schweren Rucksack auf einen um $200 \, m$ höher gelegenen Gipfel eines Berges hinauf. Er benötigt hierfür $30 \, min$. Welche Leistung bringt der Wanderer durchschnittlich auf, um sich selbst und den Rucksack auf den Berg zu tragen?
 
-Hubarbeit für den Wanderer: $\Delta W_W = m_w g h = 70 \,kg \cdot 9.81 \frac{kg\cdot m}{s^2}\cdot 200m = 137,34 \,kJ$
+Hubarbeit für den Wanderer: $\Delta W_W = m_w g h = 70 \,kg \cdot 9.81 \frac{m}{s^2}\cdot 200m = 137.34 \,kJ$
 
-Hubarbeit für den Rucksack: $\Delta W_R = m_R g h = 7 \,kg \cdot 9.81 \frac{kg\cdot m}{s^2}\cdot 200m = 13,734 \,kJ$
+Hubarbeit für den Rucksack: $\Delta W_R = m_R g h = 7 \,kg \cdot 9.81 \frac{m}{s^2}\cdot 200m = 13.734 \,kJ$
 
 Für die Leistung gilt: 
 
@@ -125,20 +127,20 @@ $P = \frac{dW}{dt} \stackrel{Durchschnittswert}{=}\frac{\Delta W}{\Delta t}$
 
 Damit muss der Wanderer durchschnittlich die Leistung
 
-$\overline{P}_W = \frac{\Delta W_W}{\Delta t} = \frac{137,34 \, kJ}{30\cdot 60 s} = 76,3 \,W$
+$\overline{P}_W = \frac{\Delta W_W}{\Delta t} = \frac{137.34 \, kJ}{30\cdot 60 s} = 76.3 \,W$
 
 aufbringen, um die $200 $ Höhenmeter zu überwinden. 
 Um den Rucksack auf den Berg zu tragen muss zusätzlich die Leistung
 
-$\overline{P}_R = \frac{\Delta W_W}{\Delta t} = \frac{13,734 \, kJ}{30\cdot 60 s} = 7,63 \,W$ aufgebracht werden.
+$\overline{P}_R = \frac{\Delta W_R}{\Delta t} = \frac{13.734 \, kJ}{30\cdot 60 s} = 7.63 \,W$ aufgebracht werden.
 
 Insgesamt ist damit die benötigte Leistung
 
-$\overline{P}_{Ges} = \overline{P}_W + \overline{P}_R = 83,93 \, W$
+$\overline{P}_{Ges} = \overline{P}_W + \overline{P}_R = 83.93 \, W$
 
 ### Beispiel: Mechanische Leistung 2
 
-Ein Auto fährt bei einer gesamten Fahrwiderstandskraft $F = 1200\, N$ von eine Geschwindigkeit von $v = 72 \frac{km}{h} = 20 \frac{m}{s}$. Berechnen Sie die mechanische Leistung, die der Motor des Autos aufbringt.
+Ein Auto fährt bei einer gesamten Fahrwiderstandskraft $F = 1200\, N$ mit einer Geschwindigkeit von $v = 72 \frac{km}{h} = 20 \frac{m}{s}$. Berechnen Sie die mechanische Leistung, die der Motor des Autos aufbringt.
 
 Die Fahrwiderstandskraft $F = 1200\, N$ ist konstant, daher gilt
 
@@ -146,7 +148,7 @@ $W = \int F \, ds = F\int ds $
 
 Die Leistung ist daher 
 
-$P = \frac{dW}{dt} = \frac{d}{dt} F\int ds = F \int \frac{ds}{dt} = F \int dv = F \cdot v$
+$P = \frac{dW}{dt} = \frac{d}{dt} \left( F \cdot s \right) = F \cdot \frac{ds}{dt} = F \cdot v$
 
 Damit ist
 
@@ -173,7 +175,7 @@ $E_{ges} = E_{kin} + E_{pot} \left( + E_{diss} \right) = \text{konstant}$
 Die dissipative Energie (Reibung) wird oft als Verlustenergie bezeichnet.
 Dies ist falsch, da keine Energie verloren geht, allerdings wird sie in thermische Energie (mit niedriger Temperatur) umgewandelt und kann nicht mehr in kinetische oder potentielle Energie umgewandelt werden.
 
-Der Energieerhaltungssatz ist ein oft verwendeter Satz. Es kann beispielsweise verwendet werden, um Anfangs- und Endzustände einer Bewegung in Relation zu setzen, ohne dass die genauen Bewegungsgleichungen benötigt werden.
+Der Energieerhaltungssatz ist ein oft verwendeter Satz. Er kann beispielsweise verwendet werden, um Anfangs- und Endzustände einer Bewegung in Relation zu setzen, ohne dass die genauen Bewegungsgleichungen benötigt werden.
 
 ### Beispiel: Energieerhaltungssatz
 
@@ -185,15 +187,15 @@ name: energie-1
 Beispiel zur Energieerhaltung.
  ```
 
-Für die Hubarbeit gilt (siehe [](#beispiel-hubarbeit))
+Für die Hubarbeit gilt (siehe {ref}`Beispiel Hubarbeit <beispiel-hubarbeit>`)
 
-$E_{pot}: \,\,\, W_{pot} \text{ Hubarbeit von } (1) \text{ nach } (2)$
+$E_{pot}: \,\,\, W_{pot} \text{ Hubarbeit, um die Masse von } (2) \text{ nach } (1) \text{ zu heben}$
 
-$W_{pot} = W_{12} =  mg \left( x_2 - x_1\right) = mgh =: E_{pot}$
+$W_{pot} = mg \left( x_1 - x_2\right) = mgh =: E_{pot}$
 
-Für die Beschleunigungsarbeit gilt (siehe [](#beispiel-beschleunigungsarbeit))
+Für die Beschleunigungsarbeit gilt (siehe {ref}`Beispiel Beschleunigungsarbeit <beispiel-beschleunigungsarbeit>`)
 
-$E_{kin} = W_{kin} = \text{ Beschleunigungs von (1) nach (2) } = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right) =  \frac{m}{2} v^2$
+$E_{kin} = W_{kin} = \text{ Beschleunigungsarbeit von (1) nach (2) } = \frac{m}{2} \left( v^2(t_2) - v^2(t_1) \right) =  \frac{m}{2} v^2$
 
 mit $ v\left( t_1 \right) = 0$ und $v \left( t_2 \right) = v(t) $.
 

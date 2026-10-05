@@ -4,7 +4,7 @@ Unter bestimmten Voraussetzungen kann eine Funktion differenziert werden. Das Di
 Differenzierbarkeit ist die Eigenschaft einer Funktion, sich lokal um einen Punkt in eindeutiger Weise linear approximieren zu lassen. Differenzierbare Funktionen sind stets stetig. 
 Das Differential oder die Ableitung einer Funktion ist definiert als
 
-$f^\prime(x) = lim_{h\rightarrow 0} \frac{f \left( x + h \right) - f \left( x \right)}{h} $
+$f^\prime(x) = \lim_{h\rightarrow 0} \frac{f \left( x + h \right) - f \left( x \right)}{h} $
 
 Beispiel:
 

@@ -13,7 +13,7 @@ Beispiele: Geschwindigkeit, Erdanziehung, Magnetfeld
 Ein Auto fährt mit der Geschwindigkeit von $v = 100 \frac{km}{h}$.
 (d.h. der Zahlenwert der Geschwindigkeit ist gegeben). Das ist nicht die
 ganze Information über die Geschwindigkeit: es ist nicht gesagt wohin und in welcher
-Richtung das Auto fährt. Die vektorielle Grösse $\vec{v}$ enthält den Betrag **und** die Richtung.
+Richtung das Auto fährt. Die vektorielle Größe $\vec{v}$ enthält den Betrag **und** die Richtung.
 
 ```{figure} Vektor_1.png
 ---

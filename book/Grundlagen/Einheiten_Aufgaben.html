@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Grundlagen/Einheiten_Aufgaben';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/Grundlagen/Einheiten_Aufgaben.html" />
     <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="2.3. Exponentialschreibweise / Präfixe" href="Einheiten_Praefixe.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 1 - Home"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 1 - Home"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark pst-js-only" alt="Skript Physik 1 - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
@@ -211,7 +251,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">2.1. Kinematik eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">2.2. Eindimensionale Bewegung eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. 2 dimensionale Bewegungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. Zweidimensionale Bewegungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">2.5. Schiefer Wurf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">2.6. Beispielaufgaben zum Schiefen Wurf</a></li>
 </ul>
@@ -285,9 +325,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -434,7 +479,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -448,25 +493,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -488,7 +525,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einheiten-umrechnen">2.4.1. Einheiten umrechnen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einheiten-umrechnen-2">2.4.2. Einheiten umrechnen 2</a></li>
 </ul>
@@ -508,17 +545,32 @@ document.write(`
 <h2><span class="section-number">2.4.1. </span>Einheiten umrechnen<a class="headerlink" href="#einheiten-umrechnen" title="Link to this heading">#</a></h2>
 <p>Geben Sie die folgenden Größen in SI-Basiseinheiten an. Falls Sie eine Einheit nicht kennen, googlen Sie!</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(32,321 \,km \)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(0,034 \,d\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(32.321 \,km \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0.034 \,d\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(44 \, MV\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(0,018 \, \frac{kg}{l}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(100 \)</span>, MW</p></li>
+<li><p><span class="math notranslate nohighlight">\(0.018 \, \frac{kg}{l}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(100 \, MW\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(5 \,pc\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(25 \, ha\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(3000 \, J\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(0.043 \, Ts\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(1\)</span> k <span class="math notranslate nohighlight">\(Hz\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1 \, kHz\)</span></p></li>
 </ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(32.321 \,km = 32321 \, m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0.034 \,d = 0.034 \cdot 24 \cdot 3600 \, s = 2937.6 \, s\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(44 \, MV = 44 \cdot 10^6 \, \frac{kg \cdot m^2}{A \cdot s^3}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0.018 \, \frac{kg}{l} = 0.018 \, \frac{kg}{10^{-3} \cdot m^3} = 18 \, \frac{kg}{m^3}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(100 \, MW = 10^8 \, \frac{kg \cdot m^2}{s^3}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(5 \,pc = 5 \cdot 3.0857 \cdot 10^{16} \, m = 15.43 \cdot 10^{16} \, m \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(25 \, ha = 25 \cdot 10000 \, m^2 = 2.5 \cdot 10^5 \, m^2 \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(3000 \, J = 3000 \, kg \frac{m^2}{s^2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0.043 \, Ts = 0.043 \cdot 10^{12} \, s = 43 \cdot 10^9 \, s \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1 \, kHz = 1 \cdot 10^3 \, \frac{1}{s} = 1000 \, \frac{1}{s}\)</span></p></li>
+</ul>
+</div>
 </section>
 <section id="einheiten-umrechnen-2">
 <h2><span class="section-number">2.4.2. </span>Einheiten umrechnen 2<a class="headerlink" href="#einheiten-umrechnen-2" title="Link to this heading">#</a></h2>
@@ -527,26 +579,55 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(\left[p \right] = N \cdot s\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\left[p \right] = \frac{N}{s}\)</span></p></li>
 </ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<p><span class="math notranslate nohighlight">\(\left[p \right] = N \cdot s\)</span>, denn</p>
+<div class="math notranslate nohighlight">
+\[ N = \frac{kg \cdot m}{s^2} \Rightarrow N \cdot s = \frac{kg \cdot m \cdot s}{s^2} = \frac{kg \cdot m}{s}\]</div>
+</div>
 <p>Die Einheit der Leistung <span class="math notranslate nohighlight">\(P\)</span> ist <span class="math notranslate nohighlight">\(1  J / s\)</span>. Welche Einheit ist noch möglich?</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\left[P \right] = \frac{N \cdot m}{s}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\left[P \right] = N \cdot m\)</span></p></li>
 </ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<p><span class="math notranslate nohighlight">\(\left[P \right] = \frac{N \cdot m}{s}\)</span>, denn</p>
+<div class="math notranslate nohighlight">
+\[ 1  \, J / s = \frac{kg \cdot m}{s^2} \, \frac{m}{s} = \frac{N \cdot m}{s}\]</div>
+</div>
 <p>Die Einheit des Volumens V ist?</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\left[V \right] = m^3\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\left[V \right] = mg^3\)</span></p></li>
 </ul>
-<p>Die Einheit des Drucks <span class="math notranslate nohighlight">\(p\)</span> ist <span class="math notranslate nohighlight">\(bar = 10^5 \, Pascal = 1 \frac{N}{m^2}\)</span>. Welche Einheit ist noch möglich?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<div class="math notranslate nohighlight">
+\[ \left[V \right] = m^3 \]</div>
+</div>
+<p>Die Einheit des Drucks <span class="math notranslate nohighlight">\(p\)</span> ist <span class="math notranslate nohighlight">\(1 \, Pa = 1 \frac{N}{m^2}\)</span> (gebräuchlich ist auch <span class="math notranslate nohighlight">\(1 \, bar = 10^5 \, Pa\)</span>). Welche Einheit ist noch möglich?</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\frac{kg }{m \cdot s^2}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\frac{kg \cdot m}{s^2}\)</span></p></li>
 </ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<p><span class="math notranslate nohighlight">\(\frac{kg }{m \cdot s^2}\)</span>, denn</p>
+<div class="math notranslate nohighlight">
+\[1 \frac{N}{m^2} = 1 \frac{kg \cdot m}{s^2} \cdot \frac{1}{m^2} = \frac{kg}{m \cdot s^2}\]</div>
+</div>
 <p>Die Einheit der Energie ist <span class="math notranslate nohighlight">\( 1 \, J  =1 \frac{kg \cdot m^2}{s^2}.\)</span>  Welche Einheit ist noch möglich?</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(N \cdot s\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(N \cdot m\)</span></p></li>
 </ul>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Lösung</p>
+<p><span class="math notranslate nohighlight">\(N \cdot m\)</span>, denn</p>
+<div class="math notranslate nohighlight">
+\[Nm = \frac{kg \cdot m}{s^2} \cdot m = \frac{kg \cdot m^2}{s^2}\]</div>
+</div>
 </section>
 </section>
 
@@ -605,15 +686,17 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einheiten-umrechnen">2.4.1. Einheiten umrechnen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einheiten-umrechnen-2">2.4.2. Einheiten umrechnen 2</a></li>
 </ul>
@@ -665,8 +748,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

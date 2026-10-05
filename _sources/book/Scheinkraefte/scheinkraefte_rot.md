@@ -4,9 +4,10 @@ Auch und insbesondere bei Drehbewegungen treten Scheinkräfte auf. Bei der Drehb
 
 Scheinkräfte im rotierenden Bezugssystem sind besonders interessant, da wir uns auf der Erde in einem solchen Bezugssystem befinden. 
 
+(beispiel-rotierendes-bezugssystem)=
 ## Beispiel: rotierendes Bezugssystem
 
-Ein weiteres, häufig in der Realität verwendetes, Bezugssystem, ist ein Bezugssystem, welches mit konstanter Geschwindigkeit rotiert. Dies wird im Folgenden betrachtet. 
+Ein weiteres, häufig in der Realität verwendetes, Bezugssystem, ist ein Bezugssystem, welches mit konstanter Winkelgeschwindigkeit $\vec{\omega}$ rotiert. Dies wird im Folgenden betrachtet. 
 
 ```{figure} Bilder/rotierendes_bz.png
 ---
@@ -16,11 +17,11 @@ name: rotierendes_bz-1
 Scheinkräfte in einem rotierenden Bezugssystem.
  ```
 
-Durch ähnliche Betrachtungen wie in [Scheinkräfte](#beispiel-negativ-beschleunigtes-bezugssystem), ergibt sich im Bezugssystem $O^\prime$:
+Durch ähnliche Betrachtungen wie in {ref}`Scheinkräfte <beispiel-negativ-beschleunigtes-bezugssystem>`, ergibt sich im Bezugssystem $O^\prime$:
 
-$m \ddot{\vec{r}}^\prime = m\vec{a}^\prime = -2m \left(\vec{\omega} \times \dot{\vec{r}}^\prime \right) - m \vec{\omega} \times \left(\vec{\omega} \times \vec{r}^\prime  \right)$
+$m \ddot{\vec{r}}^\prime = m\vec{a}^\prime = \vec{F} -2m \left(\vec{\omega} \times \dot{\vec{r}}^\prime \right) - m \vec{\omega} \times \left(\vec{\omega} \times \vec{r}^\prime  \right)$
 
-Dies bedeutet, dass es in diesem Fall zwei auftretende Scheinkräfte gibt. Die eine
+Dabei ist $\vec{F}$ die Summe der realen Kräfte. Dies bedeutet, dass es in diesem Fall zwei auftretende Scheinkräfte gibt. Die eine
 
 $\vec{F}_Z = - m \vec{\omega} \times \left(\vec{\omega} \times \vec{r}^\prime  \right)$
 
@@ -28,5 +29,5 @@ wird als Zentrifugalkraft bezeichnet, die andere als Corioliskraft.
 
 $\vec{F}_C =  -2m \left(\vec{\omega} \times \dot{\vec{r}}^\prime \right) $
 
-Eine genaue Herleitung dieser Zusammenhänge ist beispielsweise in {cite}`nolting` S. 184 zu finden. Diese überschreitet aber den Rahmen dieser Vorlesung und ist hier nur der Vollständigkeit halber abgegeben.
+Eine genaue Herleitung dieser Zusammenhänge ist beispielsweise in {cite}`nolting` S. 184 zu finden. Diese überschreitet aber den Rahmen dieser Vorlesung und ist hier nur der Vollständigkeit halber angegeben.
 

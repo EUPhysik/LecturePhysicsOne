@@ -1,9 +1,9 @@
 # Wärmetauscher
 
-Eine einfache Anwendung, bei der man sich dei Grundlagen thermodynamischer Prinzipien zu Nutze macht, ist ein Wärmetauscher.
+Eine einfache Anwendung, bei der man sich die Grundlagen thermodynamischer Prinzipien zu Nutze macht, ist ein Wärmetauscher.
 Dies ist eine Vorrichtung, die thermische Energie von einem Stoffstrom auf einen anderen überträgt. 
-Dabei gibt das warme Medium gibt Wärme ab und das kalte Medium nimmt Wärme auf.
-Ein Beispiel für einen Wärmetauscher ist in {numref}` Abbildung %s <wt-1>` dargestellt.
+Dabei gibt das warme Medium Wärme ab und das kalte Medium nimmt Wärme auf.
+Ein Beispiel für einen Wärmetauscher ist in {numref}`Abbildung %s <wt-1>` dargestellt.
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/a/a8/WTU-Email.jpg
 ---
@@ -22,15 +22,15 @@ Im Wärmetauscher gibt es zwei Stoffströme, einen Warmen, der Energie abgibt, u
 Im Gleichstromwärmetauscher fließen beide Stoffströme in die gleiche Richtung. Die beiden Stoffströme vermischen sich nicht, sondern tauschen nur Wärmeenergie aus. 
 
 Der Druck im Wärmetauscher ist konstant. Daher liegt hier in jedem Strom eine Isobare Zustandsänderung vor.
-Bei [Isobaren](./zustandsaenderungen.html#isobare-zustandsanderung) gilt für die Entropie
+Bei {ref}`Isobaren <isobare-zustandsaenderung>` gilt für die Entropie
 
-$dS = \frac{d Q}{T} = \frac{dH}{T} = \left| \frac{C_p \cdot dT }{T} \right| _{p = \text{konst.}} = m \cdot c_p \frac{dT}{T} \Rightarrow dQ = m \cdot c_p \cdot dT \Rightarrow \frac{dQ}{dt} = \frac{d}{dt} \left( m \cdot c_p \cdot dT \right)$
+$dS = \frac{d Q}{T} = \frac{dH}{T} = \left| \frac{C_p \cdot dT }{T} \right| _{p = \text{konst.}} = m \cdot c_p \frac{dT}{T} \Rightarrow dQ = m \cdot c_p \cdot dT$
 
-Sind $c_p$ und $dT$ nicht zeitabhängig sind, gilt
+Strömt ein Massenstrom $\dot{m}$ durch den Wärmetauscher und ändert dabei seine Temperatur um $\Delta T$ (Differenz zwischen Ein- und Austrittstemperatur), so gilt bei konstantem $c_p$
 
-$\dot{Q} = \dot{m} c_p dT$
+$\dot{Q} = \dot{m} \cdot c_p \cdot \Delta T$
 
-Die ist die thermische Leistung des Wärmetauschers.
+Dies ist die thermische Leistung des Wärmetauschers.
 
 ```{figure} Bilder/waermetauscher.png
 ---
@@ -41,13 +41,13 @@ name: wt-2
 Prinzip eines Wärmetauschers
  ```
 
-Da auf der warmen Seite die gleiche Leistung abgegeben wird (siehe {numref}` Abbildung %s <wt-2>`), wie von der kalten Seite aufgenommen wird, gilt
+Da auf der warmen Seite die gleiche Leistung abgegeben wird (siehe {numref}`Abbildung %s <wt-2>`), wie von der kalten Seite aufgenommen wird, gilt
 
-$\dot{Q}_{kalt} = \dot{m}_1 \cdot c_p \cdot \Delta T_{kalt}$
+$\dot{Q}_{kalt} = \dot{m}_{kalt} \cdot c_p \cdot \Delta T_{kalt}$
 
 und
 
-$\dot{Q}_{warm} = \dot{m}_2 \cdot c_p \cdot \Delta T_{warm}$
+$\dot{Q}_{warm} = \dot{m}_{warm} \cdot c_p \cdot \Delta T_{warm}$
 
 mit
 
@@ -77,12 +77,12 @@ $\dot{Q}_{warm} = \dot{Q}_{kalt} \Leftrightarrow \dot{m}_{warm} \cdot c_p \cdot 
 
 $\Leftrightarrow \dot{m}_{warm} \cdot \Delta T_{warm} = \dot{m}_{kalt} \cdot \Delta T_{kalt} \Leftrightarrow 10 \cdot \dot{m}_{kalt} \cdot \Delta T_{warm} = \dot{m}_{kalt} \cdot \Delta T_{kalt}$
 
-$\Leftrightarrow \Delta T_{warm} = \frac{ \Delta T_{kalt}}{10} = 1,5 \,K$
+$\Leftrightarrow \Delta T_{warm} = \frac{ \Delta T_{kalt}}{10} = 1.5 \,K$
 
 ## Wärmeleitung 
 
 Will man nicht nur die übertragenen Wärmeleistung berechnen, sondern genauer verstehen wie die Wärme transportiert wird, muss genauer angeschaut werden, die die Wärme transportiert werden.
-Die Wärmeleitung ist ein Mechanismus zum Transport von thermischer Energie und wird beschrieben durch das Fouriersches-Gesetz:
+Die Wärmeleitung ist ein Mechanismus zum Transport von thermischer Energie und wird beschrieben durch das Fouriersches Gesetz:
 
 $\dot{Q} = \lambda \cdot A \cdot \frac{\Delta T}{d}$
 
@@ -103,20 +103,20 @@ Beispiel für Wärmeleitkoeffizienten sind
 
 |Material|$\left[\lambda \right] = \frac{W}{m\cdot K}$|
 |--|--|
-|Beton | 0,18 - 1,3|
-|Holz |0,15|
+|Beton | 0.18 - 1.3|
+|Holz |0.15|
 |Kupfer |401|
 |Messing |120|
 |Stahl |50-80|
-|Luft |0,026|
-|Wasser |0,61|
+|Luft |0.026|
+|Wasser |0.61|
 |Eis |2|
-|Wolle |0,04|
-|Glas |0,8|
+|Wolle |0.04|
+|Glas |0.8|
 
-Alternativ wird der Wärmedurchgangskoeffizient $k$ und die mittlere logarithmische Temperaturdifferenz verwendet, dann wird das Fouriersches-Gesetz zu
+Alternativ wird der Wärmedurchgangskoeffizient $k$ und die mittlere logarithmische Temperaturdifferenz verwendet, dann wird das Fouriersches Gesetz zu
 
-$\dot{Q} = k \cdot A \cdot \Delta T_{log}$
+$\dot{Q} = k \cdot A \cdot \Delta T_{\log}$
 
 mit
 
@@ -124,19 +124,21 @@ Wärmedurchgangskoeffizient $k$ mit $\left[k\right] = \frac{W}{m^2 \cdot K}$
 
 Austauschfläche $A$ mit $\left[A\right] = m^2$
 
-Mittlere logarithmische Temperaturdifferenz $\Delta T_{log}$ mit $\Delta T_{log} = \frac{\Delta T_{max} - \Delta T_{min}}{ln \left( \frac{\Delta T_{max}}{\Delta T_{min}} \right)}$
+Mittlere logarithmische Temperaturdifferenz $\Delta T_{\log}$ mit $\Delta T_{\log} = \frac{\Delta T_{max} - \Delta T_{min}}{\ln \left( \frac{\Delta T_{max}}{\Delta T_{min}} \right)}$
 
-und $\left[ \Delta T_{log} \right] = K$
+und $\left[ \Delta T_{\log} \right] = K$
 
-Die beiden häufigsten Varianten eine Wärmeströmers sind das Gleichstromprinzip und das Gegenstromprinzip.
+Die beiden häufigsten Varianten eines Wärmeübertragers sind das Gleichstromprinzip und das Gegenstromprinzip.
 
+|Gleichstromprinzip|Gegenstromprinzip|
+|--|--|
 |![](https://upload.wikimedia.org/wikipedia/de/e/eb/Gleichstromprinzip.png)|![](https://upload.wikimedia.org/wikipedia/de/0/01/Gegenstromprinzip.png)| 
 
 Quellen: [Gleichstrom](https://de.wikipedia.org/w/index.php?curid=2143054) und [Gegenstrom](https://de.wikipedia.org/w/index.php?curid=345286)
 
 
 Beim Gleichstromwärmetauscher strömen beide Massenströme in die gleiche Richtung
-Beim Gegenstromwärmetauscher strömen die Massenströme in die entgegengesetze Richtung
+Beim Gegenstromwärmetauscher strömen die Massenströme in die entgegengesetzte Richtung
 
 Gleichstromwärmetauscher hat eine hohe Wärmeaustauschrate bei großen Temperaturunterschieden $\Rightarrow$ schnelle Wärmeübertragung
 

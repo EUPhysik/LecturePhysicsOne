@@ -7,7 +7,7 @@ $$f(x) = y$$
 Einem Element der Definitionsmenge ist somit genau ein Element der Zielmenge zugeordnet. Andersherum gilt dieses nicht.
 Ein Element der Zielmenge kann genau einem, mehreren, aber auch keinem Element der Definitionsmenge zugeordnet sein.
 
-Ein Beispiel für eine einfache Funktion ist $y = x^2$, also eine quadratische Funktion. Hier wird jedem Element x der Definitionsmenge ein Element y der Zielmenge über die Funktionvorschrift $y = x^2$ zugeordnet. 
+Ein Beispiel für eine einfache Funktion ist $y = x^2$, also eine quadratische Funktion. Hier wird jedem Element x der Definitionsmenge ein Element y der Zielmenge über die Funktionsvorschrift $y = x^2$ zugeordnet. 
 
 Beispiel einer Funktion: 
 

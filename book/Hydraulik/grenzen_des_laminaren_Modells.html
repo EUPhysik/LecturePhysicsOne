@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Hydraulik/grenzen_des_laminaren_Modells';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/Hydraulik/grenzen_des_laminaren_Modells.html" />
     <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="9. Aerodynamik" href="../Gase/aerodynamik.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 1 - Home"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 1 - Home"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark pst-js-only" alt="Skript Physik 1 - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
@@ -211,7 +251,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">2.1. Kinematik eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">2.2. Eindimensionale Bewegung eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. 2 dimensionale Bewegungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. Zweidimensionale Bewegungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">2.5. Schiefer Wurf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">2.6. Beispielaufgaben zum Schiefen Wurf</a></li>
 </ul>
@@ -285,9 +325,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -434,7 +479,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -448,25 +493,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -488,7 +525,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viskositat">10.1. Viskosität</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulenz">10.2. Turbulenz</a></li>
 </ul>
@@ -505,9 +542,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="grenzen-des-einfachen-modells">
 <h1><span class="section-number">10. </span>Grenzen des einfachen Modells<a class="headerlink" href="#grenzen-des-einfachen-modells" title="Link to this heading">#</a></h1>
 <p>Bislang wurden reibungsfreie und laminare Strömungen betrachtet. In Realität treten jedoch Phänomene wie Reibung und Turbulenz auf.
-Im folgenden werden diese Inhalte soweit bearbeitet, wie es notwendig ist, um zu verstehen, in welchen Grenzen das einfach Modell der laminaren Strömung gilt und welche Effekte darüber hinaus auftretende Phänomene wie Reibung und Turbulenz haben.</p>
+Im Folgenden werden diese Inhalte soweit bearbeitet, wie es notwendig ist, um zu verstehen, in welchen Grenzen das einfache Modell der laminaren Strömung gilt und welche Effekte darüber hinaus auftretende Phänomene wie Reibung und Turbulenz haben.</p>
 <section id="viskositat">
-<h2><span class="section-number">10.1. </span>Viskosität<a class="headerlink" href="#viskositat" title="Link to this heading">#</a></h2>
+<span id="viskositaet"></span><h2><span class="section-number">10.1. </span>Viskosität<a class="headerlink" href="#viskositat" title="Link to this heading">#</a></h2>
 <p>Bei realen Strömungen muss der Reibungswiderstand berücksichtigt werden.
 Die Reibung setzt sich zusammen aus</p>
 <ul class="simple">
@@ -516,40 +553,43 @@ Die Reibung setzt sich zusammen aus</p>
 </ul>
 <p>Die Viskosität bezeichnet die Zähigkeit, von Fluiden, sie wirkt also der Bewegung entgegen. Je höher die Viskosität ist, desto dickflüssiger ist das Fluid. Ein Beispiel für ein Fluid mit hoher Viskosität ist Honig.</p>
 <figure class="align-default" id="viskositat-1">
-<a class="reference internal image-reference" href="../../_images/Viscosities.gif"><img alt="Viskosität" src="../../_images/Viscosities.gif" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="../../_images/Viscosities.gif"><img alt="Viskosität" src="../../_images/Viscosities.gif" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.1 </span><span class="caption-text"><a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=50627718">Von Synapticrelay</a></span><a class="headerlink" href="#viskositat-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Um zu verstehen, was dies beispielsweise für eine Rohrströmung bedeutet, teilt man das Fluid in infinitesimale Schichten auf (<a class="reference internal" href="#reibung-1"><span class="std std-numref">siehe Abbildung 10.2</span></a>).</p>
 <figure class="align-default" id="reibung-1">
-<a class="reference internal image-reference" href="../../_images/reibung.svg"><img alt="Reibung" src="../../_images/reibung.svg" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="../../_images/reibung.svg"><img alt="Reibung" src="../../_images/reibung.svg" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.2 </span><span class="caption-text">Infinitesimale Schichten in einer Rohrströmung</span><a class="headerlink" href="#reibung-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Die dynamische Viskosität ist definiert als <span class="math notranslate nohighlight">\(F = \eta \cdot A \frac{\Delta v}{\Delta y}\)</span>
-Da es sich immer noch um eine lamiare Strömung handelt, bedeutet dies, dass <span class="math notranslate nohighlight">\(\perp\)</span> zu Strömunggeschwingungkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet, d.h. es findet keine Durchmischung der einzelnen Schichten statt.</p>
+Da es sich immer noch um eine laminare Strömung handelt, bedeutet dies, dass <span class="math notranslate nohighlight">\(\perp\)</span> zu Strömungsgeschwindigkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet, d.h. es findet keine Durchmischung der einzelnen Schichten statt.</p>
 <p>Dies bedeutet folgendes für eine Rohrströmung:</p>
 <ul class="simple">
-<li><p>die Reibung zwischen den Wänden und der ersten Fluidschicht sorgt dafür, dass diese Fluischicht abgebremst wird</p></li>
+<li><p>die Reibung zwischen den Wänden und der ersten Fluidschicht sorgt dafür, dass diese Fluidschicht abgebremst wird</p></li>
 <li><p>die Reibung zwischen der ersten und zweiten Fluidschicht sorgt dafür, dass versetzt zur ersten Fluidschicht die zweite Fluidschicht abgebremst wird</p></li>
 <li><p>die Reibung zwischen der zweiten und dritten Fluidschicht sorgt dafür, dass versetzt zur zweiten Fluidschicht die dritte Fluidschicht abgebremst wird</p></li>
 <li><p>…</p></li>
-<li><p>Es bildet sich somit ein Profil aus, bei dem die an den Rand liegenden Schichten hinter den weiter in der Mitte liegenden Schichten hinterherlaufen.</p></li>
+<li><p>Es bildet sich somit ein Profil aus, bei dem die am Rand liegenden Schichten hinter den weiter in der Mitte liegenden Schichten hinterherlaufen.</p></li>
 </ul>
 <p>Die Form dieses Profils lässt sich über eine Kräftebilanz bestimmen.
 Zum einen wirken Druckkräfte, die das Fluid durch die Rohrleitung drücken. Diese sind gegeben durch
-<span class="math notranslate nohighlight">\(F_D = A \cdot \Delta p = r^2 \cdot \pi \cdot \left( p_2 - p_1 \right)\)</span></p>
+<span class="math notranslate nohighlight">\(F_D = A \cdot \Delta p = r^2 \cdot \pi \cdot \Delta p\)</span> mit <span class="math notranslate nohighlight">\(\Delta p = p_1 - p_2\)</span> (Druck am Rohranfang minus Druck am Rohrende)</p>
 <p>Die Reibungskräfte wirken der Bewegung entgegen. Sie sind gegeben durch
 <span class="math notranslate nohighlight">\(F_R = U\cdot l \left( - \eta \frac{du}{dr}\right) = 2 \cdot \pi \cdot r \cdot l \left( - \eta \frac{du}{dr}\right)\)</span>, wobei der Term <span class="math notranslate nohighlight">\(- \eta \frac{du}{dr}\)</span> den Impulsübertrag in radiale Richtung beschreibt.</p>
 <p>Hierbei ist in der Mitte der Rohrleitung <span class="math notranslate nohighlight">\(r=0\)</span> und am Rand <span class="math notranslate nohighlight">\(r=R\)</span> und <span class="math notranslate nohighlight">\(u(R) = 0\)</span>.</p>
 <p>Die daraus resultierende Differentialgleichung hat (bei konstanter Druckkraft) die Lösung <span class="math notranslate nohighlight">\(u (r) = \frac{\Delta p}{4 \cdot \eta \cdot l} \left(R^2 - r^2 \right)\)</span></p>
 <p>Die maximale Geschwindigkeit ist bei <span class="math notranslate nohighlight">\(r = 0\)</span>: <span class="math notranslate nohighlight">\(u_{max} = \frac{\Delta p \cdot R^2}{4 \cdot \eta \cdot l}\)</span></p>
 <p>Und die mittlere Geschwindigkeit <span class="math notranslate nohighlight">\(\bar{u} = \frac{u_{max}}{2}\)</span></p>
-<p>Dies ist auch bekannt als das Gesetz von Hagen-Poseuille.</p>
+<p>Dies ist auch bekannt als das Gesetz von Hagen-Poiseuille.</p>
 <figure class="align-default" id="reibung-2">
-<a class="reference internal image-reference" href="../../_images/laminar2.svg"><img alt="Laminare Rohrströmung" src="../../_images/laminar2.svg" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="../../_images/laminar2.svg"><img alt="Laminare Rohrströmung" src="../../_images/laminar2.svg" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.3 </span><span class="caption-text">Laminare Rohrströmung mit Geschwindigkeitsprofil</span><a class="headerlink" href="#reibung-2" title="Link to this image">#</a></p>
 </figcaption>
@@ -557,16 +597,18 @@ Zum einen wirken Druckkräfte, die das Fluid durch die Rohrleitung drücken. Die
 </section>
 <section id="turbulenz">
 <h2><span class="section-number">10.2. </span>Turbulenz<a class="headerlink" href="#turbulenz" title="Link to this heading">#</a></h2>
-<p>Bislang wurden laminare Strômungen betrachtet. Kennzeichnend hierfür war, das <span class="math notranslate nohighlight">\(\perp\)</span> zu Strömunggeschwingungkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. Ab einer bestimmten Strömungsgeschwindigkeit ist das nicht mehr der Fall, sondern es kommt zu Verwirbelungen. Dies wird auch als Turbulenz bezeichnet.</p>
+<p>Bislang wurden laminare Strömungen betrachtet. Kennzeichnend hierfür war, das <span class="math notranslate nohighlight">\(\perp\)</span> zu Strömungsgeschwindigkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. Ab einer bestimmten Strömungsgeschwindigkeit ist das nicht mehr der Fall, sondern es kommt zu Verwirbelungen. Dies wird auch als Turbulenz bezeichnet.</p>
 <figure class="align-default" id="turbulenz-1">
-<a class="reference internal image-reference" href="../../_images/False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg"><img alt="Turbulenz" src="../../_images/False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg"><img alt="Turbulenz" src="../../_images/False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg" style="width: 60%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.4 </span><span class="caption-text">Turbulenz <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=3082535">Von C. Fukushima and J. Westerweel, Technical University of Delft</a></span><a class="headerlink" href="#turbulenz-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>1883 machte Reynolds grundlegende Expermiente zur Turbulenz und lieferte wichtige theoretische Grundlagen. Er lies einen starken Farbstoff durch eine Fluidströmung mitlaufen und analysierte die dadurch sichtbar gemachten Schichten. Dennoch sind viele Aspekte der Turbulenz auch heute noch ein aktives Forschungsfeld.</p>
+<p>1883 machte Reynolds grundlegende Experimente zur Turbulenz und lieferte wichtige theoretische Grundlagen. Er lies einen starken Farbstoff durch eine Fluidströmung mitlaufen und analysierte die dadurch sichtbar gemachten Schichten. Dennoch sind viele Aspekte der Turbulenz auch heute noch ein aktives Forschungsfeld.</p>
 <figure class="align-default" id="reynolds-1">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Reynolds_fluid_turbulence_experiment_1883.jpg"><img alt="Reynolds Experiment" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Reynolds_fluid_turbulence_experiment_1883.jpg" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Reynolds_fluid_turbulence_experiment_1883.jpg"><img alt="Reynolds Experiment" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Reynolds_fluid_turbulence_experiment_1883.jpg" style="width: 60%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.5 </span><span class="caption-text">Experiment von Reynolds zur Turbulenz <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=39278179">Von Svebert</a></span><a class="headerlink" href="#reynolds-1" title="Link to this image">#</a></p>
 </figcaption>
@@ -581,16 +623,17 @@ Zum einen wirken Druckkräfte, die das Fluid durch die Rohrleitung drücken. Die
 <p><span class="math notranslate nohighlight">\(\eta = \)</span>  dynamische Viskosität</p>
 <p><span class="math notranslate nohighlight">\(\nu = \)</span> kinematische Viskosität</p>
 <p>Turbulenz führt zu Massenaustausch zwischen den einzelnen Schichten. Dies hat zur Folge, dass
-erhöhte Reibungsverluste auftregen, sodass das in <a class="reference internal" href="#reibung-2"><span class="std std-numref">Abbildung 10.3</span></a> abgeflacht wird (<a class="reference internal" href="#reynolds-2"><span class="std std-numref">siehe Abbildung 10.6</span></a>).</p>
+erhöhte Reibungsverluste auftreten, sodass das in <a class="reference internal" href="#reibung-2"><span class="std std-numref">Abbildung 10.3</span></a> abgeflacht wird (<a class="reference internal" href="#reynolds-2"><span class="std std-numref">siehe Abbildung 10.6</span></a>).</p>
 <figure class="align-default" id="reynolds-2">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/6/61/Flow-profile-roughness.svg"><img alt="Verbreiterung des Geschwindigkeitsprofils durch Turbulenz" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Flow-profile-roughness.svg" style="width: 40%;" /></a>
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/6/61/Flow-profile-roughness.svg"><img alt="Verbreiterung des Geschwindigkeitsprofils durch Turbulenz" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Flow-profile-roughness.svg" style="width: 40%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 10.6 </span><span class="caption-text">Verbreiterung des Geschwindigkeitsprofils durch Turbulenz <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=39278179">Von Svebert</a></span><a class="headerlink" href="#reynolds-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Bei Rohrströmungen werden als charakteristische Größen üblicherweise der Innendurchmesser <span class="math notranslate nohighlight">\(d\)</span>, der Betrag der über den Querschnitt gemittelten Geschwindigkeit <span class="math notranslate nohighlight">\(v_m\)</span> und die Viskosität des Fluids <span class="math notranslate nohighlight">\(\nu = \eta\)</span> verwendet.</p>
+<p>Bei Rohrströmungen werden als charakteristische Größen üblicherweise der Innendurchmesser <span class="math notranslate nohighlight">\(d\)</span>, der Betrag der über den Querschnitt gemittelten Geschwindigkeit <span class="math notranslate nohighlight">\(v_m\)</span> und die kinematische Viskosität <span class="math notranslate nohighlight">\(\nu = \frac{\eta}{\rho}\)</span> verwendet.</p>
 <p><span class="math notranslate nohighlight">\(Re_{Rohr} = \frac{v_m \cdot d}{\nu}\)</span></p>
-<p>Für Wasser gilt: <span class="math notranslate nohighlight">\(Re_{Rohr} = 2040 \pm 10 \)</span></p>
+<p>Für Rohrströmungen liegt die kritische Reynoldszahl bei <span class="math notranslate nohighlight">\(Re_{krit} \approx 2040 \pm 10\)</span> (häufig wird auch <span class="math notranslate nohighlight">\(\approx 2300\)</span> angegeben). Darunter ist die Strömung laminar.</p>
 </section>
 </section>
 
@@ -649,15 +692,17 @@ erhöhte Reibungsverluste auftregen, sodass das in <a class="reference internal"
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viskositat">10.1. Viskosität</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turbulenz">10.2. Turbulenz</a></li>
 </ul>
@@ -709,8 +754,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

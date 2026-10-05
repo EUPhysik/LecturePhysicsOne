@@ -1,8 +1,8 @@
 # Strömungen
 
-Eine (laminare) Strömung ist definiert als eine gerichtete Bewegung eines Fluids ({numref}`siehe Abbildung %s <stroemung-1>`). Es findet kein Massenaustausch der Schichten untereinander, da $\perp$ zu Strömunggeschwingungkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. 
+Eine (laminare) Strömung ist definiert als eine gerichtete Bewegung eines Fluids ({numref}`siehe Abbildung %s <stroemung-1>`). Es findet kein Massenaustausch der Schichten untereinander, da $\perp$ zu Strömungsgeschwindigkeit ein Impulsaustausch, aber kein Massenaustausch stattfindet. 
 
-Zunächst werden Effekte wie Reibung vernachlässigt. Reibung in Fluiden wird in [Kapitel Grenzen des einfachen Modells](./grenzen_des_laminaren_Modells.html#viskosität) beschrieben. 
+Zunächst werden Effekte wie Reibung vernachlässigt. Reibung in Fluiden wird in {ref}`Kapitel Grenzen des einfachen Modells <viskositaet>` beschrieben. 
 
 ```{figure} Bilder/Bernoulli_1.png
 ---
@@ -13,7 +13,7 @@ name: stroemung-1
 Darstellung einer Strömung. 
  ```
 
-Bei einer Strömung setzt sich der Gesamtdruck zusammen aus einem statischen und einem dynamischen Anteil. Der statische Druck wurde bereits im Kapitel [Pascal'sches Gesetz](./hydrostatik.html#pascalsches-gesetz) hergeleitet. Für diesen gilt
+Bei einer Strömung setzt sich der Gesamtdruck zusammen aus einem statischen und einem dynamischen Anteil. Der statische Druck wurde bereits im Kapitel {ref}`pascalsches-gesetz` hergeleitet. Für diesen gilt
 
 $p_{stat}(h) = \rho \cdot g \cdot h$
 
@@ -25,7 +25,7 @@ Um eine laminare Strömung zu beschreiben, gibt es zwei wichtige Grundgleichunge
 
 ## Kontinuitätsgleichung
 
-Betrachtet man einen Flüssigkeitstrom (beispielsweise durch eine Rohrleitung), so bleibt der Massenstrom (der bei inkompressiblen Medien gleich dem Volumenstrom ist) konstant. Denn die gleiche Menge Flüssigkeit, die in das Rohr hineinfließt, muss am Ende auch wieder hinausfließen, wenn keine Flüssigkeit verloren geht ({numref}`siehe Abbildung %s <Kontinuitaetsgleichung-1>`).
+Betrachtet man einen Flüssigkeitsstrom (beispielsweise durch eine Rohrleitung), so bleibt der Massenstrom $\dot{m} = \rho \dot{V}$ konstant. Bei inkompressiblen Medien ($\rho = $ konst.) ist damit auch der Volumenstrom konstant. Denn die gleiche Menge Flüssigkeit, die in das Rohr hineinfließt, muss am Ende auch wieder hinausfließen, wenn keine Flüssigkeit verloren geht ({numref}`siehe Abbildung %s <Kontinuitaetsgleichung-1>`).
 
 
 ```{figure} Bilder/Kontinuitaetsgleichung.png
@@ -47,7 +47,7 @@ $A_1 \cdot v_1 \cdot \rho = A_2 \cdot v_2 \cdot \rho \Leftrightarrow A_1 \cdot v
 
 **Kontinuitätsgleichung** $A \cdot v = \text{konstant}$
 
-## Beispiel: Rohrstömung
+## Beispiel: Rohrströmung
 
 ```{figure} Bilder/Kontinuitaetgsgleichung_2.png
 ---
@@ -68,6 +68,7 @@ $\Rightarrow A_1 \cdot v_1 = A_2 \cdot v_2 \Leftrightarrow \left( \frac{d_1}{2} 
 
 $\Rightarrow$ Bei kleinerem Durchmesser ist die Geschwindigkeit höher!
 
+(satz-von-bernoulli)=
 ## Satz von Bernoulli
 
 Die Kontinuitätsgleichung betrachtet den Massenstrom in einer Strömung. Der Satz von Bernoulli ist gegeben durch die Energiebilanz einer (laminaren) Strömung und betrachtet den Gesamtdruck. 
@@ -75,7 +76,7 @@ Die Gesamtenergie setzt sich zusammen aus der Druckenergie, der potentiellen Ene
 
 $E = V\cdot p + m \cdot g \cdot h + \frac{1}{2} \cdot m \cdot v^2$ 
 
-Unter der Voraussetzung, dass es sich um ein abgeschlossenes System handelt, gilt Energieerhaltung. Die Gesamtenergie entlang einer Stromline ist somit konstant. Eine Stromline kann verstanden werden als der Weg, den ein Massenelement in einer laminaren Strömung zurückgelegt. 
+Unter der Voraussetzung, dass es sich um ein abgeschlossenes System handelt, gilt Energieerhaltung. Die Gesamtenergie entlang einer Stromlinie ist somit konstant. Eine Stromlinie kann verstanden werden als der Weg, den ein Massenelement in einer laminaren Strömung zurücklegt. 
 
 $E = \text{konstant} \Rightarrow E_1 = E_2 \Leftrightarrow V\cdot p_1 + m \cdot g \cdot h_1 + \frac{1}{2} \cdot m \cdot v_1^2 = V\cdot p_2 + m \cdot g \cdot h_2 + \frac{1}{2} \cdot m \cdot v_2^2$ 
 
@@ -87,7 +88,7 @@ $\Leftrightarrow p_1 + \rho \cdot g \cdot h_1 + \frac{1}{2} \cdot \rho \cdot v_1
 
 $\Leftrightarrow p_{1,gesamt} = p_{2,gesamt}$
 
-**Satz vor Bernoulli** Entlang einer Stromlinie gilt $p_{gesamt} = p_0 + \rho g h + \frac{\rho}{2}v^2$
+**Satz von Bernoulli** Entlang einer Stromlinie gilt $p_{gesamt} = p_0 + \rho g h + \frac{\rho}{2}v^2$
 
 Dabei ist
 
@@ -99,9 +100,10 @@ $\frac{\rho}{2}v^2$ der dynamische Druck
 
 Der Satz von Bernoulli gilt nur
 
+* für stationäre Strömungen
 * entlang einer Stromlinie
 * für reibungsfreie Medien 
-* Für wirbelfreie Strömungen
+* bei wirbelfreien Strömungen gilt er sogar im gesamten Strömungsfeld
 * für inkompressible Strömungen, d.h Strömungen mit konstanter Dichte
 
 ### Inkompressible Strömungen
@@ -112,6 +114,7 @@ Inkompressible Strömungen sind definiert durch folgende Eigenschaften:
 * Vollständige Inkompressibilität ist ein theoretisches Konstrukt, auch Flüssigkeiten haben eine geringe Kompressibilität. Diese kann aber vernachlässigt werden, wenn sie hinreichend klein ist.
 * Gase sind kompressibel. In der Praxis kann eine Gasströmung unter bestimmten Umständen jedoch als inkompressibel angesehen werden. Die Dichte eines Gases hängt ab von der Temperatur T und von Druckänderungen $\Delta p$. Da die Abhängigkeit von der Temperatur in der Praxis meist erheblich kleiner ist als Dichteänderungen auf Grund von Druckänderungen, wird ein Fluid als inkompressibel angesehen, wenn die Dichte entlang jeder Trajektorie konstant ist. Strömungen von prinzipiell kompressiblen Fluiden (z. B. von Gasen) können als inkompressibel angesehen werden, wenn die Mach-Zahl klein ist, also $v \ll c$.
 
+(beispiel-laminare-rohrstroemung)=
 ### Beispiel: Laminare Rohrströmung
 
 ```{figure} Bilder/Bernoulli_Beispiel01.png
@@ -139,9 +142,9 @@ Mit $\Delta s = v \, \Delta t$ erhält man $A_1 \cdot v_1 \cdot \Delta t = A_2 \
 
 $p_2 = p_1 + \frac{\rho}{2}\left(v_1^2 - v_2^2\right) =  p_1 + \frac{\rho}{2} v_1^2\left(1 - \left( \frac{A_1}{A_2} \right)^2\right)$
 
-$= 4 \cdot 10^5 \frac{N}{m^2} + \frac{1000 \, kg/m^3}{2}\cdot 4 \, m/s \cdot \left(1 - \left(\frac{80 \, cm^2}{40 \, cm^2}\right)^2 \right) $
+$= 4 \cdot 10^5 \frac{N}{m^2} + \frac{1000 \, kg/m^3}{2}\cdot \left( 4 \, m/s \right)^2 \cdot \left(1 - \left(\frac{80 \, cm^2}{40 \, cm^2}\right)^2 \right) $
 
-$= 4 \cdot 10^5 \frac{kg}{m \cdot s^2} + \frac{1000 \, kg/m^3}{2}\cdot 4 \, m/s \cdot \left(1 - 4 \right) =  3.94 \, bar$
+$= 4 \cdot 10^5 \frac{kg}{m \cdot s^2} + \frac{1000 \, kg/m^3}{2}\cdot \left( 4 \, m/s \right)^2 \cdot \left(1 - 4 \right) = 3.76 \cdot 10^5 \, Pa = 3.76 \, bar$
 
 ### Beispiel: Torricelli
 
@@ -175,11 +178,11 @@ name: Venturi-2
 Venturi-Effekt
  ```
 
-Entlang der Strömungslinie gilt $h = \text{konst.} \Rightarrow p + \frac{1}{2} \rho v^2 = \text{konst.}$
+Entlang der Stromlinie gilt $h = \text{konst.} \Rightarrow p + \frac{1}{2} \rho v^2 = \text{konst.}$
 
 Kontinuitätsgleichung $A \cdot v \cdot \Delta t = \text{konst.}$
 
-In [obigem Abschnitt](./stroemungen.html#beispiel-laminare-rohrströmung), wird gezeigt, dass wenn die Strömungsgeschwindigkeit einer inkompressiblen Strömung zunimmt, der Thermodynamische Druck fällt. Dies macht man sich beim Venturi-Effekt zunutze. Auf diese Art kann durch Messung des Differenzdrucks die Strömungsgeschwindigkeit in einer Rohrleitung gemessen werden.
+In {ref}`obigem Abschnitt <beispiel-laminare-rohrstroemung>` wird gezeigt, dass wenn die Strömungsgeschwindigkeit einer inkompressiblen Strömung zunimmt, der thermodynamische Druck fällt. Dies macht man sich beim Venturi-Effekt zunutze. Auf diese Art kann durch Messung des Differenzdrucks die Strömungsgeschwindigkeit in einer Rohrleitung gemessen werden.
 
 
 ```{figure} Bilder/Venturi_Messung.png
@@ -203,7 +206,7 @@ Damit ergibt sich für die Geschwindigkeit der Rohrströmung
 
 $\Rightarrow v_1^2 = \frac{2\cdot \Delta p}{\rho \left( \left( \frac{d_1}{d_2} \right)^4 - 1 \right)} \Leftrightarrow v_1 = \sqrt{\frac{2\cdot \Delta p}{\rho \left( \left( \frac{d_1}{d_2} \right)^4 - 1 \right)}}$
 
-Eine weitere Anwengung ist die Venturi Düse. Hierbei wird der entstehende niedrige Thermodynamische Druck genutzt, um eine Flüssigkeit aus einem Behälter anzusaugen und fein zerstäubt auszupusten ({numref}`siehe Abbildung %s <Venturi-4>`).
+Eine weitere Anwendung ist die Venturi Düse. Hierbei wird der entstehende niedrige thermodynamische Druck genutzt, um eine Flüssigkeit aus einem Behälter anzusaugen und fein zerstäubt auszupusten ({numref}`siehe Abbildung %s <Venturi-4>`).
 
  ```{figure} Bilder/VenturiDuese.png
 ---

@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/waerme/thermo_begriffe';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/waerme/thermo_begriffe.html" />
     <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="6. Temperatureffekte auf Gase" href="temp_gas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 1 - Home"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 1 - Home"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark pst-js-only" alt="Skript Physik 1 - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
@@ -211,7 +251,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">2.1. Kinematik eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">2.2. Eindimensionale Bewegung eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. 2 dimensionale Bewegungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. Zweidimensionale Bewegungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">2.5. Schiefer Wurf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">2.6. Beispielaufgaben zum Schiefen Wurf</a></li>
 </ul>
@@ -285,9 +325,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -434,7 +479,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -448,25 +493,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -488,7 +525,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#begriffsdefinitionen">7.1. Begriffsdefinitionen</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volumen">7.1.1. Volumen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#druck">7.1.2. Druck</a></li>
@@ -523,7 +560,7 @@ Hierzu werden zunächst wichtige Begriffe definiert und erläutert.</p>
 <h3><span class="section-number">7.1.1. </span>Volumen<a class="headerlink" href="#volumen" title="Link to this heading">#</a></h3>
 <p>Das Volumen <span class="math notranslate nohighlight">\(V\)</span> ist die Ausdehnung bzw. der Platzbedarf eines Körpers</p>
 <p><span class="math notranslate nohighlight">\(\left[ V\right] = 1 \, m^3\)</span></p>
-<p>Für Flüssigkeiten oft <span class="math notranslate nohighlight">\(\left[V\right] = 1 \, l = \, 1\, \text{Liter} \, = 1 \, \left(0,1 \, m\right)^3 = 10^{(-3)} \, m^3\)</span></p>
+<p>Für Flüssigkeiten oft <span class="math notranslate nohighlight">\(\left[V\right] = 1 \, l = \, 1\, \text{Liter} \, = 1 \, \left(0.1 \, m\right)^3 = 10^{(-3)} \, m^3\)</span></p>
 </section>
 <section id="druck">
 <h3><span class="section-number">7.1.2. </span>Druck<a class="headerlink" href="#druck" title="Link to this heading">#</a></h3>
@@ -531,7 +568,7 @@ Hierzu werden zunächst wichtige Begriffe definiert und erläutert.</p>
 <p>Der thermodynamische Druck ist eine Zustandsgröße, die bei einem Gas mit einer Zustandsgleichung definiert wird, und kann im Ungleichgewicht vom mechanischen Druck abweichen.</p>
 <p>Beispiele sind</p>
 <ul class="simple">
-<li><p>Hydrostatischer Druck <span class="math notranslate nohighlight">\(p(h) = \rho g h \left(+ \rho_0 \right)\)</span></p></li>
+<li><p>Hydrostatischer Druck <span class="math notranslate nohighlight">\(p(h) = \rho g h \left(+ p_0 \right)\)</span></p></li>
 <li><p>Hydrodynamischer Druck <span class="math notranslate nohighlight">\(p(v)= \frac{1}{2} \rho v^2\)</span></p></li>
 <li><p>Gasdruck <span class="math notranslate nohighlight">\(p \cdot V = n\cdot R\cdot T\)</span></p></li>
 </ul>
@@ -552,8 +589,8 @@ Weitere Beiträge zur inneren Energie (molekülinterne Schwingungen, chemische R
 Zur inneren Energie eines Systems gehört nicht die potentielle oder kinetische Energie des gesamten Systems. 
 Die innere Energie ist eine extensive Größe.</p>
 <p>Der Absolutwert der inneren Energie ist schwer zu berechnen, da es viele mögliche Beiträge gibt.</p>
-<p>Für ideale Gase kann <span class="math notranslate nohighlight">\(U\)</span> bäherungsweise berechnet werden.
-Hierzu verwendet man den <a class="reference external" href="https://de.wikipedia.org/wiki/Gleichverteilungssatz">Gleichverteilungssatz</a>. Ein Teilchen in einem System, das sich im thermodynamischen Gleichgewicht befindet, besitzt für jeden Freiheitsgrad eine Energie von ￼<span class="math notranslate nohighlight">\(\frac{1}{2} k_B \cdot T= \frac{1}{2} \frac{R}{N_A}T\)</span></p>
+<p>Für ideale Gase kann <span class="math notranslate nohighlight">\(U\)</span> näherungsweise berechnet werden.
+Hierzu verwendet man den <a class="reference external" href="https://de.wikipedia.org/wiki/Gleichverteilungssatz">Gleichverteilungssatz</a>. Ein Teilchen in einem System, das sich im thermodynamischen Gleichgewicht befindet, besitzt für jeden Freiheitsgrad eine Energie von <span class="math notranslate nohighlight">\(\frac{1}{2} k_B \cdot T= \frac{1}{2} \frac{R}{N_A}T\)</span></p>
 <p>Dann gilt für die innere Energie des idealen Gases <span class="math notranslate nohighlight">\(U = \frac{f}{2} n R T\)</span>, wobei <span class="math notranslate nohighlight">\(f\)</span> die Anzahl der Freiheitsgrade ist.
 Für ein 1-atomiges Gas ist <span class="math notranslate nohighlight">\(f=3\)</span>, dies entspricht den drei Freiheitsgraden der Translation.</p>
 </section>
@@ -568,12 +605,13 @@ Sie ist die Summe aus der inneren Energie <span class="math notranslate nohighli
 <section id="entropie">
 <h3><span class="section-number">7.1.6. </span>Entropie<a class="headerlink" href="#entropie" title="Link to this heading">#</a></h3>
 <p>Die Entropie ist ein abstrakter Begriff und folgt aus der statistischen Herleitung der Thermodynamik.
-Die Thermodynamische Definition der Entropie erfolge durch Ludwig Boltzmann und ist gegeben durch</p>
-<p><span class="math notranslate nohighlight">\(S = k_B \cdot ln \left(\Omega\right)\)</span></p>
+Die statistische Definition der Entropie geht auf Ludwig Boltzmann zurück und ist gegeben durch</p>
+<p><span class="math notranslate nohighlight">\(S = k_B \cdot \ln \left(\Omega\right)\)</span></p>
 <p>Dabei ist <span class="math notranslate nohighlight">\(\Omega\)</span> das Phasenraumvolumen. Dieses kann man sich in etwa wie folgt vorstellen:</p>
-<p>Betrachtet man ein System aus vier Teilchen, die entweder auf der rechten oder der linken Seite eines Behälters sein können. In <a class="reference internal" href="#phasenraum"><span class="std std-numref"> Abbildung 7.3</span></a> sind die Möglichkeiten dagestellt, mit denen ein bestimmter Zustand erzeugt werden kann. Beispielsweise gibt es nur eine Möglickeit, wenn alle Teilchen links sein sollen, jedoch 6 Moglichkeiten, wenn je 2 Teilchen links und 2 Teilchen rechts sein sollen. Da die Teilchen ununterscheidbar sind, sind die Möglichkeiten jeweils gleichwertig. Die Anzahl der Möglichkeiten, mit der ein Zustand konstruiert werden kann, stellt das Phasenraumvolumen dar.</p>
+<p>Betrachtet man ein System aus vier Teilchen, die entweder auf der rechten oder der linken Seite eines Behälters sein können. In <a class="reference internal" href="#phasenraum"><span class="std std-numref">Abbildung 7.3</span></a> sind die Möglichkeiten dargestellt, mit denen ein bestimmter Zustand erzeugt werden kann. Beispielsweise gibt es nur eine Möglichkeit, wenn alle Teilchen links sein sollen, jedoch 6 Möglichkeiten, wenn je 2 Teilchen links und 2 Teilchen rechts sein sollen. Jede dieser Anordnungen (Mikrozustände) ist gleich wahrscheinlich. Die Anzahl der Möglichkeiten, mit der ein Zustand konstruiert werden kann, stellt das Phasenraumvolumen dar.</p>
 <figure class="align-default" id="phasenraum">
-<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg"><img alt="Veranschaulichung des Phasenraumvolumens" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg"><img alt="Veranschaulichung des Phasenraumvolumens" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Possible-distributions-4-particles.svg" style="width: 70%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Veranschaulichung des Phasenraumvolumens <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=84321913">Von MikeRun</a></span><a class="headerlink" href="#phasenraum" title="Link to this image">#</a></p>
 </figcaption>
@@ -588,12 +626,12 @@ Die Thermodynamische Definition der Entropie erfolge durch Ludwig Boltzmann und 
 <section id="warmeenergie-und-kapazitat">
 <h3><span class="section-number">7.1.7. </span>Wärmeenergie und -kapazität<a class="headerlink" href="#warmeenergie-und-kapazitat" title="Link to this heading">#</a></h3>
 <p>Wird einem System Wärme zugeführt, ändert sich die Temperatur des Systems, der Betrag der Temperaturänderung hängt von den Stoffeigenschaften ab.
-Die Menge an Energie, die aufgewendet werden muss, um <span class="math notranslate nohighlight">\(1 \, kg\)</span> Stoff um <span class="math notranslate nohighlight">\(1 \, K\)</span> zu erwärmen wird als Wärmekapazität <span class="math notranslate nohighlight">\(C\)</span> bezeichnet.</p>
+Die Menge an Energie, die aufgewendet werden muss, um einen Körper um <span class="math notranslate nohighlight">\(1 \, K\)</span> zu erwärmen, wird als Wärmekapazität <span class="math notranslate nohighlight">\(C\)</span> bezeichnet.</p>
 <p><span class="math notranslate nohighlight">\(C = \frac{\Delta Q}{\Delta T}\)</span></p>
-<p>Die Wärmekapazität ist stoffspezifisch, bezogen auf die Masse ergibt sich die spezifische Wärmekapazität <span class="math notranslate nohighlight">\(c = \frac{C}{m}\)</span> bzw. <span class="math notranslate nohighlight">\(C=c\,m=C_m\,n\)</span> mit <span class="math notranslate nohighlight">\(C_m\)</span> molare Wärmekapazität.</p>
+<p>Die Wärmekapazität hängt von Stoff und Masse ab. Bezogen auf die Masse ergibt sich die stoffspezifische (spezifische) Wärmekapazität <span class="math notranslate nohighlight">\(c = \frac{C}{m}\)</span> bzw. <span class="math notranslate nohighlight">\(C=c\,m=C_m\,n\)</span> mit <span class="math notranslate nohighlight">\(C_m\)</span> molare Wärmekapazität.</p>
 <p>Ein Stoff verhält sich prinzipiell unterschiedlich beim Erwärmen, je nachdem ob die Messung bei konstantem äußerem Druck <span class="math notranslate nohighlight">\(p\)</span> oder bei gleichbleibendem Volumen <span class="math notranslate nohighlight">\(V\)</span> durchgeführt wird, daher unterscheidet man</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(C_p\)</span> Wärmekapazität bei konstantem Druck, sie ist definiert als <span class="math notranslate nohighlight">\(C_P = \left(\frac{dH}{dT} \right)_{p = \text{konst.}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C_p\)</span> Wärmekapazität bei konstantem Druck, sie ist definiert als <span class="math notranslate nohighlight">\(C_p = \left(\frac{dH}{dT} \right)_{p = \text{konst.}}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(C_V\)</span> Wärmekapazität bei konstantem Volumen, sie ist definiert als <span class="math notranslate nohighlight">\(C_V = \left(\frac{dU}{dT} \right)_{V = \text{konst.}}\)</span></p></li>
 </ul>
 <p>Die spezifische Wärmekapazität ist</p>
@@ -607,14 +645,14 @@ Die Menge an Energie, die aufgewendet werden muss, um <span class="math notransl
 <p>Die Einheit der Wärme ist die einer Energie <span class="math notranslate nohighlight">\(\rightarrow \left[ \Delta Q \right] = 1 \, J\)</span>.</p>
 <section id="beispiel-wasser-kochen">
 <h4><span class="section-number">7.1.7.1. </span>Beispiel: Wasser kochen<a class="headerlink" href="#beispiel-wasser-kochen" title="Link to this heading">#</a></h4>
-<p>Wie groß ist die hinzugefügte Wärmeenergie, wenn <span class="math notranslate nohighlight">\(1 \,l\)</span> Wasser von <span class="math notranslate nohighlight">\(T_1 = 20^\circ C\)</span> au4 <span class="math notranslate nohighlight">\(T_1 = 100^\circ C\)</span> erhitzt wird?</p>
+<p>Wie groß ist die hinzugefügte Wärmeenergie, wenn <span class="math notranslate nohighlight">\(1 \,l\)</span> Wasser von <span class="math notranslate nohighlight">\(T_1 = 20^\circ C\)</span> auf <span class="math notranslate nohighlight">\(T_2 = 100^\circ C\)</span> erhitzt wird?</p>
 <p><span class="math notranslate nohighlight">\(\Delta T = T_2 -T_1 = 80 \,K\)</span></p>
 <p><span class="math notranslate nohighlight">\(\Delta Q = c \cdot m \cdot \Delta T = c \cdot \rho \cdot V \cdot \Delta T\)</span></p>
-<p>Für Wasser ist die Wärmekapazität <span class="math notranslate nohighlight">\(c = c_{Wasser} = 4,19 \frac{kJ}{kg \cdot K}\)</span></p>
-<p>Die Dichte von Wasser ist <span class="math notranslate nohighlight">\(\rho = \rho_{Wasser}(20 ^\circ C) = 0,998202 \frac{g}{cm^3} \)</span></p>
+<p>Für Wasser ist die Wärmekapazität <span class="math notranslate nohighlight">\(c = c_{Wasser} = 4.19 \frac{kJ}{kg \cdot K}\)</span></p>
+<p>Die Dichte von Wasser ist <span class="math notranslate nohighlight">\(\rho = \rho_{Wasser}(20 ^\circ C) = 0.998202 \frac{g}{cm^3} \)</span></p>
 <p>Streng genommen müsste die Dichte- und Volumenänderung des Wassers berücksichtigt werden. Da die Masse aber konstant bleibt, mitteln sich diese Änderungen weg.</p>
 <p>Damit ist</p>
-<p><span class="math notranslate nohighlight">\(\Delta Q = 4,19 \frac{kJ}{kg \cdot K} \cdot 10^{-3} m^3 \cdot 9982,02 \frac{kg}{m^3} \cdot 80 \, K = 335 \, kJ = 0,093 \, kWh\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Delta Q = 4.19 \frac{kJ}{kg \cdot K} \cdot 10^{-3} m^3 \cdot 998.202 \frac{kg}{m^3} \cdot 80 \, K = 335 \, kJ = 0.093 \, kWh\)</span></p>
 </section>
 </section>
 </section>
@@ -675,15 +713,17 @@ Die Menge an Energie, die aufgewendet werden muss, um <span class="math notransl
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#begriffsdefinitionen">7.1. Begriffsdefinitionen</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volumen">7.1.1. Volumen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#druck">7.1.2. Druck</a></li>
@@ -746,8 +786,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

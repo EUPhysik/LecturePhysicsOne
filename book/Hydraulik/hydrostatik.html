@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Hydraulik/hydrostatik';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsOne/book/Hydraulik/hydrostatik.html" />
     <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="3. Gase" href="../Gase/gase.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 1 - Home"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 1 - Home"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark pst-js-only" alt="Skript Physik 1 - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Grundlagen</span></p>
@@ -211,7 +251,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt.html">2.1. Kinematik eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d.html">2.2. Eindimensionale Bewegung eines Massenpunktes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_1d_Beispiele.html">2.3. Beispiele zur eindimensionalen Bewegung eines Massenpunktes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. 2 dimensionale Bewegungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/mechanik_massenpunkt_2d.html">2.4. Zweidimensionale Bewegungen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf.html">2.5. Schiefer Wurf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Massenpunkt/Kinematik/schiefer_wurf_beispiele.html">2.6. Beispielaufgaben zum Schiefen Wurf</a></li>
 </ul>
@@ -285,9 +325,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -434,7 +479,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -448,25 +493,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -488,11 +525,11 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pascalsches-gesetz">4.1. Pascal’sches Gesetz</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatisches-paradoxon">4.2. Hydrostatisches Paradoxon</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anwendung-kommuzierende-rohren">4.2.1. Anwendung: Kommuzierende Röhren</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-kommuzierende-rohren">4.2.2. Beispiel: Kommuzierende Röhren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anwendung-kommunizierende-rohren">4.2.1. Anwendung: Kommunizierende Röhren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-kommunizierende-rohren">4.2.2. Beispiel: Kommunizierende Röhren</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auftrieb">4.3. Auftrieb</a><ul class="nav section-nav flex-column">
@@ -513,55 +550,59 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="hydrostatik">
 <h1><span class="section-number">4. </span>Hydrostatik<a class="headerlink" href="#hydrostatik" title="Link to this heading">#</a></h1>
 <p><strong>Definition:</strong>
-Der hydrostatische Druck (Gravitationsdruck), ist der Druck, der sich innerhalb eines ruhenden Fluids, das ist eine Flüssigkeit oder ein Gas, durch den Einfluss der Gravitation einstellt. Quantitativ beschrieben wird er durch das Pascal’sches Gesetz.</p>
+Der hydrostatische Druck (Gravitationsdruck), ist der Druck, der sich innerhalb eines ruhenden Fluids, das ist eine Flüssigkeit oder ein Gas, durch den Einfluss der Gravitation einstellt. Quantitativ beschrieben wird er durch das Pascal’sche Gesetz.</p>
 <section id="pascalsches-gesetz">
-<h2><span class="section-number">4.1. </span>Pascal’sches Gesetz<a class="headerlink" href="#pascalsches-gesetz" title="Link to this heading">#</a></h2>
+<span id="id1"></span><h2><span class="section-number">4.1. </span>Pascal’sches Gesetz<a class="headerlink" href="#pascalsches-gesetz" title="Link to this heading">#</a></h2>
 <figure class="align-default" id="pascal-1">
-<a class="reference internal image-reference" href="../../_images/pascalschesgesetz.png"><img alt="Pascal’sches Gesetz" src="../../_images/pascalschesgesetz.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/pascalschesgesetz.png"><img alt="Pascal’sches Gesetz" src="../../_images/pascalschesgesetz.png" style="width: 60%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.19 </span><span class="caption-text">Pascal’sches Gesetz</span><a class="headerlink" href="#pascal-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Auf die Grundfläche wirkt die Kraft <span class="math notranslate nohighlight">\(F = m \cdot g = \rho \cdot V \cdot g = \rho \cdot h \cdot A \cdot g \)</span></p>
 <p>Der Druck ist definiert als <span class="math notranslate nohighlight">\(p = \frac{F}{A} \)</span></p>
-<p>Damit ist der hydrostatische (Absolut-) Druck <span class="math notranslate nohighlight">\(p = \rho \cdot g \cdot h\)</span></p>
-<p>Er setzt sich zusammen aus dem Druck der Athmosphäre <span class="math notranslate nohighlight">\(p_{at}\)</span> und dem athmospärischen Überdruck <span class="math notranslate nohighlight">\(p_h\)</span></p>
-<p>Damit gilt
-<span class="math notranslate nohighlight">\(p_h = \rho \cdot g \cdot h \left( + p_{at}\right)\)</span></p>
+<p>Der hydrostatische Druck (Schweredruck) in der Tiefe <span class="math notranslate nohighlight">\(h\)</span> ist</p>
+<p><span class="math notranslate nohighlight">\(p_h = \rho \cdot g \cdot h\)</span></p>
+<p>Zusammen mit dem Luftdruck <span class="math notranslate nohighlight">\(p_{at}\)</span> an der Oberfläche ergibt sich der Absolutdruck</p>
+<p><span class="math notranslate nohighlight">\(p = p_{at} + \rho \cdot g \cdot h\)</span></p>
 </section>
 <section id="hydrostatisches-paradoxon">
 <h2><span class="section-number">4.2. </span>Hydrostatisches Paradoxon<a class="headerlink" href="#hydrostatisches-paradoxon" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(p_h\)</span> hängt nicht von der Form eines Gefäßes ab!
-Entscheidend für den Druck an dessen Boden ist alleine die Höhe des Fluid- bzw. Flüssigkeitsspiegels und dessen Dichte! Grund dafür ist, dass nicht nur Gewichtskräfte, sondern auch Auftriebskräfte wirken.</p>
+Entscheidend für den Druck an dessen Boden ist alleine die Höhe des Fluid- bzw. Flüssigkeitsspiegels und dessen Dichte! Grund dafür ist, dass die Gefäßwände Kräfte auf die Flüssigkeit ausüben: Bei schrägen Wänden tragen sie einen Teil des Flüssigkeitsgewichts bzw. drücken zusätzlich nach unten.</p>
 <figure class="align-default" id="hydrostatik-1">
-<a class="reference internal image-reference" href="../../_images/hydrostatisches_paradoxon.png"><img alt="Hydrostatisches Paradoxon" src="../../_images/hydrostatisches_paradoxon.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../../_images/hydrostatisches_paradoxon.png"><img alt="Hydrostatisches Paradoxon" src="../../_images/hydrostatisches_paradoxon.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.20 </span><span class="caption-text">Hydrostatisches Paradoxon</span><a class="headerlink" href="#hydrostatik-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="anwendung-kommuzierende-rohren">
-<h3><span class="section-number">4.2.1. </span>Anwendung: Kommuzierende Röhren<a class="headerlink" href="#anwendung-kommuzierende-rohren" title="Link to this heading">#</a></h3>
+<section id="anwendung-kommunizierende-rohren">
+<h3><span class="section-number">4.2.1. </span>Anwendung: Kommunizierende Röhren<a class="headerlink" href="#anwendung-kommunizierende-rohren" title="Link to this heading">#</a></h3>
 <p>Da der Druck entlang der roten Linie gleich ist, ist der Füllstand in allen Röhren gleich, unabhängig von ihrer Form. Gilt für Röhren, die zu breit genug sind, dass der Kapillareffekt keine Rolle spielt</p>
 <figure class="align-default" id="roehren-1">
-<a class="reference internal image-reference" href="../../_images/komm_roehren.png"><img alt="Kommunizierende Röhren" src="../../_images/komm_roehren.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../../_images/komm_roehren.png"><img alt="Kommunizierende Röhren" src="../../_images/komm_roehren.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.21 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Dies macht man sich bei der Schlauchwaage zunutze. Eine Schlauchwaage besteht aus zwei Gefäßen mit Maßeinteilungen (meist mm). Die beiden Gefäße sind oben offen und besitzen Bodenöffnungen, durch die sie mit einem Schlauch verbunden sind. Das Gefäß-Schlauchsystem wird mit Wasser gefüllt. Durch den in beiden Gefäßen gleichen Wasserspiegel lassen sich Höhenunterschiede ablesen oder übertragen. Bevor man den Wasserspiegel der Schlauchwaage als Markierung übernimmt, muss der Schlauch unbedingt frei von Luftblasen sein.</p>
 </section>
-<section id="beispiel-kommuzierende-rohren">
-<h3><span class="section-number">4.2.2. </span>Beispiel: Kommuzierende Röhren<a class="headerlink" href="#beispiel-kommuzierende-rohren" title="Link to this heading">#</a></h3>
+<section id="beispiel-kommunizierende-rohren">
+<h3><span class="section-number">4.2.2. </span>Beispiel: Kommunizierende Röhren<a class="headerlink" href="#beispiel-kommunizierende-rohren" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="roehren-2">
-<a class="reference internal image-reference" href="../../_images/roehren2.png"><img alt="Kommunizierende Röhren" src="../../_images/roehren2.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/roehren2.png"><img alt="Kommunizierende Röhren" src="../../_images/roehren2.png" style="width: 60%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.22 </span><span class="caption-text">Kommunizierende Röhren</span><a class="headerlink" href="#roehren-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Bei unterschiedlichen Flüssigkeiten steigt die leichtere Flüssigkeit höher</p>
-<p><span class="math notranslate nohighlight">\(\rho_{Wasser} = \rho_W =  1.02 \, \frac{g}{cm^3}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\rho_{Wasser} = \rho_W =  1.00 \, \frac{g}{cm^3}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\rho_{Oel} = \rho_O= 0.9 \, \frac{g}{cm^3}\)</span></p>
-<p><span class="math notranslate nohighlight">\(p_{links} = p_{rechts} \Leftrightarrow \rho_W \cdot g \cdot (h_3 - h_1) = \rho_O \cdot g \cdot h_2 \Leftrightarrow h_2 = \frac{\rho_W}{\rho_O} (h_3-h_1)\approx 1,13 \cdot (h_3-h_1)\)</span></p>
+<p><span class="math notranslate nohighlight">\(p_{links} = p_{rechts} \Leftrightarrow \rho_W \cdot g \cdot (h_3 - h_1) = \rho_O \cdot g \cdot h_2 \Leftrightarrow h_2 = \frac{\rho_W}{\rho_O} (h_3-h_1)\approx 1.11 \cdot (h_3-h_1)\)</span></p>
 </section>
 </section>
 <section id="auftrieb">
@@ -572,7 +613,8 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
 <p>Beschrieben wird das Phänomen des Auftriebs durch das Archimedische Prinzip:</p>
 <p>Der statische Auftrieb eines Körpers in einem Medium ist genauso groß wie die Gewichtskraft des vom Körper verdrängten Mediums.</p>
 <figure class="align-default" id="auftrieb-1">
-<a class="reference internal image-reference" href="../../_images/auftrieb.svg"><img alt="Auftrieb" src="../../_images/auftrieb.svg" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="../../_images/auftrieb.svg"><img alt="Auftrieb" src="../../_images/auftrieb.svg" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.23 </span><span class="caption-text">Prinzip des Auftriebs</span><a class="headerlink" href="#auftrieb-1" title="Link to this image">#</a></p>
 </figcaption>
@@ -582,26 +624,27 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
 <p><span class="math notranslate nohighlight">\(F_o + F_u = - \rho \cdot g \cdot h_0 \cdot A + \rho \cdot g \cdot (h_0 + h) \cdot A = \rho \cdot g \cdot h \cdot A = \)</span> Auftriebskraft, wobei <span class="math notranslate nohighlight">\(\rho\)</span> die Dichte des den Körper umgebenden Mediums ist.</p>
 <p>Damit ist die Auftriebskraft</p>
 <p><span class="math notranslate nohighlight">\(F_A = \rho \cdot g \cdot V\)</span></p>
-<p>Ist <span class="math notranslate nohighlight">\(F_G &lt; F_A \longrightarrow\)</span> steig der Körper auf</p>
+<p>Ist <span class="math notranslate nohighlight">\(F_G &lt; F_A \longrightarrow\)</span> steigt der Körper auf</p>
 <p>Ist <span class="math notranslate nohighlight">\(F_G = F_A \longrightarrow\)</span> schwebt der Körper</p>
 <p>Ist <span class="math notranslate nohighlight">\(F_G &gt; F_A \longrightarrow\)</span> sinkt der Körper ab</p>
 <section id="beispiel-schwimmender-eisberg">
 <h3><span class="section-number">4.3.1. </span>Beispiel: Schwimmender Eisberg<a class="headerlink" href="#beispiel-schwimmender-eisberg" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="eisberg-1">
-<a class="reference internal image-reference" href="../../_images/eisberg.png"><img alt="eisberg" src="../../_images/eisberg.png" style="width: 60%;" /></a>
+<a class="reference internal image-reference" href="../../_images/eisberg.png"><img alt="eisberg" src="../../_images/eisberg.png" style="width: 60%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4.24 </span><span class="caption-text">Schwimmender Eisberg</span><a class="headerlink" href="#eisberg-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Dichte des Wassers: <span class="math notranslate nohighlight">\(\rho_W = 1.02 \frac{g}{cm^3}\)</span></p>
-<p>Dichte des Eises: <span class="math notranslate nohighlight">\(\rho_{Eis} = 0.92 \frac{g}{cm^3}\)</span> bei <span class="math notranslate nohighlight">\(-20^\circ\)</span></p>
+<p>Dichte des Eises: <span class="math notranslate nohighlight">\(\rho_{Eis} = 0.92 \frac{g}{cm^3}\)</span> bei <span class="math notranslate nohighlight">\(-20^\circ C\)</span></p>
 <p>Dichte Eis inkl. Luftblasen: <span class="math notranslate nohighlight">\(\rho_{Eis,L} = 0.84 \frac{g}{cm^3}\)</span></p>
 <p>Eisberg schwimmt <span class="math notranslate nohighlight">\(\Rightarrow F_G = F_A\)</span></p>
-<p><span class="math notranslate nohighlight">\(F_G = m_E \cdot g = \rho_E \left(V_1 + V_2 \right) \cdot g\)</span></p>
+<p><span class="math notranslate nohighlight">\(F_G = m_E \cdot g = \rho_{Eis,L} \left(V_1 + V_2 \right) \cdot g\)</span></p>
 <p><span class="math notranslate nohighlight">\(F_A = \rho_W \cdot V_2 \cdot g\)</span></p>
-<p><span class="math notranslate nohighlight">\(F_G = F_A \Leftrightarrow \rho_E \left(V_1 + V_2 \right) \cdot g = \rho_W \cdot V_2 \cdot g\)</span></p>
-<p><span class="math notranslate nohighlight">\(\Leftrightarrow \rho_E \cdot V_1 + \rho_E \cdot V_2 = \rho_W \cdot V_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(\Leftrightarrow V_1 = \frac{\rho_W - \rho_E}{\rho_E} V_2 \Rightarrow \frac{V_1}{V_2} = \frac{\rho_W - \rho_E}{\rho_E} \approx 0.214 \approx \frac{1}{5}\)</span></p>
+<p><span class="math notranslate nohighlight">\(F_G = F_A \Leftrightarrow \rho_{Eis,L} \left(V_1 + V_2 \right) \cdot g = \rho_W \cdot V_2 \cdot g\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Leftrightarrow \rho_{Eis,L} \cdot V_1 + \rho_{Eis,L} \cdot V_2 = \rho_W \cdot V_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(\Leftrightarrow V_1 = \frac{\rho_W - \rho_{Eis,L}}{\rho_{Eis,L}} V_2 \Rightarrow \frac{V_1}{V_2} = \frac{\rho_W - \rho_{Eis,L}}{\rho_{Eis,L}} \approx 0.214 \approx \frac{1}{5}\)</span></p>
 <!-- Rohrfedermanometer -->
 </section>
 </section>
@@ -662,19 +705,21 @@ Seine Gewichtskraft wird teilweise, vollständig oder überschießend durch die 
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pascalsches-gesetz">4.1. Pascal’sches Gesetz</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydrostatisches-paradoxon">4.2. Hydrostatisches Paradoxon</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anwendung-kommuzierende-rohren">4.2.1. Anwendung: Kommuzierende Röhren</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-kommuzierende-rohren">4.2.2. Beispiel: Kommuzierende Röhren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anwendung-kommunizierende-rohren">4.2.1. Anwendung: Kommunizierende Röhren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-kommunizierende-rohren">4.2.2. Beispiel: Kommunizierende Röhren</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auftrieb">4.3. Auftrieb</a><ul class="nav section-nav flex-column">
@@ -730,8 +775,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -26,6 +26,6 @@ hydraulischer Kolben
 
  Der Druck ist definiert als $p = \frac{F}{A}$
 
- Da Flüssigkeiten (näherungsweise) inkompressibel sind gilt $p=p_1 = p_2 \Rightarrow \frac{F_1}{A_1} = \frac{F_2}{A_2}$
+ Nach dem Pascal'schen Prinzip breitet sich der Druck in einer ruhenden Flüssigkeit allseitig gleichmäßig aus (bei Vernachlässigung des Schweredrucks). Daher gilt $p=p_1 = p_2 \Rightarrow \frac{F_1}{A_1} = \frac{F_2}{A_2}$
 
  Für zylinderförmige Kolben gilt: $A = r^2 \cdot \pi \Rightarrow \frac{F_1}{F_2} = \frac{r_1^2}{r_2^2}$

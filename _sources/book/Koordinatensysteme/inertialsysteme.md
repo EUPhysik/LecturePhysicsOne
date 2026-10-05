@@ -1,10 +1,10 @@
 # Inertialsysteme
 
-Eine besondere Bedeutung haben in der Physik die Inertialsysteme. Diese sind Bezugssyteme, welche sich gegenüber einem Referenzsystem mit konstanter Geschwindigkeit bewegen. Der Koordinatenursprung des Inertialsystems erfährt demnach keine Beschleunigung. 
+Eine besondere Bedeutung haben in der Physik die Inertialsysteme. Diese sind Bezugssysteme, welche sich gegenüber einem Referenzsystem mit konstanter Geschwindigkeit bewegen. Der Koordinatenursprung des Inertialsystems erfährt demnach keine Beschleunigung. 
 Historisch wird in der klassischen Mechanik der Fixsternhimmel als Referenzsystem gewählt.
 
 
-```{figure} Bilder/inertial.png
+```{figure} Bilder/inertial.svg
 ---
 width: 600px
 name: inertial-1
