@@ -5,11 +5,11 @@
 width: 700px
 name: stoss-6
 ---
-Gerader zentraler inelastischer Stoß.
+Gerader zentraler vollständig unelastischer Stoß.
  ```
 
-Bei geraden zentralen unelastischen Stoß handelt es sich ebenfalls um ein eindimensionales Problem. 
-Hier bleiben die beiden Massen jedoch nach dem Stoss aneinander und verformen sich zu einer neuen Masse $M = m_1 + m_2$, die sich dann zusammen weiterbewegen. 
+Beim geraden zentralen unelastischen Stoß handelt es sich ebenfalls um ein eindimensionales Problem. 
+Hier bleiben die beiden Massen jedoch nach dem Stoss aneinander und verformen sich zu einer neuen Masse $M = m_1 + m_2$, die sich dann zusammen weiterbewegt. 
 Ein Teil der Energie wird daher für die Verformung benötigt, was sich dann auch in der Energiebilanz widerspiegelt.
 
 **Energieerhaltung**
@@ -23,7 +23,7 @@ $\Rightarrow v_1^\prime = v_2^\prime = v^\prime \text{ und } M = m_1 + m_2$
 
 Dann ist
 
-$\Rightarrow \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = \frac{1}{2} M \left(v^\prime \right)^2 + \Delta E$
+$\Rightarrow \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 = \frac{M}{2} \left(v^\prime \right)^2 + \Delta E$
 
 **Impulserhaltung**
 
@@ -32,6 +32,10 @@ $p_{vor} = p_{nach}$
 $m_1 v_1 + m_2 v_2 = \left( m_1  + m_2 \right) v^\prime = M v^\prime
 \Leftrightarrow v^\prime = \frac{m_1 v_1 + m_2 v_2}{M}$
 
-Damit lässt sich der Teil der Energie berechnen, der als Verformungsenergie zum zusammenkleben der Massen aufgewandt wird. 
+Damit lässt sich der Teil der Energie berechnen, der als Verformungsenergie zum Zusammenkleben der Massen aufgewandt wird. 
 
-$\Delta E = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 -\frac{1}{2} M \left( \frac{m_1 v_1 + m_2 v_2}{M}\right)^2 = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - \frac{\left(m_1 v_1 + m_2 v_2\right)^2}{2M} = \frac{m_1m_2}{2M} \left(v_1 - v_2  \right)^2$
+$\Delta E = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - \frac{M}{2} \left( \frac{m_1 v_1 + m_2 v_2}{M}\right)^2 = \frac{m_1}{2} v_1^2 + \frac{m_2}{2} v_2^2 - \frac{\left(m_1 v_1 + m_2 v_2\right)^2}{2M}$
+
+Zusammengefasst ergibt sich
+
+$\Delta E = \frac{m_1 m_2}{2M} \left( v_1 - v_2 \right)^2$

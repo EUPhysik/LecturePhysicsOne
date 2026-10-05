@@ -14,7 +14,7 @@ Definition Axiom:
 **Ein Körper verharrt im Zustand der Ruhe oder der gleichförmig geradlinigen Bewegung, sofern jener nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird**
 
 Das erste Axiom definiert ein Bezugssystem, in dem die drei Axiome gelten. Dieses Bezugssystem ist ein Inertialsystem.
-Die physikalischen Gesetzmäßigkeiten der Mechanik nehmen in eimem Inertialsystem ihre einfachste mathematische Form an
+Die physikalischen Gesetzmäßigkeiten der Mechanik nehmen in einem Inertialsystem ihre einfachste mathematische Form an
 
 ## 2. Newtonsches Axiom: Impulssatz
 
@@ -28,7 +28,7 @@ $\vec{F} = \frac{d \vec{p}}{dt} $
 
 **Kräfte treten immer paarweise auf. Übt ein Körper A auf einen anderen Körper B eine Kraft aus (actio), so wirkt eine gleich große, aber entgegen gerichtete Kraft von Körper B auf Körper A (reactio).**
 
-$\vec{F}_{A \rightarrow B} = -\vec{F}_{A \rightarrow B}$
+$\vec{F}_{A \rightarrow B} = -\vec{F}_{B \rightarrow A}$
 
 In einem abgeschlossenen System ist die Summe der Kräfte gleich Null, was gleichbedeutend mit der Impulserhaltung ist. 
 
@@ -38,6 +38,6 @@ Das dritte Axiom setzt voraus, dass die Kräfte gleichzeitig, d. h. ohne Zeitver
 
 ## Superpositionsprinzip 
 
-Wirken auf eine Masse mehrere Kräfte, so addieren sie sich vektoriell zur einer resultierenden Gesamtkraft
+Wirken auf eine Masse mehrere Kräfte, so addieren sie sich vektoriell zu einer resultierenden Gesamtkraft
 
 $\vec{F}_{ges} = \sum_{i=1}^N \vec{F}_i$

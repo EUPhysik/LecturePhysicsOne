@@ -2,7 +2,7 @@
 
 Wie bereits im ersten Kapitel der [Hydro-/Aerostatik und Hydro-/Aerodynamik](../Hydraulik/fluessigkeiten) angesprochen, können Stoffe in unterschiedlichen Aggregatzuständen vorkommen. Obwohl die Elemente dieselben ist, unterscheiden sich die physikalischen Eigenschaften eines Stoffes in den jeweiligen Aggregatzuständen stark. 
 
-In welchem Aggegatzustand sich ein Stoff befindet, hängt von der Temperatur und dem Druck ab. 
+In welchem Aggregatzustand sich ein Stoff befindet, hängt von der Temperatur und dem Druck ab. 
 Dabei ist die Temperatur eine statistische Größe, sie beschreibt die mittlere kinetische Energie aller Teilchen.
 Die physikalischen Auswirkungen von Temperaturänderungen werden durch die Wärmelehre beschrieben. 
 

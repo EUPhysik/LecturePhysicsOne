@@ -25,7 +25,7 @@ $\Rightarrow F_{ges} = 0 = p(h)\cdot A -(p(h) + dp )\cdot A - dm\cdot g$
 
 $\Leftrightarrow -A \cdot dp - dm \cdot g = 0 \Leftrightarrow -A \cdot dp - \rho \cdot g \cdot A \cdot dh = 0 \Leftrightarrow -dp - \rho \cdot g \cdot dh = 0$
 
-Unter der Annahme, dass die Dichte proportional zum Druck ist, gilt $\rho \propto p$. Auf Meereshöhe können Druck und Dichte einfach vermessen werden $\left( p_0, 
+Unter der Annahme, dass die Dichte proportional zum Druck ist (das gilt bei konstanter Temperatur, d.h. für eine isotherme Atmosphäre), gilt $\rho \propto p$. Auf Meereshöhe können Druck und Dichte einfach vermessen werden $\left( p_0, 
 \rho_0 \right)$
 
 $\Rightarrow \frac{\rho}{p} = \frac{\rho_0}{p_0}$
@@ -34,9 +34,9 @@ Dann ist
 
 $dp = - p \frac{\rho_0 }{p_0} g dh \Leftrightarrow \frac{dp}{p} = - \frac{\rho_0 }{p_0} g dh$
 
-$\frac{dp}{p} = - \frac{\rho_0 }{p_0} g dh \longrightarrow \int_{p_0}^{p(h)} \frac{dp}{p} = \int_{h_0}^h- \frac{\rho_0 }{p_0} g dh$
+$\frac{dp}{p} = - \frac{\rho_0 }{p_0} g dh \longrightarrow \int_{p_0}^{p(h)} \frac{dp}{p} = \int_{0}^h- \frac{\rho_0 }{p_0} g dh$
 
-$\Rightarrow ln \left( \frac{p(h)}{p_0} \right) = - \frac{\rho_0}{p_0} g h \Rightarrow p(h) = p_0 e^{- \left(\rho_0/p_0\right) gh}$
+$\Rightarrow \ln \left( \frac{p(h)}{p_0} \right) = - \frac{\rho_0}{p_0} g h \Rightarrow p(h) = p_0 e^{- \left(\rho_0/p_0\right) gh}$
 
 ```{figure} https://upload.wikimedia.org/wikipedia/commons/9/95/Pressure_air.svg
 ---

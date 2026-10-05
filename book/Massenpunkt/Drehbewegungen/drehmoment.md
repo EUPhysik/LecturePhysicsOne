@@ -9,7 +9,7 @@ Das Drehmoment ist also das Vektorprodukt aus Kraft und Hebelarm und steht senkr
 
 Da das Drehmoment ein Vektorkreuzprodukt ist, gilt:
 
-$\left|\vec{M}\right| = \left|\vec{r}\right| \cdot \left|\vec{F}\right| \cdot sin \left( \angle (\vec{r},\vec{F}) \right)$
+$\left|\vec{M}\right| = \left|\vec{r}\right| \cdot \left|\vec{F}\right| \cdot \sin \left( \angle (\vec{r},\vec{F}) \right)$
 
 Das Drehmoment ist demnach maximal, wenn $\vec{r}$ und $\vec{F}$ senkrecht aufeinander stehen. Sind $\vec{r}$ und $\vec{F}$ parallel ist das Drehmoment 0. 
 
@@ -17,7 +17,7 @@ Entsprechend zu den Größen Kraft $\vec{F}$ und Impuls $\vec{p}$ gehört zum Dr
 
 $\vec{L} = \vec{r} \times \vec{p}$
 
-Der Drehimpuls ist eine Zustandsgröße, die beschreibt, wie sich eine Punktmasse auf einer kreisförmigen Bahnkurve bewegt.
+Der Drehimpuls ist eine Erhaltungsgröße, die die Drehbewegung eines Körpers bezüglich eines Bezugspunkts beschreibt. Er ist für beliebige Bahnen definiert, nicht nur für Kreisbahnen.
 
 |Translation||Rotation||
 |-|-|-|-
@@ -34,7 +34,7 @@ name: gg-1
 Gleichgewichtsbedingung bei Rotation. 
  ```
 
-Bei der Betrachtung von statischen Gleichgewichten gibt es, sofern Rotationsbewegungen möglich sind, zusätzlich die Bedinugung
+Bei der Betrachtung von statischen Gleichgewichten gibt es, sofern Rotationsbewegungen möglich sind, zusätzlich die Bedingung
 
 $\sum \vec{M} = \vec{0}$
 
@@ -58,11 +58,11 @@ $\sum \vec{M} = \vec{0} = \vec{M}_\circlearrowleft +  \vec{M}_\circlearrowright$
 
 $\Rightarrow \left| \vec{M}_\circlearrowleft \right| = \left| \vec{M}_\circlearrowright \right|$
 
-$\left| \vec{M}_\circlearrowleft \right|  = \left| \vec{r}_l \cdot m_{GG} \cdot \vec{g} \cdot sin \left( 90^\circ \right) \right| = r_l \cdot m_{GG} \cdot g$
+$\left| \vec{M}_\circlearrowleft \right|  = \left| \vec{r}_l \times m_{GG} \cdot \vec{g} \right| = r_l \cdot m_{GG} \cdot g \cdot \sin \left( 90^\circ \right) = r_l \cdot m_{GG} \cdot g$
 
-$\left| \vec{M}_\circlearrowright \right| = \left| \vec{r}_r \cdot m_{G} \cdot \vec{g} \cdot sin \left( 90^\circ \right) \right|= r_r \cdot m_{G} \cdot g$ 
+$\left| \vec{M}_\circlearrowright \right| = \left| \vec{r}_r \times m_{G} \cdot \vec{g} \right|= r_r \cdot m_{G} \cdot g \cdot \sin \left( 90^\circ \right) = r_r \cdot m_{G} \cdot g$ 
 
-$\Rightarrow M_{GG} = \frac{r_r}{r_l} \cdot m_G = \frac{6 \,m}{2 \,m} \cdot 500 \, kg = 1500 \, kg$
+$\Rightarrow m_{GG} = \frac{r_r}{r_l} \cdot m_G = \frac{6 \,m}{2 \,m} \cdot 500 \, kg = 1500 \, kg$
 
 <!---## Praktische Anwendung: Hebel--->
 

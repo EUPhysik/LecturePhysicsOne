@@ -56,7 +56,7 @@ Darstellung des freien Falls.
 
 **Lösung:**
 
-Im freien Fall wirkt auf einen Massenpunkt (in Oberflächennähe) die konstante Ergbeschleunigung $a = -g$. 
+Im freien Fall wirkt auf einen Massenpunkt (in Oberflächennähe) die konstante Erdbeschleunigung $a = -g$. 
 Die Geschwindigkeit ist demnach
 
 $v(t) = -g \cdot t + v_0$
@@ -99,10 +99,10 @@ $x(t_e) = h$
 
 Damit ergibt sich
 
-$h = \frac{1}{2} g t^2 \Leftrightarrow t_e = \sqrt{\frac{2h}{g}}$
+$h = \frac{1}{2} g t_e^2 \Leftrightarrow t_e = \sqrt{\frac{2h}{g}}$
 
 Wenn der Ball mit $v_0 = 2 \frac{m}{s}$ aus einer Höhe von $h= 10 \, m$ nach oben geworfen wird, gibt es zum Zeitpunkt $t=0$ eine Anfangsgeschwindigkeit, die der Beschleunigung entgegen gesetzt wird.
-Beim unsprünglichen Koordinatensystem bedeutet dies
+Beim ursprünglichen Koordinatensystem bedeutet dies
 
 $v(t) = -g \cdot t + v_0$
 
@@ -110,14 +110,14 @@ $x(t) = - \frac{1}{2} g t^2 + v_0\cdot t + h$
 
 Damit wird
 
-$x(t_e) = 0 = - \frac{1}{2} g t^2 + v_0\cdot t + h \Leftrightarrow t^2 = t^2 - \frac{2 \cdot v_0}{g} \cdot t - \frac{2 \cdot h}{g} = 0$
+$x(t_e) = 0 = - \frac{1}{2} g t_e^2 + v_0\cdot t_e + h \Leftrightarrow t_e^2 - \frac{2 \cdot v_0}{g} \cdot t_e - \frac{2 \cdot h}{g} = 0$
 
 Dies ergibt (mit Hilfe quadratischer Ergänzung / pq-Formel)
 
-$t_e = \frac{v_0}{g} \pm \sqrt{\left(\frac{v_0}{g} + \frac{2 \cdot h}{g}\right)}$
+$t_e = \frac{v_0}{g} \pm \sqrt{\left(\frac{v_0}{g}\right)^2 + \frac{2 \cdot h}{g}}$
 
 wobei die positive Wurzel die einzig physikalisch sinnvolle Lösung darstellt. Mit $h = 10 m$ und  $v_0 = 2 \frac{m}{s}$ ist
-$t_e = \frac{v_0 = 2 \frac{m}{s}}{g} \pm \sqrt{\left(\frac{v_0 = 2 \frac{m}{s}}{g} + \frac{2 \cdot 10 \, m}{g}\right)} \approx 1.6 \, s$
+$t_e = \frac{2 \frac{m}{s}}{g} + \sqrt{\left(\frac{2 \frac{m}{s}}{g}\right)^2 + \frac{2 \cdot 10 \, m}{g}} \approx 1.6 \, s$
 
 Am oberen Umkehrpunkt gilt:
 
@@ -125,7 +125,7 @@ $v(t_u) = 0 \Leftrightarrow -g \cdot t_u + v_0 = 0 \Leftrightarrow t_u = \frac{v
 
 Dies entspricht einer Höhe von 
 
-$$x(t_u) = - \frac{1}{2} g t_u^2 + v_0\cdot t_u + h = - \frac{1}{2} g \left(\frac{v_0}{g}\right)^2 + v_0\cdot \frac{v_0}{g} + h = \frac{1}{2} \frac{v_0^2}{g} + h = 10.2 \, m$
+$$x(t_u) = - \frac{1}{2} g t_u^2 + v_0\cdot t_u + h = - \frac{1}{2} g \left(\frac{v_0}{g}\right)^2 + v_0\cdot \frac{v_0}{g} + h = \frac{1}{2} \frac{v_0^2}{g} + h = 10.2 \, m$$
 
 
 ## Beispiel 4: Pendel
@@ -140,27 +140,25 @@ Darstellung einer eindimensionalen Bewegung eines Federpendels.
 
 Ein Federpendel wird beschrieben durch die Bewegungsgleichung
 
-$x(t) = \frac{1}{2} cos \left(2 \cdot t \right) - \frac{1}{2}$
+$x(t) = \frac{1}{2} \cos \left(2 \cdot t \right) - \frac{1}{2}$
 
 Zu welchen Zeitpunkten ist die Beschleunigung =0?
 
 **Lösung:**
 
-$x(t) = \frac{1}{2} cos \left(2 \cdot t \right) - \frac{1}{2}$
+$x(t) = \frac{1}{2} \cos \left(2 \cdot t \right) - \frac{1}{2}$
 
-$v(t) = \frac{d}{dt} \left(\frac{1}{2} cos \left(2 \cdot t \right) - \frac{1}{2} \right) = - 2 \frac{1}{2} sin \left(2 \cdot t \right) = - sin \left(2 \cdot t \right)$
+$v(t) = \frac{d}{dt} \left(\frac{1}{2} \cos \left(2 \cdot t \right) - \frac{1}{2} \right) = - 2 \frac{1}{2} \sin \left(2 \cdot t \right) = - \sin \left(2 \cdot t \right)$
 
-$a(t) =  \frac{d}{dt} \left(- sin \left(2 \cdot t \right) \right)  = -2 \cdot cos\left(2 \cdot t \right)$
+$a(t) =  \frac{d}{dt} \left(- \sin \left(2 \cdot t \right) \right)  = -2 \cdot \cos\left(2 \cdot t \right)$
 
 
 |Position &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Geschwindigkeit| Beschleunigung|
 |--|--|--|
 |![alt](Bilder/pendel_x.png)|![alt](Bilder/pendel_vx.png)|![alt](Bilder/pendel_ax.png)|
 
-$a(t)$ ist immer dann =0, wenn $cos\left(2 \cdot t \right) = 0$ ist, also $2 \cdot t = k \cdot \pi$.
+$a(t)$ ist immer dann =0, wenn $\cos\left(2 \cdot t \right) = 0$ ist, also $2 \cdot t = \frac{\pi}{2} + n \cdot \pi$.
 
 Damit gilt
 
-$t_n = \frac{k \cdot \pi}{2}$
-
-dabei ist $k = \left(\frac{1}{2} +n \right)$ mit $n = 0,1,2,...$
+$t_n = \frac{\pi}{4} + \frac{n \cdot \pi}{2}$

@@ -1,4 +1,4 @@
-# 2 dimensionale Bewegungen
+# Zweidimensionale Bewegungen
 
 Findet die Bewegung des Massenpunktes in zwei Dimensionen statt, wird die Ortskurve beschrieben durch den Vektor
 
@@ -10,7 +10,7 @@ $\vec{r} = \left(\begin{array}{c} x (t) \\ y (t) \end{array}\right)$
 
 Komplizierter wird es, wenn es beispielsweise eine vorgegebene Bahn, wie beispielsweise bei einer Achterbahn, gibt. Dann hängen x und y voneinander ab und die Betrachtung der Bewegungsgleichung wird deutlich komplizierter. 
 
-Betrachtet wird im folgenden die freie Bewegung. 
+Betrachtet wird im Folgenden die freie Bewegung. 
 
 
 ```{figure} Bilder/2dim-Bewegung.png
@@ -21,7 +21,7 @@ name: bewegung2d-1
 Darstellung einer Bewegung in 2 Dimensionen.
  ```
 
-Diese lässt sich dann in folgenden zwei Ort-Zeit Diagrammen darstellen
+Diese lässt sich dann in folgenden zwei Ort-Zeit-Diagrammen darstellen
 
 | x(t) | y(t) |
 |---|---|

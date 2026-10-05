@@ -3,7 +3,7 @@
 
 Gase können wir folgt beschrieben werden:
 
-In Gasen ist die Bewegungsenergie der Atome/Moleküle ist so hoch, dass die elektromagnetischen Wechselwirkungen der Teilchen vernachlässigt werden können und die  Wechselwirkung im wesentlichen durch Stoßprozesse stattfindet.
+In Gasen ist die Bewegungsenergie der Atome/Moleküle ist so hoch, dass die elektromagnetischen Wechselwirkungen der Teilchen vernachlässigt werden können und die  Wechselwirkung im Wesentlichen durch Stoßprozesse stattfindet.
 
 Ein Gas oder gasförmiger Stoff verteilt sich schnell in einem Raum.
 

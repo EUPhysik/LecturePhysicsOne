@@ -2,7 +2,7 @@
 
 Als abkürzende übersichtliche Schreibweise ist es üblich, die Exponentialschreibweise zu verwenden. Genauer gesagt ist hier die Exponentialschreibweise mit der Basis 10 gemeint. Dies bedeutet beispielsweise
 
-$2003210000 = 200,321 \cdot 10^{6}$. 
+$2003210000 = 2003.21 \cdot 10^{6} = 2.00321 \cdot 10^{9}$. 
 
 Für verschiedene 10er Exponenten gibt es abkürzende Schreibweisen, die sogenannten Präfixe.
 
@@ -14,7 +14,7 @@ Für verschiedene 10er Exponenten gibt es abkürzende Schreibweisen, die sogenan
 |Femto  |f      | $10^{-15}$   | Atomkern     |
 |Pico   |p      | $10^{-12}$   |              |
 |Nano   |n      | $10^{-9}$    | Viren        |
-|Micro  |$\mu$  | $10^{-6}$    | Pilzsporen   |
+|Mikro  |$\mu$  | $10^{-6}$    | Pilzsporen   |
 |Milli  |m      | $10^{-3}$    |              |
 |Zenti  |c      | $10^{-2}$    |              |
 |Dezi   |d      | $10^{-1}$    |              |

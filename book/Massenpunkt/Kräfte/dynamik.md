@@ -1,7 +1,7 @@
 # Dynamik
 
-Die Kinematik beschreibt Bewegungen durch mathematische Funktionen. Es werden Bewegungsgesetze betrachtet, ohne Kräfte zu berücksichtigen.Die Dynamik betrachtet die Ursache von Bewegungsänderungen und damit die Wirkung von Kräften. Grundsätzlich können innerhalb der Dynamik zwei Teilbereiche unterschieden werden. 
-Zum einen die Statik, welche das Kräftegleichgewicht bei einem ruhenden Körper betrachtet, zum anderen die Kinetik, welche sich ändernde Bewegungszusände durch das Wirken von Kräften betrachtet.
+Die Kinematik beschreibt Bewegungen durch mathematische Funktionen. Es werden Bewegungsgesetze betrachtet, ohne Kräfte zu berücksichtigen. Die Dynamik betrachtet die Ursache von Bewegungsänderungen und damit die Wirkung von Kräften. Grundsätzlich können innerhalb der Dynamik zwei Teilbereiche unterschieden werden. 
+Zum einen die Statik, welche das Kräftegleichgewicht bei einem ruhenden Körper betrachtet, zum anderen die Kinetik, welche sich ändernde Bewegungszustände durch das Wirken von Kräften betrachtet.
 
 Bei der Kinematik ging die Masse des Massenpunktes nicht in die Bewegungsgleichungen ein. In der Dynamik ist dies anders, hier geht die Masse in die relevanten Größen ein. 
 
@@ -37,22 +37,22 @@ Gewichtskraft
 $\vec{F}_g = m \cdot \vec{g}$
 
 Auftriebskraft
-$\vec{F}_A = \rho_{Wasser} \cdot V \cdot \vec{g}$
+$\vec{F}_A = - \rho_{Fl} \cdot V \cdot \vec{g}$
 
 Federkraft
 $\vec{F}_F = -k \cdot \vec{x}$
 
-Graviationskraft
+Gravitationskraft
 $\vec{F}_G = - G \frac{m_1 \cdot m_2}{r^2} \frac{\vec{r}}{r}$
 
 Coulombkraft
-$\vec{F}_C = - e \frac{q_1 \cdot q_2}{r^2} \frac{\vec{r}}{r}$
+$\vec{F}_C = \frac{1}{4 \pi \varepsilon_0 \varepsilon_r} \frac{q_1 \cdot q_2}{r^2} \frac{\vec{r}}{r}$
 
 Haftreibung
-$\vec{F}_R = - \mu_R \vec{F}_\perp$
+$\vec{F}_R = - \mu_H \cdot F_\perp \cdot \vec{e}_\parallel$
 
 
-Kraft $\vec{F}$ also ist eine vektorielle Größe, deren Richtung parallel zur Beschleunigung $\vec{a}$ ist und deren Betrag
+Die Kraft $\vec{F}$ ist also eine vektorielle Größe, deren Richtung parallel zur Beschleunigung $\vec{a}$ ist und deren Betrag
 
 $\left| \vec{F} \right| = m \cdot \left| \vec{a} \right|$
 
@@ -72,7 +72,7 @@ Der Impuls $\vec{p}$ ist eine vektorielle Zustandsgrösse und hat die Richtung d
 
 $\vec{p} = m \cdot \vec{v}$
 
-Für den Impuls gilt in einem festen Bezugssystem die Impulserhaltung.
+In einem abgeschlossenen System, also ohne äußere Kräfte, gilt die Impulserhaltung.
 
 $\sum \vec{p}_{vorher} = \sum \vec{p}_{nachher}$
 

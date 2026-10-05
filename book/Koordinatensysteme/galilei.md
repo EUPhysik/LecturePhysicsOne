@@ -12,7 +12,8 @@ Darstellung einer Koordinatentransformation.
  ```
 
 Bei der Galilei-Transformation betrachtet man ein Koordinatensystem $O$ und ein Koordinatensystem $O^\prime$, welches sich von $O$ wegbewegt.
-Zum Zeitpunkt $t=0$ liegen die Koordinatenurspünge in den folgenden Betrachtungen übereinander. Prinzipiell können die Koordinatensysteme auch einen Offset haben. 
+Zum Zeitpunkt $t=0$ liegen die Koordinatenursprünge in den folgenden Betrachtungen übereinander. Prinzipiell können die Koordinatensysteme auch einen Offset haben. 
+Im engeren Sinne spricht man nur für $\vec{a}_{O \rightarrow O^\prime} = \vec{0}$ von einer Galilei-Transformation; der allgemeine Fall beschreibt den Übergang in ein beschleunigtes Bezugssystem.
 
 Betrachtet aus $O$ bewegt sich der Koordinatenursprung von $O^\prime$ mit $\frac{1}{2} \vec{a}_{O \rightarrow O^\prime} t^2 + \vec{v}_{0, O \rightarrow O^\prime}t$
 
@@ -22,7 +23,7 @@ $\vec{r}_{O \rightarrow O^\prime} = \frac{1}{2} \vec{a}_{O \rightarrow O^\prime}
 
 Eine Herleitung dieser Zusammenhänge erfolgt im Kapitel [Kinematik des Massenpunktes](../Massenpunkt/Kinematik/mechanik_massenpunkt.md).
 
-Ein Punkt $P$ wird nun aus beiden Bezugssystemen betrachtet. Im Bezugssystem $O$ bezeichnet $\vec{r}$ den Ortsvektor von Koordinatenursprung zum Punkt $P$. Im Bezugssystem $^\prime$ bezeichnet $\vec{r}^\prime$ den Ortsvektor von Koordinatenursprung zum Punkt $P$ (siehe {numref}` Abbildung %s <galilei-2>`).
+Ein Punkt $P$ wird nun aus beiden Bezugssystemen betrachtet. Im Bezugssystem $O$ bezeichnet $\vec{r}$ den Ortsvektor von Koordinatenursprung zum Punkt $P$. Im Bezugssystem $O^\prime$ bezeichnet $\vec{r}^\prime$ den Ortsvektor von Koordinatenursprung zum Punkt $P$ (siehe {numref}`Abbildung %s <galilei-2>`).
 
 Da der Vektor $\vec{r}_{O \rightarrow O^\prime}$ die beiden Koordinatenursprünge miteinander verbindet, gilt
 
@@ -55,4 +56,4 @@ Dann gilt
 |-|-|
 |$ \vec{r} = \vec{r}^\prime + \vec{v}_{0, O \rightarrow O^\prime}t$|$ \vec{r}^\prime = \vec{r} - \vec{v}_{0, O \rightarrow O^\prime}t$|
 |$ \vec{v} = \vec{v}^\prime + \vec{v}_{0, O \rightarrow O^\prime}$|$ \vec{v}^\prime = \vec{v} - \vec{v}_{0, O \rightarrow O^\prime}$|
-|$ \vec{a} = \vec{v}^\prime $|$ \vec{a}^\prime = \vec{a}$|
+|$ \vec{a} = \vec{a}^\prime $|$ \vec{a}^\prime = \vec{a}$|

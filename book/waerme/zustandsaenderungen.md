@@ -1,8 +1,8 @@
 # Thermodynamische Zustandsänderungen
 
-Im Folgenden werden die vier grundlegenden Zustandsänderungen genauer analysiert. Mit Hilfe dieser grundlegenden Zustandsänderungen könnnen viele Thermodynamische Prozesse in sogenannte Vergleichsprozesse übersetzt und damit berechenbar gemacht werden.
+Im Folgenden werden die vier grundlegenden Zustandsänderungen genauer analysiert. Mit Hilfe dieser grundlegenden Zustandsänderungen können viele Thermodynamische Prozesse in sogenannte Vergleichsprozesse übersetzt und damit berechenbar gemacht werden.
 
-Zuvor seien noch einmal die wichtigsten für nachfolgende Betrachtungen notwengigen Gleichungen wiederholt:
+Zuvor seien noch einmal die wichtigsten für nachfolgende Betrachtungen notwendigen Gleichungen wiederholt:
 
 Wärmekapazitäten:
 
@@ -23,9 +23,9 @@ Allgemeine Gasgleichung:
 $p\cdot V = n \cdot R \cdot T =  N \cdot k_B \cdot T = m \cdot R_S \cdot T$
 
 Bei thermodynamischen Prozessen bzw. Zustandsänderungen wird Arbeit verrichtet. 
-Der Begriff der Arbeit wurde im [Kapitel zur Energie](../Energie/energie.md) erläutert. Bei thermodynamischen Zustandsänderungen ist dies eine Volumenänderungsarbeit, dies ist die Arbeit, die verrichtet wird, um eine Volumenänderung durch Kompression zu erzeugen. Diese ist
+Der Begriff der Arbeit wurde im [Kapitel zur Energie](../Energie/energie.md) erläutert. Bei thermodynamischen Zustandsänderungen ist dies eine Volumenänderungsarbeit, dies ist die Arbeit, die verrichtet wird, um eine Volumenänderung durch Kompression zu erzeugen. Als am System verrichtete Arbeit (positiv bei Kompression, $dV < 0$) ist sie
 
-$W_{V,12} = \int_1^2 F \cdot ds = \int_1^2 p \cdot A \cdot ds = \int_1^2 p \cdot dV$
+$W_{V,12} = - \int_1^2 p \cdot dV$
 
 Unterschieden werden vier grundlegende Zustandsänderungen, die Isochore, die Isobare, die Isotherme und die Adiabate, bzw. Isentrope. Diese werden nun einzeln betrachtet und erläutert.
 
@@ -42,7 +42,7 @@ $\Rightarrow V = $ konstant
 
 Dies wird im Folgenden anhand der Wärmezufuhr bei konstantem Volumen betrachtet, analog in umgekehrter Richtung verläuft die Wärmeabfuhr bei konstantem Volumen.
 
-Die Wärmezufuhr bei konstantem Volumen ist in {numref}` Abbildung %s <isochor>` dargestellt, hier ist $V_1 = V_2$
+Die Wärmezufuhr bei konstantem Volumen ist in {numref}`Abbildung %s <isochor>` dargestellt, hier ist $V_1 = V_2$
 
 ```{figure} Bilder/isochore.png
 ---
@@ -67,7 +67,7 @@ $\Delta U = \Delta Q + \Delta W $
 
 Da das Volumen konstant bleibt, ist $\Delta W = 0$ und somit $\Delta U = \Delta Q$.
 
-Die hinzugefügte Wärmemänge kann über die Temperaturänderung und die Wärmekapazität ermittelt werden. Da $V = $ konstant, muss natürlich die Wärmekapazität bei konstantem Volumen betrachtet werden.
+Die hinzugefügte Wärmemenge kann über die Temperaturänderung und die Wärmekapazität ermittelt werden. Da $V = $ konstant, muss natürlich die Wärmekapazität bei konstantem Volumen betrachtet werden.
 
 $C_V = \left( \frac{dU}{dT}\right)_{V=\text{konst.}} \Rightarrow dU = C_V \cdot dT = m \cdot c_V \cdot dT |_{V=\text{konst.}} = dQ \Rightarrow \Delta Q = m \cdot c_V \cdot \Delta T |_{V=\text{konst.}} $
 
@@ -84,13 +84,13 @@ $p-V$-Diagramm der isochoren Zustandsänderung
 
 Für einen reibungsfreien Prozess ist die Änderung der Entropie: $dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}$
 
-Mit $\Delta U = \Delta Q \Rightarrow $dU = dQ$ ist
+Mit $\Delta U = \Delta Q \Rightarrow dU = dQ$ ist
 
 $\Rightarrow dS = \frac{dQ}{T}  = \frac{dU}{T} = m \cdot c_V \cdot \frac{dT}{T}$
 
 Wenn $c_V = \text{konst.}$ folgt daraus 
 
-$S = m \cdot c_V \cdot ln \left(T \right)= m \cdot ln \left(T^{c_V} \right) \Rightarrow T \propto \sqrt[c_V]{e^S}$
+$S - S_0 = m \cdot c_V \cdot \ln \left(\frac{T}{T_0} \right) \Rightarrow T \propto e^{S/(m \cdot c_V)}$
 
 Das zugehörige $T-S$-Diagramm sieht daher wie folgt aus:
 
@@ -114,9 +114,9 @@ name: bsp-isochor
 Beispiel für eine isochore Zustandsänderung
  ```
 
-Sonne scheint auf eine mit Luft gefüllte Flasche, die sich nicht ausdehnen kann. Die Sonne fügt der Luft eine bestimmte Wärmemenge $\Delta W$ hinzu. 
+Sonne scheint auf eine mit Luft gefüllte Flasche, die sich nicht ausdehnen kann. Die Sonne fügt der Luft eine bestimmte Wärmemenge $\Delta Q$ hinzu. 
 
-Damit ändert sich die innere Energie entsprechen der Isochoren
+Damit ändert sich die innere Energie entsprechend der Isochoren
 
 $\Delta U = \Delta Q = c_V \cdot m \cdot \Delta T$
 
@@ -130,6 +130,7 @@ $\Delta Q = c_V \cdot m \cdot \Delta T = c_V \cdot m \cdot T_{vorher} \left(\fra
 
 Damit kann nun aus den Druck in der Flasche zu Beginn der Zustandsänderung und der Temperaturdifferenz, der Druck in der Flasche am Ende der Zustandsänderung berechnet werden.
 
+(isobare-zustandsaenderung)=
 ## Isobare Zustandsänderung
 
 Bei der isobaren Zustandsänderung (kurz: Isobare) wird eine Zustandsänderung betrachtet, die bei konstantem Druck erfolgt. Dies ist derselbe Prozess, der bei der Ermittlung des Gesetzes von Gay-Lussac verwendet wurde. 
@@ -138,7 +139,7 @@ $\Rightarrow p = $ konstant
 
 Dies wird im Folgenden anhand der Wärmezufuhr bei konstantem Druck betrachtet, analog in umgekehrter Richtung verläuft die Wärmeabfuhr bei konstantem Druck.
 
-Die Wärmezufuhr bei konstantem Druck ist in {numref}` Abbildung %s <isobar>` dargestellt, hier ist $p_1 = p_2$
+Die Wärmezufuhr bei konstantem Druck ist in {numref}`Abbildung %s <isobar>` dargestellt, hier ist $p_1 = p_2$
 
 ```{figure} Bilder/isobare.png
 ---
@@ -183,13 +184,13 @@ Da in diesem Fall Volumenänderungsarbeit verrichtet wird gilt:
 
 $dU = dQ + dW = dQ - p\cdot dV$
 
-Anmerkung $dW = -p \cdot dV$, da das Gas Volumenänderungsarbeit am System verrichtet.
+Anmerkung: $dW = -p \cdot dV$, da $W$ die am System verrichtete Arbeit ist. Dehnt sich das Gas aus ($dV > 0$), verrichtet es Arbeit an der Umgebung.
 
 $dU = dQ + dW = dQ - p\cdot dV \Leftrightarrow dQ = dU + p \cdot dV = m \cdot c_V \cdot dT + p \cdot dV$
 
 Änderung der Entropie $dS$ ist für einen reibungsfreien Prozess: $dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}$
 
-Mit $H = U + p\cdot V = $ ist die Änderung der Enthalpie $dH$
+Mit $H = U + p\cdot V$ ist die Änderung der Enthalpie $dH$
 
 $dH = dU + p\cdot dV + V \cdot dp \Leftrightarrow dH - V \cdot dp = dU + p\cdot dV$
 
@@ -207,9 +208,9 @@ $\frac{dH}{T} = \left| \frac{C_p \cdot dT }{T} \right| _{p = \text{konst.}} = m 
 
 Somit ergibt sich der Zusammenhang bei konstantem $c_p$
 
-$S = m \cdot c_p \cdot ln \left(T \right) = m \cdot ln \left(T^{c_p} \right) \Rightarrow T \propto \sqrt[c_p]{e^S}$
+$S - S_0 = m \cdot c_p \cdot \ln \left(\frac{T}{T_0} \right) \Rightarrow T \propto e^{S/(m \cdot c_p)}$
 
-Dies bedeutet das der Verlauf der Isobaren $T-S$ -Diagramm flacher ist, als der der Isochoren.
+Dies bedeutet, dass der Verlauf der Isobaren im $T-S$-Diagramm flacher ist, als der der Isochoren.
 
 ```{figure} Bilder/ts-isobar.svg
 ---
@@ -242,7 +243,7 @@ $W = F \cdot \Delta s = m \cdot g \cdot \Delta s$
 
 ## Adiabate beziehungsweise isentrope Zustandsänderung
 
-Unter einer adiabaten Zustandsänderung (kurz: Adiabate) versteht man eine Zustandsänderung, bei der mit der Umgebung keine Wärme ausgetauscht wird. Es gilt als $\Delta Q = 0$. Ist der Prozess zusätzlich noch reibungsfrei, sprich man von einem isentropen Prozess.
+Unter einer adiabaten Zustandsänderung (kurz: Adiabate) versteht man eine Zustandsänderung, bei der mit der Umgebung keine Wärme ausgetauscht wird. Es gilt also $\Delta Q = 0$. Ist der Prozess zusätzlich noch reibungsfrei, spricht man von einem isentropen Prozess.
 
 Dies wird im folgenden am Beispiel der adiabaten Kompression dargestellt. 
 
@@ -265,7 +266,7 @@ $\rightarrow dU = dW$
 
 Das Volumen ändert sich, bei der Kompression wird am System Volumenänderungsarbeit verrichtet.
 
-$W = \int F \cdot ds = \int p\cdot A \cdot ds = - \int p\cdot dV$
+$W = - \int p\cdot dV$
 
 Mit Hilfe der idealen Gasgleichung ist 
 
@@ -279,15 +280,15 @@ $dW = -\frac{n \cdot R \cdot T}{V}\cdot dV$
 
 Gleichzeitig folgt aus der Definition der Wärmekapazität bei konstantem Volumen
 
-$dU=n \cdot c_{v}dT$
+$dU=n \cdot c_{v}dT$ (hier mit der molaren Wärmekapazität $c_v$)
 
-Da $dU = dW$ folgt daraus $n \cdot c_{v}dT + \int \frac{n \cdot R \cdot T}{V}\cdot dV = 0$
+Da $dU = dW$ folgt daraus $n \cdot c_{v}dT + \frac{n \cdot R \cdot T}{V}\cdot dV = 0$
 
 Diese Gleichung ist nur erfüllt, wenn
 
 $T \cdot V^{R/c_V} = $ konstant
 
-Mit Hilfe der idealen Gasgleichung und $\kappa = \frac{c_P}{c_V}$ und $c_p = c_V +R$ lässt sich dies umformulieren zur Possoin'schen Adiabatengleichung
+Mit Hilfe der idealen Gasgleichung und $\kappa = \frac{c_p}{c_V}$ und $c_p = c_V +R$ (molare Wärmekapazitäten) lässt sich dies umformulieren zur Poisson'schen Adiabatengleichung
 
 $p\cdot V^\kappa = $ konstant
 
@@ -335,7 +336,7 @@ Näherungsweise adiabatisch ablaufende Zustandsänderungen sind zum Beispiel
 In einer Luftpumpe wird $1 \, kg$ Luft ($0^\circ C$ und $1 \, bar$) auf den 10-fachen Druck isentrop verdichtet.
 Wie hoch ist die Temperatur der verdichteten Luft?
 
-Wie groß ist die Volumenändernderungsarbeit?
+Wie groß ist die Volumenänderungsarbeit?
 
 $R_{Luft} = 287 \frac{J}{kg \cdot K}$ und $\kappa_{Luft} = 1.4$
 
@@ -349,16 +350,19 @@ $p \cdot V = m \cdot R_{Luft} \cdot T \Leftrightarrow V = \frac{m \cdot R_{Luft}
 
 Damit ergibt sich
 
-$p \cdot \left( \frac{m \cdot R_{Luft} \cdot T}{p} \right)^\kappa = \left( m \cdot R_{Luft} \cdot T\right)^\kappa \cdot p^\left( 1 - \kappa \right)$ = konst
+$p \cdot \left( \frac{m \cdot R_{Luft} \cdot T}{p} \right)^\kappa = \left( m \cdot R_{Luft} \cdot T\right)^\kappa \cdot p^{1 - \kappa} = \text{konst.}$
 
 Also ist mit
 
 $p_1 = 1 \, bar$
-$p_2 = 10 \cdot p_1 = 10 \, bar$
-$T_1 = 0^\circ C = 273.15 \, K
 
-$\left( m \cdot R_{Luft} \cdot T_1\right)^\kappa \cdot p_1^\left( 1 - \kappa \right) = \left( m \cdot R_{Luft} \cdot T_2\right)^\kappa \cdot p_2^\left( 1 - \kappa \right)$
-$\Leftrightarrow \left(T_1\right)^\kappa \cdot p_1^\left( 1 - \kappa \right) = \left(T_2\right)^\kappa \cdot p_2^\left( 1 - \kappa \right)$
+$p_2 = 10 \cdot p_1 = 10 \, bar$
+
+$T_1 = 0^\circ C = 273.15 \, K$
+
+$\left( m \cdot R_{Luft} \cdot T_1\right)^\kappa \cdot p_1^{1 - \kappa} = \left( m \cdot R_{Luft} \cdot T_2\right)^\kappa \cdot p_2^{1 - \kappa}$
+
+$\Leftrightarrow \left(T_1\right)^\kappa \cdot p_1^{1 - \kappa} = \left(T_2\right)^\kappa \cdot p_2^{1 - \kappa}$
 
 Damit ist
 
@@ -420,7 +424,7 @@ Isotherme Kompression
  ```
 
 Da eine Kompression stattfindet, wird Volumenänderungsarbeit geleistet. 
-$W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot ln \left( \frac{V_1}{V_2}\right)$
+$W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot \ln \left( \frac{V_1}{V_2}\right)$
 
 Die gesamte bei einer Kompression zugeführte Arbeit muss quantitativ als Wärme an die Umgebung abgegeben werden, damit die Temperatur im System konstant bleibt.
 
@@ -445,7 +449,7 @@ $p-V$-Diagramm der isothermen Zustandsänderung
 
 Änderung der Entropie $S$ ist für einen reibungsfreien Prozess: $dS = \frac{d Q}{T} + \frac{dW_{diss}}{T} = \frac{d Q}{T}$
 
-Da $T = $ konstanst ist, gilt
+Da $T = $ konstant ist, gilt
 
 $T \cdot dS = d Q \Rightarrow T \cdot \Delta S = \Delta  Q \Leftrightarrow \Delta S = \frac{\Delta Q}{T}$
 
@@ -479,22 +483,22 @@ Isotherme Kompression im $T-S$-Diagramm.
 Näherungsweise realisierbar durch langsam verlaufende Zustandsänderungen, um den Temperaturausgleich mit der Umgebung zu ermöglichen 
 (Bsp.: langsame Luftpumpe)
 
-$W_{12} = \int_1^2 p(V) \cdot dV = \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot ln \left( \frac{V_2}{V_1}\right)$
+$W_{12} = - \int_1^2 p(V) \cdot dV = - \int_1^2 \frac{n R  T}{V} \cdot dV = n  R T \cdot \ln \left( \frac{V_1}{V_2}\right)$
 
 ## Polytrope Zustandsänderungen
 
 Isotherme und Isentrope bilden extreme Zustandsänderungen. 
 
-Bei der Isotherme ist $\kappa = 1 \text{ und } p\cdot V^1 = \text{konst.}$
+Bei der Isotherme ist der Exponent $1 \text{ und } p\cdot V^1 = \text{konst.}$
 
 Bei der Isentropen hingegen ist $\kappa = \frac{c_p}{c_V} \text{ und } p\cdot V^{\frac{c_p}{c_V}} = \text{konst.}$
 
-Für ein ideales Gas ist $\kappa = \frac{c_p}{c_V} = \frac{5}{3}$
+Für ein einatomiges ideales Gas ist $\kappa = \frac{c_p}{c_V} = \frac{5}{3}$, für Luft (zweiatomig) ist $\kappa \approx 1.4$.
 
-In der Realität kommen oft Zustandsänderungen vor, bei denen der Exponent zwischen $1$ und $\frac{5}{3}$ liegt. 
+In der Realität kommen oft Zustandsänderungen vor, bei denen der Exponent zwischen $1$ und $\kappa$ liegt. 
 Man spricht dann von Polytropenexponenten $n$ mit $1 \le n \le \kappa$.
 
-Beispielsweise ist für Luft $n = 1.4 \rightarrow p \cdot V^{1.4} = \text{konst.}$
+Beispielsweise ist für die Verdichtung von Luft in realen Kompressoren $n \approx 1.3 \rightarrow p \cdot V^{1.3} = \text{konst.}$
 
 ```{figure} Bilder/polytrop.png
 ---
@@ -510,6 +514,6 @@ Beispiel für eine polytrope Zustandsänderung anhand von Luft
 
 ## Umwandlungsenthalpie
 
-Bei einem Phasenübergang, beispielsweise vom flüssigen in den gasförmigen Zustand, wird Enthalpie aufgewand, um den Phasenübergang herbeizuführen. 
+Bei einem Phasenübergang, beispielsweise vom flüssigen in den gasförmigen Zustand, wird Enthalpie aufgewandt, um den Phasenübergang herbeizuführen. 
 Die hinzugefügte Enthalpie führt dann beispielsweise nicht zur Erhöhung der Temperatur, sondern nur zur Umwandlung von einer Phase zur anderen.
 Diese Enthalpie bezeichnet man als Umwandlungsenthalpie.

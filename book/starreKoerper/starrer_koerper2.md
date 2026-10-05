@@ -1,4 +1,4 @@
-# Model
+# Modell
 
 Ein starrer Körper kann durch die Position des Schwerpunktes und der Massenverteilung bezüglich dieses Schwerpunktes beschrieben werden. 
 
@@ -13,7 +13,7 @@ Modell eines starren Körpers bzgl. eines Koordinatensystems.
 
 ## Massenverteilung
 
-Die Positionen der einzelnen Massenelemente $m_i$ wird bezüglich eines gewählten Koordinatensystem durch den Vektor $\vec{r}_i$ beschrieben (siehe beispielsweise der der rote Pfeil in {numref}`Abbildung %s <starrerkoerper-2>`). Damit gibt es pro Massenelement einen dazugehörenden Ortsvektor.
+Die Positionen der einzelnen Massenelemente $m_i$ wird bezüglich eines gewählten Koordinatensystem durch den Vektor $\vec{r}_i$ beschrieben (siehe beispielsweise der rote Pfeil in {numref}`Abbildung %s <starrerkoerper-2>`). Damit gibt es pro Massenelement einen dazugehörenden Ortsvektor.
 
 Beim Übergang zu einem kontinuierlichen System wird
 
@@ -35,7 +35,7 @@ $\vec{r}_S = \frac{1}{M} \int \vec{r} \, dm = \frac{1}{M} \int \vec{r} \rho(r)\,
 
 Die möglichen Bewegungen eines starren Körpers sind
 
-1. **Translationsbewegung** Der starre Körper bewegt sich in eine Richtung ohne Drehbewegung. Die Bewegung kann vollständig durch die Bewegung des Schwerpunktes beschrieben Werden, da der Abstand jedes Massenpunktes zum Schwerpunkt konstant ist. 
+1. **Translationsbewegung** Der starre Körper bewegt sich in eine Richtung ohne Drehbewegung. Die Bewegung kann vollständig durch die Bewegung des Schwerpunktes beschrieben werden, da der Abstand jedes Massenpunktes zum Schwerpunkt konstant ist. 
 1. **Rotationsbewegung** Der starre Körper dreht sich um eine feste Drehachse. Dies bedeutet, dass der Abstand der einzelnen Massenelemente zur Drehachse konstant ist. Die Bewegung kann nicht über die Bewegung des Schwerpunktes beschrieben werden. 
 
 ```{figure} Bilder/trans_vs_rot.svg
